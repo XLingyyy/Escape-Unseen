@@ -67,3 +67,9 @@ Required review images are in `EU/Saved/review/task4_4B_*.png`: L01 overview, st
 - `CODEX_TASKS.md`: completed handoff entries, updated as each deliverable is ready.
 
 Codex has run the limited PIE sessions and Blueprint compilation described above. It has not packaged a build, recorded a gameplay video, uploaded the store page or submitted the jam entry. The final jam submission must be performed by the entrant.
+
+## Task 4C correction, 13 November UTC
+
+Claude accepted 4A/4B and requested removal of the visible wall patch beneath the guard window. Codex duplicated M_ModelTex as the masked M_ModelTexClip and added saturate(((AbsoluteWorldPosition - ActorPositionWS).Z - ClipZ) * 1000) to OpacityMask. MI_GuardClip retains the original guard texture, tint and roughness. Measured lower-bar sections were approximately Z=0–7.07 cm; including the window component offset of -5 and actor scale 1.4 gives ClipZ=-2.05 cm. BuildGuard now has only the night backing, window mesh and clipped guard mesh. The -100 descent, scan behavior, collision and shadow settings remain unchanged.
+
+The guard Blueprint compiled. Actual PIE captures show a continuous L01 wall, a clean sill cut at L03 Alpha=0.5000007, and the fully risen guard with its flashlight head retained. Screenshots: EU/Saved/review/task4C_L01.png, task4C_rise.png and task4C_closeup.png. The closeup is cropped from the engine high-resolution screenshot. Slomo was restored to 1, bAlwaysOn to false, PIE stopped and assets saved. No map edits, full playthrough or packaging were required.
