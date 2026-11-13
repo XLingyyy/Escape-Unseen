@@ -25,3 +25,30 @@ Validation: affected Blueprints compiled. Actual paused inspection Phase=2 retai
 Editor limitation: its default Esc shortcut stops PIE before gameplay receives the key. The game's Esc toggle branch is implemented; direct Esc testing in this editor session was intercepted. Keyboard navigation, mouse actions, pause and resume were exercised. Editor shortcut preferences were not changed. No packaged run or complete level playthrough was performed.
 
 All Task 5 edits saved with PIE stopped and the temporary actor removed. Review remains with Claude.
+
+## Task 6 — screenplay-style Canvas HUD
+
+Completed 2026-11-13 UTC. BP_EscapeHUD now uses Bebas Neue for headings/keys and Courier Prime Regular/Bold for body/status text. Three Runtime UFonts and three FontFaces are saved under `/Game/EscapeUnseen/UI/Fonts/`; the original TTFs, both OFL licenses, import report and official source URLs are retained in `EU/SourceArt/Fonts/`. Provenance records the downloaded fonts and the derived assets.
+
+The HUD implements the specified scene card/clapper strip, measured and wrapped script hint, available-key bar, projected E prompts, lamp drag/blocked indicators, explicit HIDDEN/LIT symbols, settling labels, inspection framing/progress, rotated LOCKED/RETAKE/WRAP stamps, title/end cards and pause-menu typography. All layout uses viewport-height / 1080 scaling. The inspection banner has a 72%-black backing for readability against the bright room. Preview/settling labels stay above the script hint. Missing font symbols are drawn as Canvas geometry.
+
+Director.PreviewHidden reuses PlacementValid, inventory and ShadowService.CheckBlock(Ghost), so preview color and label agree with the inspection geometry. Ghost's actual scale is (1,1,1). In the tested L01 lamp position (500,800), (1050,50) was correctly reported exposed and (1100,50) was HIDDEN and passed actual inspection. Lamp dragging starts on the lamp hit radius; rejected moves retain Task 5B's last legal position.
+
+`M_UIStamp` uses a runtime Canvas red-channel mask plus a tint. Canvas material draws need display-encoded tint values, whereas text/rect helpers use linear palette values; the MID values preserve the specified hex colors. `M_UIVignette` is a native UV-distance material capped at 25% opacity. Its Saturate input uses the native unnamed pin. Float loop indices are explicit in circle/ring/key geometry to avoid integer truncation.
+
+Validation: affected Blueprints compiled and assets saved through MCP. Eight native Shot PNGs were captured at an actual 1920x1080 viewport, with no resampling. The final set was visually inspected. Inspection and LOCKED came from real RequestApproval/Commit transitions; Cut required OnMark and BClear, and the exit required CanEscape. Mark/exit screenshots use character teleport solely to position the UI fixture. The inspection screenshot briefly held Director tick after real progress; all tick/pause/drag state was restored. The original editor play-window settings were restored, PIE stopped, temporary actors were absent, and the temporary bridge asset was deleted.
+
+Screenshots under `EU/Saved/review/`:
+
+- `task6_L01_lamp.png`
+- `task6_L01_build.png`
+- `task6_inspection.png`
+- `task6_locked.png`
+- `task6_cut_prompt.png`
+- `task6_exit_prompt.png`
+- `task6_menu.png`
+- `task6_title.png`
+
+Detailed runtime states: `EU/Saved/codex_task6/_capture/capture_report.json`. Task 5's direct Esc limitation in PIE still applies. The screenshot fixture opened the pause menu through its gameplay function. RETAKE/WRAP and the final ending share the implemented rendering paths, but were not separately captured in Task 6. No complete traversal, packaged run, push or competition submission was performed. Task 7 was not started. Visual acceptance remains with Claude.
+
+During authoring, the editor crashed after a synchronous material operation in a construction-script bridge. Saved assets were recovered; subsequent material mutation was deferred until the construction call returned. This was an editor-authoring incident, not a gameplay crash observed in the final PIE run.

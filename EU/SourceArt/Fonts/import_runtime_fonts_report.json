@@ -1,0 +1,32 @@
+[
+  {
+    "source": "F:\\Escape Unseen\\EU\\SourceArt\\Fonts\\BebasNeue\\BebasNeue-Regular.ttf",
+    "font_face": "/Game/EscapeUnseen/UI/Fonts/FF_BebasNeue.FF_BebasNeue",
+    "font": "/Game/EscapeUnseen/UI/Fonts/F_BebasNeue.F_BebasNeue",
+    "cache_type": "<FontCacheType.RUNTIME: 1>",
+    "legacy_font_size": 64,
+    "legacy_font_name": "Default",
+    "font_loading_policy": "<FontLoadingPolicy.INLINE: 2>",
+    "saved": true
+  },
+  {
+    "source": "F:\\Escape Unseen\\EU\\SourceArt\\Fonts\\CourierPrime\\CourierPrime-Regular.ttf",
+    "font_face": "/Game/EscapeUnseen/UI/Fonts/FF_CourierPrime_Regular.FF_CourierPrime_Regular",
+    "font": "/Game/EscapeUnseen/UI/Fonts/F_CourierPrime_Regular.F_CourierPrime_Regular",
+    "cache_type": "<FontCacheType.RUNTIME: 1>",
+    "legacy_font_size": 64,
+    "legacy_font_name": "Default",
+    "font_loading_policy": "<FontLoadingPolicy.INLINE: 2>",
+    "saved": true
+  },
+  {
+    "source": "F:\\Escape Unseen\\EU\\SourceArt\\Fonts\\CourierPrime\\CourierPrime-Bold.ttf",
+    "font_face": "/Game/EscapeUnseen/UI/Fonts/FF_CourierPrime_Bold.FF_CourierPrime_Bold",
+    "font": "/Game/EscapeUnseen/UI/Fonts/F_CourierPrime_Bold.F_CourierPrime_Bold",
+    "cache_type": "<FontCacheType.RUNTIME: 1>",
+    "legacy_font_size": 64,
+    "legacy_font_name": "Default",
+    "font_loading_policy": "<FontLoadingPolicy.INLINE: 2>",
+    "saved": true
+  }
+]

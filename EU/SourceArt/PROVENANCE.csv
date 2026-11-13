@@ -513,3 +513,203 @@ SM_Settings.uasset,Codex + Unreal MCP Blueprint/native editor asset API,"### 5C 
 - 画法先用现有 Canvas 字体，任务 6 统一换样式。
 
 ",2026-11-13T18:54:16.084958+00:00,0,"Task 5; implementation asset, no external generative-asset service"
+Fonts/BebasNeue/BebasNeue-Regular.ttf,Google Fonts official GitHub; Python urllib download,"### 6.1 字体（游戏的""剧本感""字体风格）
+
+主题是""拍一部越狱片""，所以界面要像片场的场记板和剧本。
+- **标题字体：Bebas Neue**（OFL 许可）。用在关卡名、阶段名、按键、大字横幅。
+- **正文字体：Courier Prime**（OFL 许可，专为电影剧本设计的等宽字体），用 Regular 和 Bold 两个字重。用在提示和说明文字。
+- 下载来源用 Google Fonts 的 GitHub 仓库。TTF 文件和 OFL.txt 一起放进 `EU/SourceArt/Fonts/`，并在 PROVENANCE.csv 里登记。
+- 导入后建 Font 资产，Font Cache Type 设为 Runtime，放在 `/Game/EscapeUnseen/UI/Fonts/`。",2026-11-13T18:55:39.377635+00:00,0; free OFL font download; no paid asset-generation API,"Third-party original font, not AI-generated; unmodified. Creator: Ryoichi Tsunekawa / Dharma Type. Version: Version 2.000. Source: https://github.com/google/fonts/blob/main/ofl/bebasneue/BebasNeue-Regular.ttf. Download: https://raw.githubusercontent.com/google/fonts/main/ofl/bebasneue/BebasNeue-Regular.ttf. License: SIL Open Font License 1.1; https://raw.githubusercontent.com/google/fonts/main/ofl/bebasneue/OFL.txt; retained at Fonts/BebasNeue/OFL.txt. UTC is download time."
+Fonts/BebasNeue/OFL.txt,Google Fonts official GitHub; Python urllib download,"### 6.1 字体（游戏的""剧本感""字体风格）
+
+主题是""拍一部越狱片""，所以界面要像片场的场记板和剧本。
+- **标题字体：Bebas Neue**（OFL 许可）。用在关卡名、阶段名、按键、大字横幅。
+- **正文字体：Courier Prime**（OFL 许可，专为电影剧本设计的等宽字体），用 Regular 和 Bold 两个字重。用在提示和说明文字。
+- 下载来源用 Google Fonts 的 GitHub 仓库。TTF 文件和 OFL.txt 一起放进 `EU/SourceArt/Fonts/`，并在 PROVENANCE.csv 里登记。
+- 导入后建 Font 资产，Font Cache Type 设为 Runtime，放在 `/Game/EscapeUnseen/UI/Fonts/`。",2026-11-13T18:55:39.377635+00:00,0; free OFL font download; no paid asset-generation API,Original license file retained without changes. Copyright © 2010 by Dharma Type. License: SIL Open Font License 1.1. Source: https://github.com/google/fonts/blob/main/ofl/bebasneue/OFL.txt. Download: https://raw.githubusercontent.com/google/fonts/main/ofl/bebasneue/OFL.txt. UTC is download time.
+Fonts/CourierPrime/CourierPrime-Regular.ttf,Google Fonts official GitHub; Python urllib download,"### 6.1 字体（游戏的""剧本感""字体风格）
+
+主题是""拍一部越狱片""，所以界面要像片场的场记板和剧本。
+- **标题字体：Bebas Neue**（OFL 许可）。用在关卡名、阶段名、按键、大字横幅。
+- **正文字体：Courier Prime**（OFL 许可，专为电影剧本设计的等宽字体），用 Regular 和 Bold 两个字重。用在提示和说明文字。
+- 下载来源用 Google Fonts 的 GitHub 仓库。TTF 文件和 OFL.txt 一起放进 `EU/SourceArt/Fonts/`，并在 PROVENANCE.csv 里登记。
+- 导入后建 Font 资产，Font Cache Type 设为 Runtime，放在 `/Game/EscapeUnseen/UI/Fonts/`。",2026-11-13T18:55:39.377635+00:00,0; free OFL font download; no paid asset-generation API,"Third-party original font, not AI-generated; unmodified. Creator: Alan Dague-Greene / The Courier Prime Project Authors. Version: Version 3.018. Source: https://github.com/google/fonts/blob/main/ofl/courierprime/CourierPrime-Regular.ttf. Download: https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/CourierPrime-Regular.ttf. License: SIL Open Font License 1.1; https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/OFL.txt; retained at Fonts/CourierPrime/OFL.txt. UTC is download time."
+Fonts/CourierPrime/CourierPrime-Bold.ttf,Google Fonts official GitHub; Python urllib download,"### 6.1 字体（游戏的""剧本感""字体风格）
+
+主题是""拍一部越狱片""，所以界面要像片场的场记板和剧本。
+- **标题字体：Bebas Neue**（OFL 许可）。用在关卡名、阶段名、按键、大字横幅。
+- **正文字体：Courier Prime**（OFL 许可，专为电影剧本设计的等宽字体），用 Regular 和 Bold 两个字重。用在提示和说明文字。
+- 下载来源用 Google Fonts 的 GitHub 仓库。TTF 文件和 OFL.txt 一起放进 `EU/SourceArt/Fonts/`，并在 PROVENANCE.csv 里登记。
+- 导入后建 Font 资产，Font Cache Type 设为 Runtime，放在 `/Game/EscapeUnseen/UI/Fonts/`。",2026-11-13T18:55:39.377635+00:00,0; free OFL font download; no paid asset-generation API,"Third-party original font, not AI-generated; unmodified. Creator: Alan Dague-Greene / The Courier Prime Project Authors. Version: Version 3.018. Source: https://github.com/google/fonts/blob/main/ofl/courierprime/CourierPrime-Bold.ttf. Download: https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/CourierPrime-Bold.ttf. License: SIL Open Font License 1.1; https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/OFL.txt; retained at Fonts/CourierPrime/OFL.txt. UTC is download time."
+Fonts/CourierPrime/OFL.txt,Google Fonts official GitHub; Python urllib download,"### 6.1 字体（游戏的""剧本感""字体风格）
+
+主题是""拍一部越狱片""，所以界面要像片场的场记板和剧本。
+- **标题字体：Bebas Neue**（OFL 许可）。用在关卡名、阶段名、按键、大字横幅。
+- **正文字体：Courier Prime**（OFL 许可，专为电影剧本设计的等宽字体），用 Regular 和 Bold 两个字重。用在提示和说明文字。
+- 下载来源用 Google Fonts 的 GitHub 仓库。TTF 文件和 OFL.txt 一起放进 `EU/SourceArt/Fonts/`，并在 PROVENANCE.csv 里登记。
+- 导入后建 Font 资产，Font Cache Type 设为 Runtime，放在 `/Game/EscapeUnseen/UI/Fonts/`。",2026-11-13T18:55:39.377635+00:00,0; free OFL font download; no paid asset-generation API,Original license file retained without changes. Copyright 2015 The Courier Prime Project Authors (https://github.com/quoteunquoteapps/CourierPrime). License: SIL Open Font License 1.1. Source: https://github.com/google/fonts/blob/main/ofl/courierprime/OFL.txt. Download: https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/OFL.txt. UTC is download time.
+Content/EscapeUnseen/UI/Fonts/FF_BebasNeue.uasset,Codex; UE 5.8 FontFileImportFactory/FontFactory; native editor Python,"### 6.1 字体（游戏的""剧本感""字体风格）
+
+主题是""拍一部越狱片""，所以界面要像片场的场记板和剧本。
+- **标题字体：Bebas Neue**（OFL 许可）。用在关卡名、阶段名、按键、大字横幅。
+- **正文字体：Courier Prime**（OFL 许可，专为电影剧本设计的等宽字体），用 Regular 和 Bold 两个字重。用在提示和说明文字。
+- 下载来源用 Google Fonts 的 GitHub 仓库。TTF 文件和 OFL.txt 一起放进 `EU/SourceArt/Fonts/`，并在 PROVENANCE.csv 里登记。
+- 导入后建 Font 资产，Font Cache Type 设为 Runtime，放在 `/Game/EscapeUnseen/UI/Fonts/`。",2026-11-13T19:02:14.430699+00:00,0; derivative of the recorded source font; no separate generation charge,"Derived FontFace, not a newly generated font design. Asset: /Game/EscapeUnseen/UI/Fonts/FF_BebasNeue. Source TTF: Fonts/BebasNeue/BebasNeue-Regular.ttf. Inline loading; native font payload. Original source: https://github.com/google/fonts/blob/main/ofl/bebasneue/BebasNeue-Regular.ttf. License: SIL Open Font License 1.1, https://raw.githubusercontent.com/google/fonts/main/ofl/bebasneue/OFL.txt; original font notices remain in Fonts/BebasNeue/OFL.txt. Import report records saved=true. UTC is the local import report modification time, used as batch-completion time. Rendered in final native 1920x1080 PIE captures; no cook/package run. Final Task 6 revision 2026-11-13T19:54:08.460247+00:00."
+Content/EscapeUnseen/UI/Fonts/F_BebasNeue.uasset,Codex; UE 5.8 FontFileImportFactory/FontFactory; native editor Python,"### 6.1 字体（游戏的""剧本感""字体风格）
+
+主题是""拍一部越狱片""，所以界面要像片场的场记板和剧本。
+- **标题字体：Bebas Neue**（OFL 许可）。用在关卡名、阶段名、按键、大字横幅。
+- **正文字体：Courier Prime**（OFL 许可，专为电影剧本设计的等宽字体），用 Regular 和 Bold 两个字重。用在提示和说明文字。
+- 下载来源用 Google Fonts 的 GitHub 仓库。TTF 文件和 OFL.txt 一起放进 `EU/SourceArt/Fonts/`，并在 PROVENANCE.csv 里登记。
+- 导入后建 Font 资产，Font Cache Type 设为 Runtime，放在 `/Game/EscapeUnseen/UI/Fonts/`。",2026-11-13T19:02:14.430699+00:00,0; derivative of the recorded source font; no separate generation charge,"Derived Runtime UFont, not a newly generated font design. Asset: /Game/EscapeUnseen/UI/Fonts/F_BebasNeue. Source TTF: Fonts/BebasNeue/BebasNeue-Regular.ttf. Runtime cache; Asset source; LegacyFontSize=64 pt; LegacyFontName=Default. Original source: https://github.com/google/fonts/blob/main/ofl/bebasneue/BebasNeue-Regular.ttf. License: SIL Open Font License 1.1, https://raw.githubusercontent.com/google/fonts/main/ofl/bebasneue/OFL.txt; original font notices remain in Fonts/BebasNeue/OFL.txt. Import report records saved=true. UTC is the local import report modification time, used as batch-completion time. Rendered in final native 1920x1080 PIE captures; no cook/package run. Final Task 6 revision 2026-11-13T19:54:08.460247+00:00."
+Content/EscapeUnseen/UI/Fonts/FF_CourierPrime_Regular.uasset,Codex; UE 5.8 FontFileImportFactory/FontFactory; native editor Python,"### 6.1 字体（游戏的""剧本感""字体风格）
+
+主题是""拍一部越狱片""，所以界面要像片场的场记板和剧本。
+- **标题字体：Bebas Neue**（OFL 许可）。用在关卡名、阶段名、按键、大字横幅。
+- **正文字体：Courier Prime**（OFL 许可，专为电影剧本设计的等宽字体），用 Regular 和 Bold 两个字重。用在提示和说明文字。
+- 下载来源用 Google Fonts 的 GitHub 仓库。TTF 文件和 OFL.txt 一起放进 `EU/SourceArt/Fonts/`，并在 PROVENANCE.csv 里登记。
+- 导入后建 Font 资产，Font Cache Type 设为 Runtime，放在 `/Game/EscapeUnseen/UI/Fonts/`。",2026-11-13T19:02:14.430699+00:00,0; derivative of the recorded source font; no separate generation charge,"Derived FontFace, not a newly generated font design. Asset: /Game/EscapeUnseen/UI/Fonts/FF_CourierPrime_Regular. Source TTF: Fonts/CourierPrime/CourierPrime-Regular.ttf. Inline loading; native font payload. Original source: https://github.com/google/fonts/blob/main/ofl/courierprime/CourierPrime-Regular.ttf. License: SIL Open Font License 1.1, https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/OFL.txt; original font notices remain in Fonts/CourierPrime/OFL.txt. Import report records saved=true. UTC is the local import report modification time, used as batch-completion time. Rendered in final native 1920x1080 PIE captures; no cook/package run. Final Task 6 revision 2026-11-13T19:54:08.460247+00:00."
+Content/EscapeUnseen/UI/Fonts/F_CourierPrime_Regular.uasset,Codex; UE 5.8 FontFileImportFactory/FontFactory; native editor Python,"### 6.1 字体（游戏的""剧本感""字体风格）
+
+主题是""拍一部越狱片""，所以界面要像片场的场记板和剧本。
+- **标题字体：Bebas Neue**（OFL 许可）。用在关卡名、阶段名、按键、大字横幅。
+- **正文字体：Courier Prime**（OFL 许可，专为电影剧本设计的等宽字体），用 Regular 和 Bold 两个字重。用在提示和说明文字。
+- 下载来源用 Google Fonts 的 GitHub 仓库。TTF 文件和 OFL.txt 一起放进 `EU/SourceArt/Fonts/`，并在 PROVENANCE.csv 里登记。
+- 导入后建 Font 资产，Font Cache Type 设为 Runtime，放在 `/Game/EscapeUnseen/UI/Fonts/`。",2026-11-13T19:02:14.430699+00:00,0; derivative of the recorded source font; no separate generation charge,"Derived Runtime UFont, not a newly generated font design. Asset: /Game/EscapeUnseen/UI/Fonts/F_CourierPrime_Regular. Source TTF: Fonts/CourierPrime/CourierPrime-Regular.ttf. Runtime cache; Asset source; LegacyFontSize=64 pt; LegacyFontName=Default. Original source: https://github.com/google/fonts/blob/main/ofl/courierprime/CourierPrime-Regular.ttf. License: SIL Open Font License 1.1, https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/OFL.txt; original font notices remain in Fonts/CourierPrime/OFL.txt. Import report records saved=true. UTC is the local import report modification time, used as batch-completion time. Rendered in final native 1920x1080 PIE captures; no cook/package run. Final Task 6 revision 2026-11-13T19:54:08.460247+00:00."
+Content/EscapeUnseen/UI/Fonts/FF_CourierPrime_Bold.uasset,Codex; UE 5.8 FontFileImportFactory/FontFactory; native editor Python,"### 6.1 字体（游戏的""剧本感""字体风格）
+
+主题是""拍一部越狱片""，所以界面要像片场的场记板和剧本。
+- **标题字体：Bebas Neue**（OFL 许可）。用在关卡名、阶段名、按键、大字横幅。
+- **正文字体：Courier Prime**（OFL 许可，专为电影剧本设计的等宽字体），用 Regular 和 Bold 两个字重。用在提示和说明文字。
+- 下载来源用 Google Fonts 的 GitHub 仓库。TTF 文件和 OFL.txt 一起放进 `EU/SourceArt/Fonts/`，并在 PROVENANCE.csv 里登记。
+- 导入后建 Font 资产，Font Cache Type 设为 Runtime，放在 `/Game/EscapeUnseen/UI/Fonts/`。",2026-11-13T19:02:14.430699+00:00,0; derivative of the recorded source font; no separate generation charge,"Derived FontFace, not a newly generated font design. Asset: /Game/EscapeUnseen/UI/Fonts/FF_CourierPrime_Bold. Source TTF: Fonts/CourierPrime/CourierPrime-Bold.ttf. Inline loading; native font payload. Original source: https://github.com/google/fonts/blob/main/ofl/courierprime/CourierPrime-Bold.ttf. License: SIL Open Font License 1.1, https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/OFL.txt; original font notices remain in Fonts/CourierPrime/OFL.txt. Import report records saved=true. UTC is the local import report modification time, used as batch-completion time. Rendered in final native 1920x1080 PIE captures; no cook/package run. Final Task 6 revision 2026-11-13T19:54:08.460247+00:00."
+Content/EscapeUnseen/UI/Fonts/F_CourierPrime_Bold.uasset,Codex; UE 5.8 FontFileImportFactory/FontFactory; native editor Python,"### 6.1 字体（游戏的""剧本感""字体风格）
+
+主题是""拍一部越狱片""，所以界面要像片场的场记板和剧本。
+- **标题字体：Bebas Neue**（OFL 许可）。用在关卡名、阶段名、按键、大字横幅。
+- **正文字体：Courier Prime**（OFL 许可，专为电影剧本设计的等宽字体），用 Regular 和 Bold 两个字重。用在提示和说明文字。
+- 下载来源用 Google Fonts 的 GitHub 仓库。TTF 文件和 OFL.txt 一起放进 `EU/SourceArt/Fonts/`，并在 PROVENANCE.csv 里登记。
+- 导入后建 Font 资产，Font Cache Type 设为 Runtime，放在 `/Game/EscapeUnseen/UI/Fonts/`。",2026-11-13T19:02:14.430699+00:00,0; derivative of the recorded source font; no separate generation charge,"Derived Runtime UFont, not a newly generated font design. Asset: /Game/EscapeUnseen/UI/Fonts/F_CourierPrime_Bold. Source TTF: Fonts/CourierPrime/CourierPrime-Bold.ttf. Runtime cache; Asset source; LegacyFontSize=64 pt; LegacyFontName=Default. Original source: https://github.com/google/fonts/blob/main/ofl/courierprime/CourierPrime-Bold.ttf. License: SIL Open Font License 1.1, https://raw.githubusercontent.com/google/fonts/main/ofl/courierprime/OFL.txt; original font notices remain in Fonts/CourierPrime/OFL.txt. Import report records saved=true. UTC is the local import report modification time, used as batch-completion time. Rendered in final native 1920x1080 PIE captures; no cook/package run. Final Task 6 revision 2026-11-13T19:54:08.460247+00:00."
+Content/EscapeUnseen/UI/Materials/M_UIStamp.uasset,Codex; Unreal native MaterialEditingLibrary via editor Python bridge,"### 6.4 情境提示
+
+- **剪辑标记**：角色站在标记上并且已经站稳时，头顶出现 `[E] CUT TO B`。如果站在标记上但还不能切，就显示灰色的 `[E] CUT TO B` 加上一行原因，原因沿用现有逻辑。
+- **出口**：门上方显示 `[E] ESCAPE`，替换任务 5 里的临时画法。
+- **摆灯**：
+  - 鼠标悬停在灯上时，光标旁显示 `DRAG`；
+  - 拖动时，灯的周围画一个半径 0.5B 的琥珀色细圈；
+  - 不合法的位置显示红色 `✕ BLOCKED`。
+- **搭景**：
+  - 预览箱子旁边显示 `HIDDEN ✓`（青色）或 `LIT ✕`（红色），Courier Bold 24。**判定状态要同时用文字和符号表示，不能只靠颜色**；
+  - 正在落稳的箱子显示 `SETTLING…`。
+- **巡检过场**（phase 2 和 3）要让玩家一眼看出""正在检查""：
+  1. 上下黑边在 0.3 s 内滑入，各 90 px 高；
+  2. 屏幕四周加暗角，变暗约 25%；
+  3. 画面上方居中出现横幅：
+     - 主文字 `INSPECTION`：Bebas 84，纸白，前面加一个红色实心圆点 `●`，圆点慢速呼吸，不闪烁；
+     - 副文字：落稳阶段是 `Settling… keep still.`，巡检阶段是 `The guard checks every prop in the light.`，Courier 28；
+     - 横幅下面一条 4 px 高的琥珀色进度条，按当前阶段的计时走满。
+  4. 结果卡 LOCKED（青）、RETAKE（红）、WRAP（琥珀）都改用 Bebas 120，加一个 6 px 粗的同色外框，像盖章一样，旋转 −4°，保持 1.2 s。
+- **标题卡和结尾**：片名 `ESCAPE UNSEEN` 用 Bebas 140，开场台词用 Courier 32，结尾也用同样的字体组合。",2026-11-13T19:06:06.024101+00:00,0; project-authored native material; no paid asset-generation API,Project-authored UI translucent material. StampMask texture R drives opacity; Tint drives final color. Canvas render-target text supplies the monochrome mask; material supports tinted rotated result cards. Built-in Unreal WhiteSquareTexture is the default parameter texture. No external generated image. Authoring source: EU/SourceArt/UI/create_hud_materials.py. Asset: /Game/EscapeUnseen/UI/Materials/M_UIStamp. UTC is the local material report modification time; report lists the target asset. Rendered in final native 1920x1080 PIE captures; no cook/package run. Final Task 6 revision 2026-11-13T19:54:08.460247+00:00.
+Content/EscapeUnseen/UI/Materials/M_UIVignette.uasset,Codex; Unreal native MaterialEditingLibrary via editor Python bridge,"### 6.4 情境提示
+
+- **剪辑标记**：角色站在标记上并且已经站稳时，头顶出现 `[E] CUT TO B`。如果站在标记上但还不能切，就显示灰色的 `[E] CUT TO B` 加上一行原因，原因沿用现有逻辑。
+- **出口**：门上方显示 `[E] ESCAPE`，替换任务 5 里的临时画法。
+- **摆灯**：
+  - 鼠标悬停在灯上时，光标旁显示 `DRAG`；
+  - 拖动时，灯的周围画一个半径 0.5B 的琥珀色细圈；
+  - 不合法的位置显示红色 `✕ BLOCKED`。
+- **搭景**：
+  - 预览箱子旁边显示 `HIDDEN ✓`（青色）或 `LIT ✕`（红色），Courier Bold 24。**判定状态要同时用文字和符号表示，不能只靠颜色**；
+  - 正在落稳的箱子显示 `SETTLING…`。
+- **巡检过场**（phase 2 和 3）要让玩家一眼看出""正在检查""：
+  1. 上下黑边在 0.3 s 内滑入，各 90 px 高；
+  2. 屏幕四周加暗角，变暗约 25%；
+  3. 画面上方居中出现横幅：
+     - 主文字 `INSPECTION`：Bebas 84，纸白，前面加一个红色实心圆点 `●`，圆点慢速呼吸，不闪烁；
+     - 副文字：落稳阶段是 `Settling… keep still.`，巡检阶段是 `The guard checks every prop in the light.`，Courier 28；
+     - 横幅下面一条 4 px 高的琥珀色进度条，按当前阶段的计时走满。
+  4. 结果卡 LOCKED（青）、RETAKE（红）、WRAP（琥珀）都改用 Bebas 120，加一个 6 px 粗的同色外框，像盖章一样，旋转 −4°，保持 1.2 s。
+- **标题卡和结尾**：片名 `ESCAPE UNSEEN` 用 Bebas 140，开场台词用 Courier 32，结尾也用同样的字体组合。",2026-11-13T19:06:06.024101+00:00,0; project-authored native material; no paid asset-generation API,"Project-authored UI translucent material. Black final color with opacity 0.25*saturate((distance(UV,(0.5,0.5))-0.225)/0.275), creating the requested inspection edge darkening. No external texture or generated image. Authoring source: EU/SourceArt/UI/create_hud_materials.py. Asset: /Game/EscapeUnseen/UI/Materials/M_UIVignette. UTC is the local material report modification time; report lists the target asset. Rendered in final native 1920x1080 PIE captures; no cook/package run. Final Task 6 revision 2026-11-13T19:54:08.460247+00:00."
+Content/EscapeUnseen/Core/BP_EscapeHUD.uasset,Codex; Unreal MCP Blueprint DSL/native Canvas nodes,"## 任务 6：界面与提示重做（Claude 的视觉规格）【允许接入 UE】
+
+在任务 5 之后做。BP_EscapeHUD 是 Canvas 绘制的，下面所有尺寸都按 1920×1080 设计，**按 视口高度/1080 等比缩放**。
+
+### 6.1 字体（游戏的""剧本感""字体风格）
+
+主题是""拍一部越狱片""，所以界面要像片场的场记板和剧本。
+- **标题字体：Bebas Neue**（OFL 许可）。用在关卡名、阶段名、按键、大字横幅。
+- **正文字体：Courier Prime**（OFL 许可，专为电影剧本设计的等宽字体），用 Regular 和 Bold 两个字重。用在提示和说明文字。
+- 下载来源用 Google Fonts 的 GitHub 仓库。TTF 文件和 OFL.txt 一起放进 `EU/SourceArt/Fonts/`，并在 PROVENANCE.csv 里登记。
+- 导入后建 Font 资产，Font Cache Type 设为 Runtime，放在 `/Game/EscapeUnseen/UI/Fonts/`。
+
+### 6.2 颜色
+
+- 正文：纸白 `#EDE6D6`
+- 强调：琥珀 `#FFB547`（和出口灯同色）
+- 露光 / 失败：红 `#E5484D`
+- 藏好 / 通过：青 `#5ED3E8`
+- 面板：黑色，不透明度 72%；按键块：纸白底，黑字
+
+### 6.3 布局
+
+1. **左上：场记板卡片**，位置 (40, 40)，宽 520。
+   - 顶部一条 10 px 高的黑白斜纹，模仿场记板的拍板；
+   - 第一行：`SCENE 01 · FIRST STEP`，Bebas 56，纸白；
+   - 第二行：阶段名，例如 `SET THE LIGHT`、`SHOT A · BUILD`、`INSPECTION`、`ACTION`，Bebas 30，琥珀色，字间距加宽；
+   - 搭景阶段在右侧显示库存 `PROPS 2/3`，Bebas 30。
+2. **底部居中：剧本提示条**，取代现在左上角的小字提示。
+   - 最大宽度 1100，底边离屏幕底 150；
+   - 字体 Courier Prime 30，纸白；左侧一条 6 px 宽的琥珀竖线；面板留 20 px 内边距；
+   - 提示切换时淡入 0.2 s。
+3. **最底部：按键栏**，居中，离屏幕底 40。
+   - 每一项是一个按键块加一个标签；
+   - 按键块：圆角 6 的纸白矩形，高 44，里面是黑色 Bebas 30 的键名，比如 `E`、`ENTER`、`LMB`；
+   - 标签：Courier Prime 24，纸白，跟在按键块右边，间距 12，各项之间相隔 36；
+   - 只显示当前阶段能用的键。
+4. **世界内提示**（6.4 用到）：
+   - 位置：把角色头顶 1.3B 处（或者门的上方）投影到屏幕上；
+   - 样式：一个按键块，加上 Bebas 34 的琥珀色文字；
+   - 用缓慢的缩放呼吸效果，1.0 到 1.06，周期 1.6 s，**不要闪烁**。
+
+### 6.4 情境提示
+
+- **剪辑标记**：角色站在标记上并且已经站稳时，头顶出现 `[E] CUT TO B`。如果站在标记上但还不能切，就显示灰色的 `[E] CUT TO B` 加上一行原因，原因沿用现有逻辑。
+- **出口**：门上方显示 `[E] ESCAPE`，替换任务 5 里的临时画法。
+- **摆灯**：
+  - 鼠标悬停在灯上时，光标旁显示 `DRAG`；
+  - 拖动时，灯的周围画一个半径 0.5B 的琥珀色细圈；
+  - 不合法的位置显示红色 `✕ BLOCKED`。
+- **搭景**：
+  - 预览箱子旁边显示 `HIDDEN ✓`（青色）或 `LIT ✕`（红色），Courier Bold 24。**判定状态要同时用文字和符号表示，不能只靠颜色**；
+  - 正在落稳的箱子显示 `SETTLING…`。
+- **巡检过场**（phase 2 和 3）要让玩家一眼看出""正在检查""：
+  1. 上下黑边在 0.3 s 内滑入，各 90 px 高；
+  2. 屏幕四周加暗角，变暗约 25%；
+  3. 画面上方居中出现横幅：
+     - 主文字 `INSPECTION`：Bebas 84，纸白，前面加一个红色实心圆点 `●`，圆点慢速呼吸，不闪烁；
+     - 副文字：落稳阶段是 `Settling… keep still.`，巡检阶段是 `The guard checks every prop in the light.`，Courier 28；
+     - 横幅下面一条 4 px 高的琥珀色进度条，按当前阶段的计时走满。
+  4. 结果卡 LOCKED（青）、RETAKE（红）、WRAP（琥珀）都改用 Bebas 120，加一个 6 px 粗的同色外框，像盖章一样，旋转 −4°，保持 1.2 s。
+- **标题卡和结尾**：片名 `ESCAPE UNSEEN` 用 Bebas 140，开场台词用 Courier 32，结尾也用同样的字体组合。
+
+### 6.5 菜单
+
+任务 5C 的 Esc 菜单统一改成这套样式：
+- 居中的面板，宽 640；
+- 标题 `PAUSED`，Bebas 72；
+- 菜单项 Bebas 40；
+- 当前选中的项变成琥珀色，左边加一个 `▶`。
+
+### 6.6 验收截图（`task6_*.png`，全部 1920×1080）
+
+- `L01_lamp.png`：摆灯阶段；
+- `L01_build.png`：搭景阶段，预览箱显示 HIDDEN；
+- `inspection.png`：巡检横幅和进度条；
+- `locked.png`：盖章卡；
+- `cut_prompt.png`：站在标记上；
+- `exit_prompt.png`：站在门口；
+- `menu.png`：菜单；
+- `title.png`：标题卡。
+
+---",2026-11-13T19:54:08.460247+00:00,0; project-authored Blueprint implementation; no paid asset-generation API,"Task 6 modification of existing HUD. Runtime typography, scene card, wrapped script hint, phase key bar, world interaction prompts, lamp/build feedback, inspection overlay/progress, stamped result cards, title/end and pause-menu styling. Uses recorded OFL fonts and project-authored UI materials. Rendered in final native 1920x1080 PIE captures; no cook/package run. Final Task 6 revision 2026-11-13T19:54:08.460247+00:00."
+Content/EscapeUnseen/Core/BP_ShotDirector.uasset,Codex; UE BlueprintTools via MCP,CODEX_TASKS.md Task 6: lamp and build contextual feedback,2026-11-13T19:54:08.460247+00:00,No paid generation API,LampHovered gates drag start. PreviewHidden combines existing placement/inventory with ShadowService.CheckBlock; ghost color and HUD use the shared result. Compiled and rendered in PIE; HIDDEN fixture passed actual inspection.
