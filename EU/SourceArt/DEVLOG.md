@@ -79,3 +79,10 @@ The guard Blueprint compiled. Actual PIE captures show a continuous L01 wall, a 
 Claude accepted 4C and requested removal of the dark strip outside the window frame. Measurements showed that the frame and backing were already geometrically centered at local X=0. The strip came from perspective parallax across their 70 cm local depth separation. The frame opening measures approximately 99.73 cm across, so the backing width was reduced from 110 to 103.73 cm (opening plus 4). BuildGuard now compensates only the backing X position using the placed camera and guard Actor positions; L03 evaluates to -16.738 cm. The formula uses the existing front-facing camera/guard layout and computes the same screen center at the two depths. Guard, spotlight, frame and clipping settings are unchanged.
 
 The Blueprint compiled, and the requested actual PIE closeup confirms no dark strip outside either side: EU/Saved/review/task4D_closeup.png. It is cropped from the native 4x engine screenshot. bAlwaysOn was restored to false, pause cleared, PIE stopped and assets saved. The only game asset changed is BP_GuardWindow. No additional playthrough or packaging was performed.
+
+## 2026-11-13 — Task 5 gameplay feedback
+
+- 5A (`ec8d0b9`): fixed ExitZone mesh-default collision, explicit E escape, 0.5-second fade and WRAP, GameInstance level order.
+- 5B (`d0296a1`): room-wide lamp placement with 30 cm clearance, retain last valid position and show rejected cursor cross.
+- 5C: pause/settings Canvas menu, keyboard and mouse controls, default-off shadow guides, independent music and Master-effect gain, session settings across travel.
+- Targeted PIE evidence: exit sweep reaches center; no automatic escape on entry; WRAP and automatic L01→L02 travel; legal/illegal lamp moves; paused inspection timers; mouse and keyboard value changes; settings survive travel. Five Task 5 screenshots saved under Saved/review. Editor intercepted Esc as Stop PIE; game toggle branch is implemented, editor shortcut unchanged. No package or full playthrough. Details: Docs/TASK5_6_HANDOFF.md.

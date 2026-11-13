@@ -467,3 +467,49 @@ Tripo request 8908eaae-9cef-4d02-afe4-4ae717f647ed,Tripo Studio H3.1,"Single sty
 Tripo request 6ecc33ca-c179-4b58-b91c-312664fbdcc8,Tripo Studio H3.1,"One stylized low-poly high prison window frame with five simple vertical iron bars. A rectangular 120 cm wide by 90 cm high frame, shallow depth, bars evenly spaced, empty opening between bars, no glass. Chunky cold gray iron with soft bevels and simple flat shading. Restrained handmade prison movie set prop aesthetic. Single static unrigged mesh. No wall, no sill extension, no scenery visible behind it, no floor, no lights, no background, no text or logo.",2026-11-13T13:21:34.658881+00:00,55 Studio credits; no refund observed,Request still showed generating/99% at last observation; not used in delivery. https://studio.tripo3d.ai/zh/workspace/generate/6ecc33ca-c179-4b58-b91c-312664fbdcc8
 Tripo request f43fa7f7-d985-48b2-bc1b-b8e9dffa0108,Tripo Studio H3.1,"One stylized low-poly prison cot, simple single bed with iron frame and thin plain mattress. Length 190 cm, mattress top height 45 cm, width about 70 cm. Four short legs, low modest head and foot rails, dark muted gray metal frame, plain desaturated gray beige thin mattress. Chunky simple shapes with soft bevels, restrained colors, a handmade prison movie set background prop. Static unrigged mesh. No pillow, blanket, person, floor, wall, scene, lights, background, text or logos.",2026-11-13T13:21:50.254488+00:00,55 Studio credits; no refund observed,Request still showed generating/99% at last observation; not used in delivery. https://studio.tripo3d.ai/zh/workspace/generate/f43fa7f7-d985-48b2-bc1b-b8e9dffa0108
 Tripo request 84aedf40-35d5-486e-81a5-ce65e159d669,Tripo Studio H3.0,"One stylized low-poly prison cot, simple single bed with iron frame and thin plain mattress. Length 190 cm, mattress top height 45 cm, width about 70 cm. Four short legs, low modest head and foot rails, dark muted gray metal frame, plain desaturated gray beige thin mattress. Chunky simple shapes with soft bevels, restrained colors, a handmade prison movie set background prop. Static unrigged mesh. No pillow, blanket, person, floor, wall, scene, lights, background, text or logos.",2026-11-13T13:44:08.739574+00:00,40 Studio credits; no refund observed,Request still showed generating/99% at last observation; not used in delivery. https://studio.tripo3d.ai/zh/workspace/generate/84aedf40-35d5-486e-81a5-ce65e159d669
+BP_EscapeGameInstance.uasset,Codex + Unreal MCP Blueprint/native editor asset API,"### 5A 出口：空气墙 + 按 E 进门（最优先）
+
+- **现象**：三关里往门口走，快走到门的时候都被一堵看不见的墙挡住。
+- **先排查原因，再修**。可能的来源：
+  - 牢门、出口灯、灯罩是否真的设成了 NoCollision（检查每个组件）；
+  - ExitZone 自身的碰撞预设是不是 Block；
+  - 关卡里有没有 BlockingVolume 或隐形挡板；
+  - 出口平台上方的横梁、房间侧墙的位置是否挡住了路。
+
+  可以用 PIE 把角色传送到门前，再用 trace 查是哪个组件挡住的。在交接记录里写清楚原因。
+- **新的出口交互**：
+  - 角色在表演阶段（phase 4）进入 ExitZone 时，门的上方出现提示「E · ESCAPE」，样式在任务 6 里统一定。现在先用现有字体画出来就行。
+  - 按 E：播放 SFX_LevelWrap；角色停止输入；画面在 0.5 s 内渐黑；显示 WRAP 卡；然后进入下一关。最后一关改为显示结尾句子 ""You escaped unseen."" 和 Enter/Q。
+  - 原来""一进 ExitZone 就自动过关""的逻辑（如果有的话）要去掉。
+  - E 的优先级：在 ExitZone 里，E 只表示进门；在剪辑标记上，E 只表示切镜。两个区域不会重叠。
+- 关卡顺序做成数据：在 Director 或 GameInstance 里放一个关卡名数组，后面加关卡时只需要改这个数组。
+
+",2026-11-13T18:54:16.084958+00:00,0,"Task 5; implementation asset, no external generative-asset service"
+SC_Music.uasset,Codex + Unreal MCP Blueprint/native editor asset API,"### 5C 暂停 / 设置菜单（Esc）
+
+- 按 Esc 打开，再按一次关闭。打开时暂停游戏（巡检计时也要停）。菜单项从上到下：
+  1. `RESUME`
+  2. `SHADOW GUIDES  ‹ OFF / ON ›`：控制阴影边界的蓝色辅助线。**默认 OFF**。关掉时只隐藏这些线，箱子预览的青/红判定颜色保持不变。
+  3. `MUSIC  ‹ 0–10 ›`：控制 MusComp 的音量，默认 4（对应现在的 0.45 左右）。
+  4. `SOUND  ‹ 0–10 ›`：控制其余音效的总音量，默认 8。
+  5. `RESTART LEVEL`
+  6. `QUIT GAME`
+- 操作：W/S 或 ↑/↓ 选择；A/D 或 ←/→ 改值；Enter 或 E 确认。鼠标点击也要能用。
+- 设置只在本次运行期间有效，换关后保留，不需要存档。
+- 画法先用现有 Canvas 字体，任务 6 统一换样式。
+
+",2026-11-13T18:54:16.084958+00:00,0,"Task 5; implementation asset, no external generative-asset service"
+SM_Settings.uasset,Codex + Unreal MCP Blueprint/native editor asset API,"### 5C 暂停 / 设置菜单（Esc）
+
+- 按 Esc 打开，再按一次关闭。打开时暂停游戏（巡检计时也要停）。菜单项从上到下：
+  1. `RESUME`
+  2. `SHADOW GUIDES  ‹ OFF / ON ›`：控制阴影边界的蓝色辅助线。**默认 OFF**。关掉时只隐藏这些线，箱子预览的青/红判定颜色保持不变。
+  3. `MUSIC  ‹ 0–10 ›`：控制 MusComp 的音量，默认 4（对应现在的 0.45 左右）。
+  4. `SOUND  ‹ 0–10 ›`：控制其余音效的总音量，默认 8。
+  5. `RESTART LEVEL`
+  6. `QUIT GAME`
+- 操作：W/S 或 ↑/↓ 选择；A/D 或 ←/→ 改值；Enter 或 E 确认。鼠标点击也要能用。
+- 设置只在本次运行期间有效，换关后保留，不需要存档。
+- 画法先用现有 Canvas 字体，任务 6 统一换样式。
+
+",2026-11-13T18:54:16.084958+00:00,0,"Task 5; implementation asset, no external generative-asset service"

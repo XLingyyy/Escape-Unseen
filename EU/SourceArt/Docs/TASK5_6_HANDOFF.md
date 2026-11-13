@@ -13,3 +13,15 @@ Validation: affected Blueprints compiled. L03 capsule sweep reached X=1325; afte
 Removed LightZoneMin/Max clamping. The lamp now uses each room's BuildMin/BuildMax inset by 30 cm, plus a 30 cm minimum Euclidean distance from the XZ bounds of fixed Occluder-tagged solids. These room bounds are per-level (L01: 1500×1000 cm; L03: 1500×1150 cm). Rejected moves leave the previous light position and shadow geometry intact, and draw a red cross at the cursor. Existing light reference positions and the shadow service's original too-near rejection remain unchanged.
 
 Validation: Director and HUD compiled. In L01, the reference (500,800) remains legal; (80,920), far outside its former lamp zone, was accepted. X=29 was rejected. Dragging into Beam left the lamp at (80,920) and set bLightRejected=true. Occluder geometry inspected in this test includes Floor, both side walls, ExitLedge and Beam; BackWall is excluded. Actual Canvas screenshots: `task5_lamp_far.png`, `task5_lamp_reject.png`. Temporary actor removed, PIE stopped and assets saved. No reference-solution playthrough or packaging performed.
+
+## Task 5C — pause and session settings
+
+Esc toggles the menu through the PlayerController's mutually exclusive pause/input branches. SetGamePaused freezes world simulation and inspection timers. W/S/arrows navigate, A/D/arrows change values, Enter/E activate, and Canvas hitboxes support mouse clicks. Mouse actions wait for button release, preventing Resume from carrying a held drag into the game.
+
+SHADOW GUIDES defaults OFF and gates only blue shadow boundaries; crate cyan/red feedback remains. MUSIC defaults to 4 (AudioComponent gain 0.45), SOUND defaults to 8. SC_Music separates the music from the Master sound class; SM_Settings changes active and future non-music sounds. Settings are held by BP_EscapeGameInstance, with no disk save. The native AudioComponent.SetVolumeMultiplier call uses an explicit declaring class because the tool's unqualified node ID also matches SynthComponent.
+
+Validation: affected Blueprints compiled. Actual paused inspection Phase=2 retained PhaseTime=0 and StableTime=0 across elapsed wall time. Mouse MUSIC+ and Right changed 4→6 and live music gain 0.45→0.675; Down/Left changed SOUND 8→7. Resume unpaused. A real L01 exit transition opened L02 automatically; MUSIC=5, SOUND=7 and GUIDES=ON survived, L02 gain=0.5625 and menu closed. This also verifies 5A's non-final automatic travel. Default OFF screenshot retains the cyan crate preview. Screenshots: `task5_menu.png`, `task5_guides_off.png`.
+
+Editor limitation: its default Esc shortcut stops PIE before gameplay receives the key. The game's Esc toggle branch is implemented; direct Esc testing in this editor session was intercepted. Keyboard navigation, mouse actions, pause and resume were exercised. Editor shortcut preferences were not changed. No packaged run or complete level playthrough was performed.
+
+All Task 5 edits saved with PIE stopped and the temporary actor removed. Review remains with Claude.
