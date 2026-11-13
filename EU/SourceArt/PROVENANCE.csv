@@ -1,0 +1,469 @@
+﻿filename,tool,prompt,generated_utc,cost_or_credits,notes
+EU/SourceArt/Audio/preflight/SFX_Clapper_preflight.wav,fal-ai/elevenlabs/sound-effects/v2,"A single sharp dry wooden film clapperboard snap closing, close microphone, crisp brief wooden crack with a very short natural decay. One isolated hit only, no reverb, no ambience, no voice, no music. The hit starts immediately.",2026-11-13T13:02:11.872089+00:00,USD 0.001 estimated; actual billing not accessible,API preflight only; raw generated audio; request_id=01a1d500-0fb8-74f0-a915-727a76b9de53
+EU/SourceArt/Audio/SFX_Clapper_a.wav,fal-ai/elevenlabs/sound-effects/v2,"A single sharp dry wooden film clapperboard snap closing, close microphone, crisp brief wooden crack with a very short natural decay. One isolated hit only, no reverb, no ambience, no voice, no music. The hit starts immediately.",2026-11-13T13:02:11.872089+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_Clapper_b_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"One sharp dry wooden film clapperboard snap closing. Close microphone, crisp wooden crack with very short natural decay. One isolated hit, no room reverberation. Original game audio variation B. The entire event should last 0.4 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:09:44.334446+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d507-35ee-7013-b92c-7c2077f9d18b
+EU/SourceArt/Audio/SFX_Clapper_b.wav,fal-ai/elevenlabs/sound-effects/v2,"One sharp dry wooden film clapperboard snap closing. Close microphone, crisp wooden crack with very short natural decay. One isolated hit, no room reverberation. Original game audio variation B. The entire event should last 0.4 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:09:44.334446+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_Clapper_c_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"One sharp dry wooden film clapperboard snap closing. Close microphone, crisp wooden crack with very short natural decay. One isolated hit, no room reverberation. Original game audio variation C. The entire event should last 0.4 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:09:54.531847+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d507-50bc-79c2-9544-38f99c17a1d1
+EU/SourceArt/Audio/SFX_Clapper_c.wav,fal-ai/elevenlabs/sound-effects/v2,"One sharp dry wooden film clapperboard snap closing. Close microphone, crisp wooden crack with very short natural decay. One isolated hit, no room reverberation. Original game audio variation C. The entire event should last 0.4 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:09:54.531847+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_CratePlace_a_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"A small wooden crate gently set down once. A short soft hollow wooden thud with restrained weight, close and dry. Original game audio variation A. The entire event should last 0.3 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:03.257524+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d507-731b-71c3-8a23-c03af84b9818
+EU/SourceArt/Audio/SFX_CratePlace_a.wav,fal-ai/elevenlabs/sound-effects/v2,"A small wooden crate gently set down once. A short soft hollow wooden thud with restrained weight, close and dry. Original game audio variation A. The entire event should last 0.3 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:03.257524+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_CratePlace_b_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"A small wooden crate gently set down once. A short soft hollow wooden thud with restrained weight, close and dry. Original game audio variation B. The entire event should last 0.3 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:09.396518+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d507-96f8-7352-8a32-c0e70cef2682
+EU/SourceArt/Audio/SFX_CratePlace_b.wav,fal-ai/elevenlabs/sound-effects/v2,"A small wooden crate gently set down once. A short soft hollow wooden thud with restrained weight, close and dry. Original game audio variation B. The entire event should last 0.3 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:09.396518+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_CrateLand_a_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"A wooden crate landing once on concrete, a compact wooden impact followed immediately by a tiny scrape as it slides to a stop. Dry close recording. Original game audio variation A. The entire event should last 0.4 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:14.604415+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d507-ac27-7272-b03b-78c667fc914c
+EU/SourceArt/Audio/SFX_CrateLand_a.wav,fal-ai/elevenlabs/sound-effects/v2,"A wooden crate landing once on concrete, a compact wooden impact followed immediately by a tiny scrape as it slides to a stop. Dry close recording. Original game audio variation A. The entire event should last 0.4 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:14.604415+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_CrateLand_b_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"A wooden crate landing once on concrete, a compact wooden impact followed immediately by a tiny scrape as it slides to a stop. Dry close recording. Original game audio variation B. The entire event should last 0.4 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:23.080688+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d507-c077-7d73-96bc-ea8b9d445827
+EU/SourceArt/Audio/SFX_CrateLand_b.wav,fal-ai/elevenlabs/sound-effects/v2,"A wooden crate landing once on concrete, a compact wooden impact followed immediately by a tiny scrape as it slides to a stop. Dry close recording. Original game audio variation B. The entire event should last 0.4 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:23.080688+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_ScanHum_a_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"Quiet low electronic scanning hum used by a guard inspecting a room. Cool restrained tone, smooth subtle movement, low register, no piercing frequencies, no alarm pulses. Continuous seamless loop. Original game audio variation A. No intro or outro, constant sound at both ends. No speech or lyrics.",2026-11-13T13:10:31.832340+00:00,USD 0.004000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d507-e11e-74b2-9732-8365e348786f
+EU/SourceArt/Audio/SFX_ScanHum_a.wav,fal-ai/elevenlabs/sound-effects/v2,"Quiet low electronic scanning hum used by a guard inspecting a room. Cool restrained tone, smooth subtle movement, low register, no piercing frequencies, no alarm pulses. Continuous seamless loop. Original game audio variation A. No intro or outro, constant sound at both ends. No speech or lyrics.",2026-11-13T13:10:31.832340+00:00,USD 0.004000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; loop overlap crossfade."
+EU/SourceArt/Audio/_work/SFX_ScanHum_b_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"Quiet low electronic scanning hum used by a guard inspecting a room. Cool restrained tone, smooth subtle movement, low register, no piercing frequencies, no alarm pulses. Continuous seamless loop. Original game audio variation B. No intro or outro, constant sound at both ends. No speech or lyrics.",2026-11-13T13:10:40.304344+00:00,USD 0.004000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d508-03ce-7143-bd67-2f42a8eb046a
+EU/SourceArt/Audio/SFX_ScanHum_b.wav,fal-ai/elevenlabs/sound-effects/v2,"Quiet low electronic scanning hum used by a guard inspecting a room. Cool restrained tone, smooth subtle movement, low register, no piercing frequencies, no alarm pulses. Continuous seamless loop. Original game audio variation B. No intro or outro, constant sound at both ends. No speech or lyrics.",2026-11-13T13:10:40.304344+00:00,USD 0.004000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; loop overlap crossfade."
+EU/SourceArt/Audio/_work/SFX_Exposed_a_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"Exactly two short low warning beeps, gently rounded electronic tones, separated by a tiny pause. Restrained and non-piercing. Both beeps fit within half a second. Original game audio variation A. The entire event should last 0.5 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:45.911835+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d508-2621-76f0-b47b-9ebdab9f5284
+EU/SourceArt/Audio/SFX_Exposed_a.wav,fal-ai/elevenlabs/sound-effects/v2,"Exactly two short low warning beeps, gently rounded electronic tones, separated by a tiny pause. Restrained and non-piercing. Both beeps fit within half a second. Original game audio variation A. The entire event should last 0.5 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:45.911835+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_Exposed_b_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"Exactly two short low warning beeps, gently rounded electronic tones, separated by a tiny pause. Restrained and non-piercing. Both beeps fit within half a second. Original game audio variation B. The entire event should last 0.5 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:50.900072+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d508-39e8-7330-8e1a-c0bf02d176eb
+EU/SourceArt/Audio/SFX_Exposed_b.wav,fal-ai/elevenlabs/sound-effects/v2,"Exactly two short low warning beeps, gently rounded electronic tones, separated by a tiny pause. Restrained and non-piercing. Both beeps fit within half a second. Original game audio variation B. The entire event should last 0.5 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:50.900072+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_ShotLocked_a_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"One firm mechanical lock click like a small stamp being pressed, followed immediately by a very soft short confirmation tone. Restrained and dry. Original game audio variation A. The entire event should last 0.6 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:59.053092+00:00,USD 0.001200 estimated; actual billing not accessible,Raw fal output; request_id=01a1d508-4d21-7070-bb97-629e1f4f2786
+EU/SourceArt/Audio/SFX_ShotLocked_a.wav,fal-ai/elevenlabs/sound-effects/v2,"One firm mechanical lock click like a small stamp being pressed, followed immediately by a very soft short confirmation tone. Restrained and dry. Original game audio variation A. The entire event should last 0.6 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:10:59.053092+00:00,USD 0.001200 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_ShotLocked_b_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"One firm mechanical lock click like a small stamp being pressed, followed immediately by a very soft short confirmation tone. Restrained and dry. Original game audio variation B. The entire event should last 0.6 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:07.270686+00:00,USD 0.001200 estimated; actual billing not accessible,Raw fal output; request_id=01a1d508-6d31-75e1-9c11-c62fe3b88a46
+EU/SourceArt/Audio/SFX_ShotLocked_b.wav,fal-ai/elevenlabs/sound-effects/v2,"One firm mechanical lock click like a small stamp being pressed, followed immediately by a very soft short confirmation tone. Restrained and dry. Original game audio variation B. The entire event should last 0.6 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:07.270686+00:00,USD 0.001200 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_Jump_a_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"One tiny soft cloth rustle and a subtle airy whoosh of a small cartoon person pushing off to jump. No spoken voice, no grunt, no impact, very short. Original game audio variation A. The entire event should last 0.25 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:12.448872+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d508-8e07-74d1-a570-de1238ba5a24
+EU/SourceArt/Audio/SFX_Jump_a.wav,fal-ai/elevenlabs/sound-effects/v2,"One tiny soft cloth rustle and a subtle airy whoosh of a small cartoon person pushing off to jump. No spoken voice, no grunt, no impact, very short. Original game audio variation A. The entire event should last 0.25 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:12.448872+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_Jump_b_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"One tiny soft cloth rustle and a subtle airy whoosh of a small cartoon person pushing off to jump. No spoken voice, no grunt, no impact, very short. Original game audio variation B. The entire event should last 0.25 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:20.701521+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d508-a190-7113-b096-afab72750200
+EU/SourceArt/Audio/SFX_Jump_b.wav,fal-ai/elevenlabs/sound-effects/v2,"One tiny soft cloth rustle and a subtle airy whoosh of a small cartoon person pushing off to jump. No spoken voice, no grunt, no impact, very short. Original game audio variation B. The entire event should last 0.25 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:20.701521+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_Land_a_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"One short soft rubber shoe landing on a concrete floor. Small compact dry footstep impact, no footsteps sequence, no bounce. Original game audio variation A. The entire event should last 0.25 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:29.296168+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d508-c212-75e3-802a-a559abf250c7
+EU/SourceArt/Audio/SFX_Land_a.wav,fal-ai/elevenlabs/sound-effects/v2,"One short soft rubber shoe landing on a concrete floor. Small compact dry footstep impact, no footsteps sequence, no bounce. Original game audio variation A. The entire event should last 0.25 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:29.296168+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_Land_b_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"One short soft rubber shoe landing on a concrete floor. Small compact dry footstep impact, no footsteps sequence, no bounce. Original game audio variation B. The entire event should last 0.25 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:37.532833+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d508-e35d-7ec3-89ad-1072fed40c1c
+EU/SourceArt/Audio/SFX_Land_b.wav,fal-ai/elevenlabs/sound-effects/v2,"One short soft rubber shoe landing on a concrete floor. Small compact dry footstep impact, no footsteps sequence, no bounce. Original game audio variation B. The entire event should last 0.25 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:37.532833+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_LevelWrap_a_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"A short understated instrumental success sting, muted plucked upright bass and a delicate brush drum accent, a restrained mysterious jazz phrase resolving softly. No cheering, no voice, no fanfare. Original game audio variation A. The entire event should last 1.5 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:42.719096+00:00,USD 0.003000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d509-0422-7f31-97ae-8459daa56008
+EU/SourceArt/Audio/SFX_LevelWrap_a.wav,fal-ai/elevenlabs/sound-effects/v2,"A short understated instrumental success sting, muted plucked upright bass and a delicate brush drum accent, a restrained mysterious jazz phrase resolving softly. No cheering, no voice, no fanfare. Original game audio variation A. The entire event should last 1.5 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:42.719096+00:00,USD 0.003000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_LevelWrap_b_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"A short understated instrumental success sting, muted plucked upright bass and a delicate brush drum accent, a restrained mysterious jazz phrase resolving softly. No cheering, no voice, no fanfare. Original game audio variation B. The entire event should last 1.5 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:48.448131+00:00,USD 0.003000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d509-194a-7c71-a76c-88f92f91b7fa
+EU/SourceArt/Audio/SFX_LevelWrap_b.wav,fal-ai/elevenlabs/sound-effects/v2,"A short understated instrumental success sting, muted plucked upright bass and a delicate brush drum accent, a restrained mysterious jazz phrase resolving softly. No cheering, no voice, no fanfare. Original game audio variation B. The entire event should last 1.5 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:48.448131+00:00,USD 0.003000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_UIClick_a_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"One extremely short clean soft interface click, rounded dry tick, lasting less than one tenth of a second. No reverb, no second click, no beep. Original game audio variation A. The entire event should last 0.1 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:57.259369+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d509-3061-7523-a646-0633f5a13b39
+EU/SourceArt/Audio/SFX_UIClick_a.wav,fal-ai/elevenlabs/sound-effects/v2,"One extremely short clean soft interface click, rounded dry tick, lasting less than one tenth of a second. No reverb, no second click, no beep. Original game audio variation A. The entire event should last 0.1 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:11:57.259369+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/SFX_UIClick_b_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"One extremely short clean soft interface click, rounded dry tick, lasting less than one tenth of a second. No reverb, no second click, no beep. Original game audio variation B. The entire event should last 0.1 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:12:02.240863+00:00,USD 0.001000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d509-50af-7502-8bf2-eb86f43749a6
+EU/SourceArt/Audio/SFX_UIClick_b.wav,fal-ai/elevenlabs/sound-effects/v2,"One extremely short clean soft interface click, rounded dry tick, lasting less than one tenth of a second. No reverb, no second click, no beep. Original game audio variation B. The entire event should last 0.1 seconds and start immediately, with no leading silence. No speech or lyrics.",2026-11-13T13:12:02.240863+00:00,USD 0.001000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; trimmed event and micro-fades."
+EU/SourceArt/Audio/_work/AMB_CellTone_a_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"Very quiet empty prison cell room tone, distant steady ventilation and soft low frequency mechanical hum. No speech, no footsteps, no doors, no sudden events. Constant restrained ambience, seamless continuous loop. Original game audio variation A. No intro or outro, constant sound at both ends. No speech or lyrics.",2026-11-13T13:12:14.281195+00:00,USD 0.040000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d509-651b-7912-a595-853fedcc5748
+EU/SourceArt/Audio/AMB_CellTone_a.wav,fal-ai/elevenlabs/sound-effects/v2,"Very quiet empty prison cell room tone, distant steady ventilation and soft low frequency mechanical hum. No speech, no footsteps, no doors, no sudden events. Constant restrained ambience, seamless continuous loop. Original game audio variation A. No intro or outro, constant sound at both ends. No speech or lyrics.",2026-11-13T13:12:14.281195+00:00,USD 0.040000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; loop overlap crossfade."
+EU/SourceArt/Audio/_work/AMB_CellTone_b_raw.wav,fal-ai/elevenlabs/sound-effects/v2,"Very quiet empty prison cell room tone, distant steady ventilation and soft low frequency mechanical hum. No speech, no footsteps, no doors, no sudden events. Constant restrained ambience, seamless continuous loop. Original game audio variation B. No intro or outro, constant sound at both ends. No speech or lyrics.",2026-11-13T13:12:24.164969+00:00,USD 0.040000 estimated; actual billing not accessible,Raw fal output; request_id=01a1d509-9976-7c42-8c6b-87a8e53abe62
+EU/SourceArt/Audio/AMB_CellTone_b.wav,fal-ai/elevenlabs/sound-effects/v2,"Very quiet empty prison cell room tone, distant steady ventilation and soft low frequency mechanical hum. No speech, no footsteps, no doors, no sudden events. Constant restrained ambience, seamless continuous loop. Original game audio variation B. No intro or outro, constant sound at both ends. No speech or lyrics.",2026-11-13T13:12:24.164969+00:00,USD 0.040000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. Mono resampling, duration fit, -1 dBFS peak normalization; loop overlap crossfade."
+EU/SourceArt/Audio/_work/MUS_Theme_a_raw.wav,fal-ai/stable-audio-25/text-to-audio,"Instrumental minimal suspense jazz underscore for a quiet playful prison escape puzzle. Sparse plucked upright bass and soft brushed drums, gentle muted tonal accents, steady 80 BPM, subdued dynamics, restrained and curious, never frightening or dramatic. A repeating background groove with no vocals, no speech, no cheering, no big climax, no intro silence and no outro fade, suitable for seamless looping. Original composition.",2026-11-13T13:17:43.066904+00:00,USD 0.200000 estimated; actual billing not accessible,Raw music output; request_id=01a1d50e-775b-7653-9b6a-3f77b41a7754
+EU/SourceArt/Audio/MUS_Theme_a.wav,fal-ai/stable-audio-25/text-to-audio,"Instrumental minimal suspense jazz underscore for a quiet playful prison escape puzzle. Sparse plucked upright bass and soft brushed drums, gentle muted tonal accents, steady 80 BPM, subdued dynamics, restrained and curious, never frightening or dramatic. A repeating background groove with no vocals, no speech, no cheering, no big climax, no intro silence and no outro fade, suitable for seamless looping. Original composition.",2026-11-13T13:17:43.066904+00:00,USD 0.200000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. 72-second mono loop with overlap crossfade and -1 dBFS peak."
+EU/SourceArt/Audio/_work/MUS_Theme_b_raw.wav,fal-ai/stable-audio-25/text-to-audio,"Instrumental minimal suspense jazz underscore for a quiet playful prison escape puzzle. Sparse plucked upright bass and soft brushed drums, gentle muted tonal accents, steady 80 BPM, subdued dynamics, restrained and curious, never frightening or dramatic. A repeating background groove with no vocals, no speech, no cheering, no big climax, no intro silence and no outro fade, suitable for seamless looping. Original composition.",2026-11-13T13:17:58.194709+00:00,USD 0.200000 estimated; actual billing not accessible,Raw music output; request_id=01a1d50e-b22d-7952-8a1e-82b827d1b445
+EU/SourceArt/Audio/MUS_Theme_b.wav,fal-ai/stable-audio-25/text-to-audio,"Instrumental minimal suspense jazz underscore for a quiet playful prison escape puzzle. Sparse plucked upright bass and soft brushed drums, gentle muted tonal accents, steady 80 BPM, subdued dynamics, restrained and curious, never frightening or dramatic. A repeating background groove with no vocals, no speech, no cheering, no big climax, no intro silence and no outro fade, suitable for seamless looping. Original composition.",2026-11-13T13:17:58.194709+00:00,USD 0.200000 estimated; actual billing not accessible,"Derived from raw output; same generation cost, do not double-count. 72-second mono loop with overlap crossfade and -1 dBFS peak."
+EU/SourceArt/Models/_work/SM_Guard_raw.zip,Tripo Studio H3.1,"Original adorable chibi prison guard toy figure, 2.2 heads tall, oversized round head, short arms and legs, plump round body. A large peaked cap and a simple dark blue gray uniform with no insignia or letters. Simple dot eyes, tiny serious mouth, earnest slightly goofy expression. One hand raised holding a small unlit flashlight. Smooth vinyl toy surface, flat muted colors, soft bevels and simplified low-poly shapes. Standing full body, static unrigged mesh, height 150 cm. No realistic skin detail, no logos, no text, no pedestal, no background or scene, no lights. Original character design, match a handmade prison film set aesthetic.",2026-11-13T13:17:31Z,55 Studio credits,https://studio.tripo3d.ai/zh/workspace/generate/9f3300c6-111c-4c43-bb87-60458046fd7a; raw FBX export archive; downloaded 2026-11-13T13:33:04.747880+00:00
+EU/SourceArt/Models/SM_Guard.fbx,Tripo Studio H3.1 + Blender 5.2.0 LTS MCP,"Original adorable chibi prison guard toy figure, 2.2 heads tall, oversized round head, short arms and legs, plump round body. A large peaked cap and a simple dark blue gray uniform with no insignia or letters. Simple dot eyes, tiny serious mouth, earnest slightly goofy expression. One hand raised holding a small unlit flashlight. Smooth vinyl toy surface, flat muted colors, soft bevels and simplified low-poly shapes. Standing full body, static unrigged mesh, height 150 cm. No realistic skin detail, no logos, no text, no pedestal, no background or scene, no lights. Original character design, match a handmade prison film set aesthetic.",2026-11-13T13:17:31Z,55 Studio credits (same source generation; do not double-count),"https://studio.tripo3d.ai/zh/workspace/generate/9f3300c6-111c-4c43-bb87-60458046fd7a; static mesh, reduced to <=15000 triangles; cm, bottom-center origin, +X front, +Z up; PNG baseColor"
+EU/SourceArt/Models/SM_Guard_baseColor.png,Tripo Studio H3.1 + Blender 5.2.0 LTS MCP,"Original adorable chibi prison guard toy figure, 2.2 heads tall, oversized round head, short arms and legs, plump round body. A large peaked cap and a simple dark blue gray uniform with no insignia or letters. Simple dot eyes, tiny serious mouth, earnest slightly goofy expression. One hand raised holding a small unlit flashlight. Smooth vinyl toy surface, flat muted colors, soft bevels and simplified low-poly shapes. Standing full body, static unrigged mesh, height 150 cm. No realistic skin detail, no logos, no text, no pedestal, no background or scene, no lights. Original character design, match a handmade prison film set aesthetic.",2026-11-13T13:17:31Z,55 Studio credits (same source generation; do not double-count),"https://studio.tripo3d.ai/zh/workspace/generate/9f3300c6-111c-4c43-bb87-60458046fd7a; static mesh, reduced to <=15000 triangles; cm, bottom-center origin, +X front, +Z up; PNG baseColor"
+EU/SourceArt/Models/SM_Guard.blend,Tripo Studio H3.1 + Blender 5.2.0 LTS MCP,"Original adorable chibi prison guard toy figure, 2.2 heads tall, oversized round head, short arms and legs, plump round body. A large peaked cap and a simple dark blue gray uniform with no insignia or letters. Simple dot eyes, tiny serious mouth, earnest slightly goofy expression. One hand raised holding a small unlit flashlight. Smooth vinyl toy surface, flat muted colors, soft bevels and simplified low-poly shapes. Standing full body, static unrigged mesh, height 150 cm. No realistic skin detail, no logos, no text, no pedestal, no background or scene, no lights. Original character design, match a handmade prison film set aesthetic.",2026-11-13T13:17:31Z,55 Studio credits (same source generation; do not double-count),"https://studio.tripo3d.ai/zh/workspace/generate/9f3300c6-111c-4c43-bb87-60458046fd7a; static mesh, reduced to <=15000 triangles; cm, bottom-center origin, +X front, +Z up; PNG baseColor"
+EU/SourceArt/Models/_work/SM_CellDoor_raw.zip,Tripo Studio H3.1,"Single stylized low-poly iron prison cell door together with its rectangular door frame. 160 cm wide, 240 cm tall, 15 cm thick. Tall flat closed steel door, small rectangular barred observation opening near eye height, simple handle and visible hinges, substantial softly beveled frame. Cold muted gray metal, simple broad planes, restrained colors, looks like a prop built for a prison film set. Static unrigged mesh, no surrounding wall, no floor, no ground plane, no lights, no text, no letters, no numbers, no logos, no background.",2026-11-13T13:21:19.926941+00:00,55 Studio credits,https://studio.tripo3d.ai/zh/workspace/generate/590348eb-96db-4dae-bb6c-6307f95868fc; raw FBX export archive
+EU/SourceArt/Models/SM_CellDoor.fbx,Tripo Studio H3.1 + Blender 5.2.0 LTS MCP,"Single stylized low-poly iron prison cell door together with its rectangular door frame. 160 cm wide, 240 cm tall, 15 cm thick. Tall flat closed steel door, small rectangular barred observation opening near eye height, simple handle and visible hinges, substantial softly beveled frame. Cold muted gray metal, simple broad planes, restrained colors, looks like a prop built for a prison film set. Static unrigged mesh, no surrounding wall, no floor, no ground plane, no lights, no text, no letters, no numbers, no logos, no background.",2026-11-13T13:21:19.926941+00:00,55 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/590348eb-96db-4dae-bb6c-6307f95868fc; static mesh; <=15000 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/SM_CellDoor_baseColor.png,Tripo Studio H3.1 + Blender 5.2.0 LTS MCP,"Single stylized low-poly iron prison cell door together with its rectangular door frame. 160 cm wide, 240 cm tall, 15 cm thick. Tall flat closed steel door, small rectangular barred observation opening near eye height, simple handle and visible hinges, substantial softly beveled frame. Cold muted gray metal, simple broad planes, restrained colors, looks like a prop built for a prison film set. Static unrigged mesh, no surrounding wall, no floor, no ground plane, no lights, no text, no letters, no numbers, no logos, no background.",2026-11-13T13:21:19.926941+00:00,55 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/590348eb-96db-4dae-bb6c-6307f95868fc; static mesh; <=15000 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/SM_CellDoor.blend,Tripo Studio H3.1 + Blender 5.2.0 LTS MCP,"Single stylized low-poly iron prison cell door together with its rectangular door frame. 160 cm wide, 240 cm tall, 15 cm thick. Tall flat closed steel door, small rectangular barred observation opening near eye height, simple handle and visible hinges, substantial softly beveled frame. Cold muted gray metal, simple broad planes, restrained colors, looks like a prop built for a prison film set. Static unrigged mesh, no surrounding wall, no floor, no ground plane, no lights, no text, no letters, no numbers, no logos, no background.",2026-11-13T13:21:19.926941+00:00,55 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/590348eb-96db-4dae-bb6c-6307f95868fc; static mesh; <=15000 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/_work/SM_Bucket_raw.zip,Tripo Studio H3.1,"One small stylized low-poly tin bucket, 35 cm diameter, about 35 cm tall excluding handle. Open hollow top with visible empty interior, rolled rim and a simple thin arched metal carry handle. Slightly tapered cylindrical body, cold muted gray metal, clean broad facets, soft beveled edges, restrained handmade prison movie set aesthetic. Static unrigged mesh. No water, no objects inside, no scene, no ground plane, no background, no lights, no text, no labels or logos.",2026-11-13T13:22:04.796959+00:00,55 Studio credits,https://studio.tripo3d.ai/zh/workspace/generate/50f2e10d-c2a5-491f-ae95-f85569b008ee; raw FBX export archive
+EU/SourceArt/Models/SM_Bucket.fbx,Tripo Studio H3.1 + Blender 5.2.0 LTS MCP,"One small stylized low-poly tin bucket, 35 cm diameter, about 35 cm tall excluding handle. Open hollow top with visible empty interior, rolled rim and a simple thin arched metal carry handle. Slightly tapered cylindrical body, cold muted gray metal, clean broad facets, soft beveled edges, restrained handmade prison movie set aesthetic. Static unrigged mesh. No water, no objects inside, no scene, no ground plane, no background, no lights, no text, no labels or logos.",2026-11-13T13:22:04.796959+00:00,55 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/50f2e10d-c2a5-491f-ae95-f85569b008ee; static mesh; <=15000 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/SM_Bucket_baseColor.png,Tripo Studio H3.1 + Blender 5.2.0 LTS MCP,"One small stylized low-poly tin bucket, 35 cm diameter, about 35 cm tall excluding handle. Open hollow top with visible empty interior, rolled rim and a simple thin arched metal carry handle. Slightly tapered cylindrical body, cold muted gray metal, clean broad facets, soft beveled edges, restrained handmade prison movie set aesthetic. Static unrigged mesh. No water, no objects inside, no scene, no ground plane, no background, no lights, no text, no labels or logos.",2026-11-13T13:22:04.796959+00:00,55 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/50f2e10d-c2a5-491f-ae95-f85569b008ee; static mesh; <=15000 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/SM_Bucket.blend,Tripo Studio H3.1 + Blender 5.2.0 LTS MCP,"One small stylized low-poly tin bucket, 35 cm diameter, about 35 cm tall excluding handle. Open hollow top with visible empty interior, rolled rim and a simple thin arched metal carry handle. Slightly tapered cylindrical body, cold muted gray metal, clean broad facets, soft beveled edges, restrained handmade prison movie set aesthetic. Static unrigged mesh. No water, no objects inside, no scene, no ground plane, no background, no lights, no text, no labels or logos.",2026-11-13T13:22:04.796959+00:00,55 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/50f2e10d-c2a5-491f-ae95-f85569b008ee; static mesh; <=15000 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Docs/Escape_Unseen_GDD_v1.3.docx,Codex; python-docx; Microsoft Word/PyMuPDF layout review,"文档（不碰 UE，可以和 1、2 并行）
+
+1. **GDD v1.3 修订**（交给用户转 GPT，或者你直接改）：
+   - 第 11 章：跳跃键由 Space 改为 W / ↑（用户试玩反馈）。
+   - 第 18–19 章：几何函数库实际放在 `BP_ShadowService` Actor 里（MCP 不支持新建 BlueprintFunctionLibrary），多边形用""扁平 Vector2D 数组 + 计数数组""表示，没有用 S_Polygon2D 结构体（MCP 不支持新建结构体）。
+   - 增加：第一关标题卡和开场台词，最终关回车重玩、Q 退出，占位方块青/红两色提示。
+2. **开发日志**（Glass Box 要用）：按时间线整理到 `EU/SourceArt/DEVLOG.md`。素材来源是 git log（`git log --stat`）以及 Claude 和用户的说明。只写真实发生过的事。目前的里程碑：
+   - 11-12 首次提交；
+   - 11-13 核心规则、三关灰盒、灯光贴图、标题与提示、跳跃改键。
+3. **itch.io 英文页面文案**：基于 GDD 第 25 章草稿，写成标题、短描述、长描述、操作说明、AI 工具声明（Claude Code + Unreal MCP、Codex、GPT、Tripo、fal 等，按实际使用情况写）、致谢赛事赞助工具。
+4. **提交清单**：对照官方规则（`2026-epic-ai-megajam-prep/sources/official-rules-2026-11-03.pdf`），列出提交要填的每个字段和需要的素材。
+
+## 任务 4：把模型接进游戏【允许接入 UE】
+
+动手前先读 `CODEX_UE_GUIDE.md`，再按里面第 1 节拿 `UE_LOCK.md` 的锁。分两批做：
+- **4A（现在就能做）**：SM_Guard、SM_WindowBars、SM_CellDoor、SM_Bucket。
+- **4B（等模型交付后再做）**：SM_Prisoner、SM_LampShade、SM_Cot。
+
+每批做完都提交一次，然后释放锁。
+
+### 4.0 导入规格
+
+- 网格导入到 `/Game/EscapeUnseen/Art/Models/`，用 `StaticMeshTools.import_file`，资产名和源文件名一致。不开 Nanite，不生成光照贴图 UV（场景全是动态光）。
+- 贴图导入到 `/Game/EscapeUnseen/Art/Textures/`，命名为 `T_<模型名去掉 SM_>_BaseColor`。源图是 4K 的，导入后要把 `maxTextureSize` 设为 1024（SM_Prisoner 用 2048），sRGB 开启。
+- 新建母材质 `/Game/EscapeUnseen/Materials/M_ModelTex`（不透明、默认光照）：
+  - BaseColor = TextureSampleParameter2D `Tex` × VectorParameter `Tint`（默认值 1,1,1）；
+  - Roughness = ScalarParameter `Roughness`（默认 0.7）；
+  - Specular 固定为 0.25。
+- 每个模型建一个材质实例 `MI_<模型名去掉 SM_>`，参数如下：
+
+| 实例 | Tint | Roughness | 说明 |
+|---|---|---|---|
+| MI_Guard | 1, 1, 1 | 0.6 | |
+| MI_WindowBars | 0.8, 0.8, 0.85 | 0.5 | 金属略偏冷 |
+| MI_CellDoor | 0.85, 0.85, 0.9 | 0.55 | 融进冷灰墙面 |
+| MI_Bucket | 0.7, 0.7, 0.72 | 0.6 | 装饰物压暗，让它退到背景里 |
+| MI_Cot (4B) | 0.65, 0.65, 0.7 | 0.8 | 同上 |
+| MI_LampShade (4B) | 0.9, 0.88, 0.85 | 0.4 | |
+| MI_Prisoner (4B) | 1, 1, 1 | 0.55 | 软胶手办的质感 |
+
+- 模型的正面都朝 +X，原点在底部中心。场景里的相机在 +Y 方向看向 −Y，所以**要让模型正面朝向镜头，Yaw 设为 90**。如果截图里看到的是背面，就改成 −90，并在交接记录里写明。
+
+### 4.1 所有装饰物都必须遵守（硬性规定）
+
+- Collision 设为 NoCollision，Cast Shadow 设为 false，**不加 `Occluder` 标签**。阴影判定只能来自玩法物体，装饰物一旦投影就会破坏""藏在阴影里""的规则。
+- 不移动、不修改任何玩法 Actor：Floor、墙、Beam、Ledge、Crate、CutMark、ExitZone、灯、相机、Director、ShadowService、StartPoint、Hero。
+- 装饰物在编辑器里预先摆好，作为 StaticMeshActor 保存，放进文件夹 `Set/Decor`，Label 命名为 `Decor_<名字>`。不要在 BeginPlay 里生成。
+- 下面给的坐标都是预期值。如果和关卡里实际的 ExitZone 或 Ledge 不一致，**以规则描述为准**，并在交接记录里写明偏差。
+
+### 4A-1 看守窗口：BP_GuardWindow 换成模型
+
+现在的窗户是在 `BuildGuard` 函数里用基础体拼的，所有坐标都是窗户局部坐标：原点在窗洞底边中心，Y 轴指向镜头。
+- **窗框和铁栏**：删掉 4 个 MI_SetPiece 方块（上框、左框、右框、窗台）和 4 根 Cylinder 铁栏。换成一个 SM_WindowBars，参数：父级 `w`，位置 (0, 72, −5)，旋转 Yaw 90，缩放 1。它的 120×90 外框正好包住 110×80 的窗洞。MI_Night 背板（y=2）和墙面遮挡板（MI_WallTex）保留不动。
+- **看守**：删掉看守的 10 个基础体部件（身体、头、帽子、帽檐、徽章、眼睛、手电、镜片、手），换成一个 SM_Guard，挂在 `g` 下，旋转 Yaw 90，材质 MI_Guard。具体要求：
+  - 缩放后头部宽约 50 cm，头的中心在局部 z≈40，也就是窗洞中间偏下，铁栏后面露出头和肩膀。参考缩放 0.75。
+  - 模型原本深度有 105 cm，**必须完整落在局部 y 6~66 之间**，不能穿过背板（y≈4），也不能顶到铁栏（y≈72）。允许只压缩深度轴（模型 X 轴）来塞进去，从正面看不出来。
+  - 降下时要整个藏好：改 `StepGuard` 里的下降量（现在是 −110），让 alpha=0 时头顶低于局部 z −12（窗台以下）。同时把 MI_WallTex 遮挡板向下加长，保证升起过程中身体下半截始终被它挡住。
+- **手电光**：把 SpotLight 的相对位置（现在是 34, 62, 10）移到模型手电的灯头位置。扫动的角度、频率、亮度、颜色逻辑都不改。
+- 验收截图：在 L03 给实例临时打开 `bAlwaysOn`，进 PIE，截一张全屏图，再放大截一张窗户。截完把 `bAlwaysOn` 改回 false。
+
+### 4A-2 牢门（出口标识），三关都要放
+
+- 放在出口正后方的后墙上：X 对准 ExitZone 的中心，底边和出口平台顶面齐平，贴着后墙，Y = −142.5（墙面 −150 加上半个门厚）。旋转 Yaw 90，材质 MI_CellDoor。
+- 预期位置：L01 约 (1350, −142.5, 200)，L02 约 (1350, −142.5, 300)，L03 底边 z=400，X 对准 ExitZone。
+- 门上方 20 cm 加一盏小出口灯，提示""往这走""：
+  - Cube，尺寸 30×10×12 cm；
+  - 材质 M_Emissive 的实例，颜色是暖琥珀 (1.0, 0.55, 0.15)，强度和现有灯泡差不多，不能抢 RuleLight 的戏；
+  - 同样无碰撞、不投影。
+
+### 4A-3 水桶
+
+- L01：(600, −120, 0)。L02：(90, −120, 0)。L03：(90, −120, 0)。底部贴地，Yaw 随意（110 左右显得自然）。
+- 如果截图里桶的轮廓和玩家要跳的东西混在一起，比如像一个台阶，就沿 X 挪到最近的空地，并在交接记录里说明。
+
+### 4B（等模型交付后再做）
+
+- **SM_Prisoner（主角）**：
+  - 在 `BP_EscapeCharacter` 里新增可编辑变量：`bUseModel`（bool，默认 true）、`HeroModel`（StaticMesh）、`HeroModelMat`（MaterialInterface），在 CDO 上分别设为 SM_Prisoner 和 MI_Prisoner。
+  - `BuildVisual` 改成：bUseModel 为 true 时，只调用一次 `AddPart`（模型、材质、位置 (0,0,0)、缩放 1）；为 false 时保留现在的基础体拼装。**不要用 IsValid 判空**，原因见指南第 4 节。
+  - `StepAnim` 的程序动画（跳着走、挤压拉伸、前倾、呼吸）作用在 Mesh 组件上，模型挂在 Mesh 下面会自动继承，不用改。
+  - 模型正面朝 +X，正好是角色的前进方向，**这里不加 Yaw 90**。
+  - 验收截图：L01 里，主角站立一张，跳到最高点一张。
+- **SM_LampShade**：三关都放。
+  - 挂到 RuleBulb 上（Actor 附着），玩家拖动灯时灯罩要跟着走。相对位置 z +12，在灯泡上方，像一顶小帽子。
+  - 不投影、无碰撞，不能挡住灯泡本身的发光。
+  - 在 PIE 里用探针命令 3 拖一下灯，截图确认灯罩跟着走了。
+- **SM_Cot**：只放 L01。
+  - 位置：靠后墙，X 范围 380~570，Y = −150 + 床宽的一半，贴地，Yaw 90，材质 MI_Cot。
+  - 如果截图里它看起来像能踩的台阶，就再压暗（Tint 降到 0.55），并告诉 Claude。
+
+### 交付
+
+- 截图存到 `EU/Saved/review/task4_<编号>.png`：
+  - 4A：三关各一张 PIE 摆灯阶段（phase 0）的全屏图，加上看守窗口的两张；
+  - 4B：主角两张、灯罩一张、L01 全景一张。
+- 提交信息分别写 ""Task 4A: …"" 和 ""Task 4B: …""，在本文件末尾追加交付说明，并在 `UE_LOCK.md` 里写交接记录。Claude 只看截图验收，有问题会再出修改单。",2026-11-13T13:20:28.287290+00:00,No additional generation API charge; assistant usage not measured,"Derived from user-provided GDD/task card, git history and official jam sources; no UE integration or submission performed"
+EU/SourceArt/DEVLOG.md,Codex; repository/official-source document synthesis,"文档（不碰 UE，可以和 1、2 并行）
+
+1. **GDD v1.3 修订**（交给用户转 GPT，或者你直接改）：
+   - 第 11 章：跳跃键由 Space 改为 W / ↑（用户试玩反馈）。
+   - 第 18–19 章：几何函数库实际放在 `BP_ShadowService` Actor 里（MCP 不支持新建 BlueprintFunctionLibrary），多边形用""扁平 Vector2D 数组 + 计数数组""表示，没有用 S_Polygon2D 结构体（MCP 不支持新建结构体）。
+   - 增加：第一关标题卡和开场台词，最终关回车重玩、Q 退出，占位方块青/红两色提示。
+2. **开发日志**（Glass Box 要用）：按时间线整理到 `EU/SourceArt/DEVLOG.md`。素材来源是 git log（`git log --stat`）以及 Claude 和用户的说明。只写真实发生过的事。目前的里程碑：
+   - 11-12 首次提交；
+   - 11-13 核心规则、三关灰盒、灯光贴图、标题与提示、跳跃改键。
+3. **itch.io 英文页面文案**：基于 GDD 第 25 章草稿，写成标题、短描述、长描述、操作说明、AI 工具声明（Claude Code + Unreal MCP、Codex、GPT、Tripo、fal 等，按实际使用情况写）、致谢赛事赞助工具。
+4. **提交清单**：对照官方规则（`2026-epic-ai-megajam-prep/sources/official-rules-2026-11-03.pdf`），列出提交要填的每个字段和需要的素材。
+
+## 任务 4：把模型接进游戏【允许接入 UE】
+
+动手前先读 `CODEX_UE_GUIDE.md`，再按里面第 1 节拿 `UE_LOCK.md` 的锁。分两批做：
+- **4A（现在就能做）**：SM_Guard、SM_WindowBars、SM_CellDoor、SM_Bucket。
+- **4B（等模型交付后再做）**：SM_Prisoner、SM_LampShade、SM_Cot。
+
+每批做完都提交一次，然后释放锁。
+
+### 4.0 导入规格
+
+- 网格导入到 `/Game/EscapeUnseen/Art/Models/`，用 `StaticMeshTools.import_file`，资产名和源文件名一致。不开 Nanite，不生成光照贴图 UV（场景全是动态光）。
+- 贴图导入到 `/Game/EscapeUnseen/Art/Textures/`，命名为 `T_<模型名去掉 SM_>_BaseColor`。源图是 4K 的，导入后要把 `maxTextureSize` 设为 1024（SM_Prisoner 用 2048），sRGB 开启。
+- 新建母材质 `/Game/EscapeUnseen/Materials/M_ModelTex`（不透明、默认光照）：
+  - BaseColor = TextureSampleParameter2D `Tex` × VectorParameter `Tint`（默认值 1,1,1）；
+  - Roughness = ScalarParameter `Roughness`（默认 0.7）；
+  - Specular 固定为 0.25。
+- 每个模型建一个材质实例 `MI_<模型名去掉 SM_>`，参数如下：
+
+| 实例 | Tint | Roughness | 说明 |
+|---|---|---|---|
+| MI_Guard | 1, 1, 1 | 0.6 | |
+| MI_WindowBars | 0.8, 0.8, 0.85 | 0.5 | 金属略偏冷 |
+| MI_CellDoor | 0.85, 0.85, 0.9 | 0.55 | 融进冷灰墙面 |
+| MI_Bucket | 0.7, 0.7, 0.72 | 0.6 | 装饰物压暗，让它退到背景里 |
+| MI_Cot (4B) | 0.65, 0.65, 0.7 | 0.8 | 同上 |
+| MI_LampShade (4B) | 0.9, 0.88, 0.85 | 0.4 | |
+| MI_Prisoner (4B) | 1, 1, 1 | 0.55 | 软胶手办的质感 |
+
+- 模型的正面都朝 +X，原点在底部中心。场景里的相机在 +Y 方向看向 −Y，所以**要让模型正面朝向镜头，Yaw 设为 90**。如果截图里看到的是背面，就改成 −90，并在交接记录里写明。
+
+### 4.1 所有装饰物都必须遵守（硬性规定）
+
+- Collision 设为 NoCollision，Cast Shadow 设为 false，**不加 `Occluder` 标签**。阴影判定只能来自玩法物体，装饰物一旦投影就会破坏""藏在阴影里""的规则。
+- 不移动、不修改任何玩法 Actor：Floor、墙、Beam、Ledge、Crate、CutMark、ExitZone、灯、相机、Director、ShadowService、StartPoint、Hero。
+- 装饰物在编辑器里预先摆好，作为 StaticMeshActor 保存，放进文件夹 `Set/Decor`，Label 命名为 `Decor_<名字>`。不要在 BeginPlay 里生成。
+- 下面给的坐标都是预期值。如果和关卡里实际的 ExitZone 或 Ledge 不一致，**以规则描述为准**，并在交接记录里写明偏差。
+
+### 4A-1 看守窗口：BP_GuardWindow 换成模型
+
+现在的窗户是在 `BuildGuard` 函数里用基础体拼的，所有坐标都是窗户局部坐标：原点在窗洞底边中心，Y 轴指向镜头。
+- **窗框和铁栏**：删掉 4 个 MI_SetPiece 方块（上框、左框、右框、窗台）和 4 根 Cylinder 铁栏。换成一个 SM_WindowBars，参数：父级 `w`，位置 (0, 72, −5)，旋转 Yaw 90，缩放 1。它的 120×90 外框正好包住 110×80 的窗洞。MI_Night 背板（y=2）和墙面遮挡板（MI_WallTex）保留不动。
+- **看守**：删掉看守的 10 个基础体部件（身体、头、帽子、帽檐、徽章、眼睛、手电、镜片、手），换成一个 SM_Guard，挂在 `g` 下，旋转 Yaw 90，材质 MI_Guard。具体要求：
+  - 缩放后头部宽约 50 cm，头的中心在局部 z≈40，也就是窗洞中间偏下，铁栏后面露出头和肩膀。参考缩放 0.75。
+  - 模型原本深度有 105 cm，**必须完整落在局部 y 6~66 之间**，不能穿过背板（y≈4），也不能顶到铁栏（y≈72）。允许只压缩深度轴（模型 X 轴）来塞进去，从正面看不出来。
+  - 降下时要整个藏好：改 `StepGuard` 里的下降量（现在是 −110），让 alpha=0 时头顶低于局部 z −12（窗台以下）。同时把 MI_WallTex 遮挡板向下加长，保证升起过程中身体下半截始终被它挡住。
+- **手电光**：把 SpotLight 的相对位置（现在是 34, 62, 10）移到模型手电的灯头位置。扫动的角度、频率、亮度、颜色逻辑都不改。
+- 验收截图：在 L03 给实例临时打开 `bAlwaysOn`，进 PIE，截一张全屏图，再放大截一张窗户。截完把 `bAlwaysOn` 改回 false。
+
+### 4A-2 牢门（出口标识），三关都要放
+
+- 放在出口正后方的后墙上：X 对准 ExitZone 的中心，底边和出口平台顶面齐平，贴着后墙，Y = −142.5（墙面 −150 加上半个门厚）。旋转 Yaw 90，材质 MI_CellDoor。
+- 预期位置：L01 约 (1350, −142.5, 200)，L02 约 (1350, −142.5, 300)，L03 底边 z=400，X 对准 ExitZone。
+- 门上方 20 cm 加一盏小出口灯，提示""往这走""：
+  - Cube，尺寸 30×10×12 cm；
+  - 材质 M_Emissive 的实例，颜色是暖琥珀 (1.0, 0.55, 0.15)，强度和现有灯泡差不多，不能抢 RuleLight 的戏；
+  - 同样无碰撞、不投影。
+
+### 4A-3 水桶
+
+- L01：(600, −120, 0)。L02：(90, −120, 0)。L03：(90, −120, 0)。底部贴地，Yaw 随意（110 左右显得自然）。
+- 如果截图里桶的轮廓和玩家要跳的东西混在一起，比如像一个台阶，就沿 X 挪到最近的空地，并在交接记录里说明。
+
+### 4B（等模型交付后再做）
+
+- **SM_Prisoner（主角）**：
+  - 在 `BP_EscapeCharacter` 里新增可编辑变量：`bUseModel`（bool，默认 true）、`HeroModel`（StaticMesh）、`HeroModelMat`（MaterialInterface），在 CDO 上分别设为 SM_Prisoner 和 MI_Prisoner。
+  - `BuildVisual` 改成：bUseModel 为 true 时，只调用一次 `AddPart`（模型、材质、位置 (0,0,0)、缩放 1）；为 false 时保留现在的基础体拼装。**不要用 IsValid 判空**，原因见指南第 4 节。
+  - `StepAnim` 的程序动画（跳着走、挤压拉伸、前倾、呼吸）作用在 Mesh 组件上，模型挂在 Mesh 下面会自动继承，不用改。
+  - 模型正面朝 +X，正好是角色的前进方向，**这里不加 Yaw 90**。
+  - 验收截图：L01 里，主角站立一张，跳到最高点一张。
+- **SM_LampShade**：三关都放。
+  - 挂到 RuleBulb 上（Actor 附着），玩家拖动灯时灯罩要跟着走。相对位置 z +12，在灯泡上方，像一顶小帽子。
+  - 不投影、无碰撞，不能挡住灯泡本身的发光。
+  - 在 PIE 里用探针命令 3 拖一下灯，截图确认灯罩跟着走了。
+- **SM_Cot**：只放 L01。
+  - 位置：靠后墙，X 范围 380~570，Y = −150 + 床宽的一半，贴地，Yaw 90，材质 MI_Cot。
+  - 如果截图里它看起来像能踩的台阶，就再压暗（Tint 降到 0.55），并告诉 Claude。
+
+### 交付
+
+- 截图存到 `EU/Saved/review/task4_<编号>.png`：
+  - 4A：三关各一张 PIE 摆灯阶段（phase 0）的全屏图，加上看守窗口的两张；
+  - 4B：主角两张、灯罩一张、L01 全景一张。
+- 提交信息分别写 ""Task 4A: …"" 和 ""Task 4B: …""，在本文件末尾追加交付说明，并在 `UE_LOCK.md` 里写交接记录。Claude 只看截图验收，有问题会再出修改单。",2026-11-13T13:27:44.095956+00:00,No additional generation API charge; assistant usage not measured,"Derived from user-provided GDD/task card, git history and official jam sources; no UE integration or submission performed"
+EU/SourceArt/Docs/ITCH_PAGE_EN.md,Codex; repository/official-source document synthesis,"文档（不碰 UE，可以和 1、2 并行）
+
+1. **GDD v1.3 修订**（交给用户转 GPT，或者你直接改）：
+   - 第 11 章：跳跃键由 Space 改为 W / ↑（用户试玩反馈）。
+   - 第 18–19 章：几何函数库实际放在 `BP_ShadowService` Actor 里（MCP 不支持新建 BlueprintFunctionLibrary），多边形用""扁平 Vector2D 数组 + 计数数组""表示，没有用 S_Polygon2D 结构体（MCP 不支持新建结构体）。
+   - 增加：第一关标题卡和开场台词，最终关回车重玩、Q 退出，占位方块青/红两色提示。
+2. **开发日志**（Glass Box 要用）：按时间线整理到 `EU/SourceArt/DEVLOG.md`。素材来源是 git log（`git log --stat`）以及 Claude 和用户的说明。只写真实发生过的事。目前的里程碑：
+   - 11-12 首次提交；
+   - 11-13 核心规则、三关灰盒、灯光贴图、标题与提示、跳跃改键。
+3. **itch.io 英文页面文案**：基于 GDD 第 25 章草稿，写成标题、短描述、长描述、操作说明、AI 工具声明（Claude Code + Unreal MCP、Codex、GPT、Tripo、fal 等，按实际使用情况写）、致谢赛事赞助工具。
+4. **提交清单**：对照官方规则（`2026-epic-ai-megajam-prep/sources/official-rules-2026-11-03.pdf`），列出提交要填的每个字段和需要的素材。
+
+## 任务 4：把模型接进游戏【允许接入 UE】
+
+动手前先读 `CODEX_UE_GUIDE.md`，再按里面第 1 节拿 `UE_LOCK.md` 的锁。分两批做：
+- **4A（现在就能做）**：SM_Guard、SM_WindowBars、SM_CellDoor、SM_Bucket。
+- **4B（等模型交付后再做）**：SM_Prisoner、SM_LampShade、SM_Cot。
+
+每批做完都提交一次，然后释放锁。
+
+### 4.0 导入规格
+
+- 网格导入到 `/Game/EscapeUnseen/Art/Models/`，用 `StaticMeshTools.import_file`，资产名和源文件名一致。不开 Nanite，不生成光照贴图 UV（场景全是动态光）。
+- 贴图导入到 `/Game/EscapeUnseen/Art/Textures/`，命名为 `T_<模型名去掉 SM_>_BaseColor`。源图是 4K 的，导入后要把 `maxTextureSize` 设为 1024（SM_Prisoner 用 2048），sRGB 开启。
+- 新建母材质 `/Game/EscapeUnseen/Materials/M_ModelTex`（不透明、默认光照）：
+  - BaseColor = TextureSampleParameter2D `Tex` × VectorParameter `Tint`（默认值 1,1,1）；
+  - Roughness = ScalarParameter `Roughness`（默认 0.7）；
+  - Specular 固定为 0.25。
+- 每个模型建一个材质实例 `MI_<模型名去掉 SM_>`，参数如下：
+
+| 实例 | Tint | Roughness | 说明 |
+|---|---|---|---|
+| MI_Guard | 1, 1, 1 | 0.6 | |
+| MI_WindowBars | 0.8, 0.8, 0.85 | 0.5 | 金属略偏冷 |
+| MI_CellDoor | 0.85, 0.85, 0.9 | 0.55 | 融进冷灰墙面 |
+| MI_Bucket | 0.7, 0.7, 0.72 | 0.6 | 装饰物压暗，让它退到背景里 |
+| MI_Cot (4B) | 0.65, 0.65, 0.7 | 0.8 | 同上 |
+| MI_LampShade (4B) | 0.9, 0.88, 0.85 | 0.4 | |
+| MI_Prisoner (4B) | 1, 1, 1 | 0.55 | 软胶手办的质感 |
+
+- 模型的正面都朝 +X，原点在底部中心。场景里的相机在 +Y 方向看向 −Y，所以**要让模型正面朝向镜头，Yaw 设为 90**。如果截图里看到的是背面，就改成 −90，并在交接记录里写明。
+
+### 4.1 所有装饰物都必须遵守（硬性规定）
+
+- Collision 设为 NoCollision，Cast Shadow 设为 false，**不加 `Occluder` 标签**。阴影判定只能来自玩法物体，装饰物一旦投影就会破坏""藏在阴影里""的规则。
+- 不移动、不修改任何玩法 Actor：Floor、墙、Beam、Ledge、Crate、CutMark、ExitZone、灯、相机、Director、ShadowService、StartPoint、Hero。
+- 装饰物在编辑器里预先摆好，作为 StaticMeshActor 保存，放进文件夹 `Set/Decor`，Label 命名为 `Decor_<名字>`。不要在 BeginPlay 里生成。
+- 下面给的坐标都是预期值。如果和关卡里实际的 ExitZone 或 Ledge 不一致，**以规则描述为准**，并在交接记录里写明偏差。
+
+### 4A-1 看守窗口：BP_GuardWindow 换成模型
+
+现在的窗户是在 `BuildGuard` 函数里用基础体拼的，所有坐标都是窗户局部坐标：原点在窗洞底边中心，Y 轴指向镜头。
+- **窗框和铁栏**：删掉 4 个 MI_SetPiece 方块（上框、左框、右框、窗台）和 4 根 Cylinder 铁栏。换成一个 SM_WindowBars，参数：父级 `w`，位置 (0, 72, −5)，旋转 Yaw 90，缩放 1。它的 120×90 外框正好包住 110×80 的窗洞。MI_Night 背板（y=2）和墙面遮挡板（MI_WallTex）保留不动。
+- **看守**：删掉看守的 10 个基础体部件（身体、头、帽子、帽檐、徽章、眼睛、手电、镜片、手），换成一个 SM_Guard，挂在 `g` 下，旋转 Yaw 90，材质 MI_Guard。具体要求：
+  - 缩放后头部宽约 50 cm，头的中心在局部 z≈40，也就是窗洞中间偏下，铁栏后面露出头和肩膀。参考缩放 0.75。
+  - 模型原本深度有 105 cm，**必须完整落在局部 y 6~66 之间**，不能穿过背板（y≈4），也不能顶到铁栏（y≈72）。允许只压缩深度轴（模型 X 轴）来塞进去，从正面看不出来。
+  - 降下时要整个藏好：改 `StepGuard` 里的下降量（现在是 −110），让 alpha=0 时头顶低于局部 z −12（窗台以下）。同时把 MI_WallTex 遮挡板向下加长，保证升起过程中身体下半截始终被它挡住。
+- **手电光**：把 SpotLight 的相对位置（现在是 34, 62, 10）移到模型手电的灯头位置。扫动的角度、频率、亮度、颜色逻辑都不改。
+- 验收截图：在 L03 给实例临时打开 `bAlwaysOn`，进 PIE，截一张全屏图，再放大截一张窗户。截完把 `bAlwaysOn` 改回 false。
+
+### 4A-2 牢门（出口标识），三关都要放
+
+- 放在出口正后方的后墙上：X 对准 ExitZone 的中心，底边和出口平台顶面齐平，贴着后墙，Y = −142.5（墙面 −150 加上半个门厚）。旋转 Yaw 90，材质 MI_CellDoor。
+- 预期位置：L01 约 (1350, −142.5, 200)，L02 约 (1350, −142.5, 300)，L03 底边 z=400，X 对准 ExitZone。
+- 门上方 20 cm 加一盏小出口灯，提示""往这走""：
+  - Cube，尺寸 30×10×12 cm；
+  - 材质 M_Emissive 的实例，颜色是暖琥珀 (1.0, 0.55, 0.15)，强度和现有灯泡差不多，不能抢 RuleLight 的戏；
+  - 同样无碰撞、不投影。
+
+### 4A-3 水桶
+
+- L01：(600, −120, 0)。L02：(90, −120, 0)。L03：(90, −120, 0)。底部贴地，Yaw 随意（110 左右显得自然）。
+- 如果截图里桶的轮廓和玩家要跳的东西混在一起，比如像一个台阶，就沿 X 挪到最近的空地，并在交接记录里说明。
+
+### 4B（等模型交付后再做）
+
+- **SM_Prisoner（主角）**：
+  - 在 `BP_EscapeCharacter` 里新增可编辑变量：`bUseModel`（bool，默认 true）、`HeroModel`（StaticMesh）、`HeroModelMat`（MaterialInterface），在 CDO 上分别设为 SM_Prisoner 和 MI_Prisoner。
+  - `BuildVisual` 改成：bUseModel 为 true 时，只调用一次 `AddPart`（模型、材质、位置 (0,0,0)、缩放 1）；为 false 时保留现在的基础体拼装。**不要用 IsValid 判空**，原因见指南第 4 节。
+  - `StepAnim` 的程序动画（跳着走、挤压拉伸、前倾、呼吸）作用在 Mesh 组件上，模型挂在 Mesh 下面会自动继承，不用改。
+  - 模型正面朝 +X，正好是角色的前进方向，**这里不加 Yaw 90**。
+  - 验收截图：L01 里，主角站立一张，跳到最高点一张。
+- **SM_LampShade**：三关都放。
+  - 挂到 RuleBulb 上（Actor 附着），玩家拖动灯时灯罩要跟着走。相对位置 z +12，在灯泡上方，像一顶小帽子。
+  - 不投影、无碰撞，不能挡住灯泡本身的发光。
+  - 在 PIE 里用探针命令 3 拖一下灯，截图确认灯罩跟着走了。
+- **SM_Cot**：只放 L01。
+  - 位置：靠后墙，X 范围 380~570，Y = −150 + 床宽的一半，贴地，Yaw 90，材质 MI_Cot。
+  - 如果截图里它看起来像能踩的台阶，就再压暗（Tint 降到 0.55），并告诉 Claude。
+
+### 交付
+
+- 截图存到 `EU/Saved/review/task4_<编号>.png`：
+  - 4A：三关各一张 PIE 摆灯阶段（phase 0）的全屏图，加上看守窗口的两张；
+  - 4B：主角两张、灯罩一张、L01 全景一张。
+- 提交信息分别写 ""Task 4A: …"" 和 ""Task 4B: …""，在本文件末尾追加交付说明，并在 `UE_LOCK.md` 里写交接记录。Claude 只看截图验收，有问题会再出修改单。",2026-11-13T13:17:41.921955+00:00,No additional generation API charge; assistant usage not measured,"Derived from user-provided GDD/task card, git history and official jam sources; no UE integration or submission performed"
+EU/SourceArt/Docs/SUBMISSION_CHECKLIST.md,Codex; repository/official-source document synthesis,"文档（不碰 UE，可以和 1、2 并行）
+
+1. **GDD v1.3 修订**（交给用户转 GPT，或者你直接改）：
+   - 第 11 章：跳跃键由 Space 改为 W / ↑（用户试玩反馈）。
+   - 第 18–19 章：几何函数库实际放在 `BP_ShadowService` Actor 里（MCP 不支持新建 BlueprintFunctionLibrary），多边形用""扁平 Vector2D 数组 + 计数数组""表示，没有用 S_Polygon2D 结构体（MCP 不支持新建结构体）。
+   - 增加：第一关标题卡和开场台词，最终关回车重玩、Q 退出，占位方块青/红两色提示。
+2. **开发日志**（Glass Box 要用）：按时间线整理到 `EU/SourceArt/DEVLOG.md`。素材来源是 git log（`git log --stat`）以及 Claude 和用户的说明。只写真实发生过的事。目前的里程碑：
+   - 11-12 首次提交；
+   - 11-13 核心规则、三关灰盒、灯光贴图、标题与提示、跳跃改键。
+3. **itch.io 英文页面文案**：基于 GDD 第 25 章草稿，写成标题、短描述、长描述、操作说明、AI 工具声明（Claude Code + Unreal MCP、Codex、GPT、Tripo、fal 等，按实际使用情况写）、致谢赛事赞助工具。
+4. **提交清单**：对照官方规则（`2026-epic-ai-megajam-prep/sources/official-rules-2026-11-03.pdf`），列出提交要填的每个字段和需要的素材。
+
+## 任务 4：把模型接进游戏【允许接入 UE】
+
+动手前先读 `CODEX_UE_GUIDE.md`，再按里面第 1 节拿 `UE_LOCK.md` 的锁。分两批做：
+- **4A（现在就能做）**：SM_Guard、SM_WindowBars、SM_CellDoor、SM_Bucket。
+- **4B（等模型交付后再做）**：SM_Prisoner、SM_LampShade、SM_Cot。
+
+每批做完都提交一次，然后释放锁。
+
+### 4.0 导入规格
+
+- 网格导入到 `/Game/EscapeUnseen/Art/Models/`，用 `StaticMeshTools.import_file`，资产名和源文件名一致。不开 Nanite，不生成光照贴图 UV（场景全是动态光）。
+- 贴图导入到 `/Game/EscapeUnseen/Art/Textures/`，命名为 `T_<模型名去掉 SM_>_BaseColor`。源图是 4K 的，导入后要把 `maxTextureSize` 设为 1024（SM_Prisoner 用 2048），sRGB 开启。
+- 新建母材质 `/Game/EscapeUnseen/Materials/M_ModelTex`（不透明、默认光照）：
+  - BaseColor = TextureSampleParameter2D `Tex` × VectorParameter `Tint`（默认值 1,1,1）；
+  - Roughness = ScalarParameter `Roughness`（默认 0.7）；
+  - Specular 固定为 0.25。
+- 每个模型建一个材质实例 `MI_<模型名去掉 SM_>`，参数如下：
+
+| 实例 | Tint | Roughness | 说明 |
+|---|---|---|---|
+| MI_Guard | 1, 1, 1 | 0.6 | |
+| MI_WindowBars | 0.8, 0.8, 0.85 | 0.5 | 金属略偏冷 |
+| MI_CellDoor | 0.85, 0.85, 0.9 | 0.55 | 融进冷灰墙面 |
+| MI_Bucket | 0.7, 0.7, 0.72 | 0.6 | 装饰物压暗，让它退到背景里 |
+| MI_Cot (4B) | 0.65, 0.65, 0.7 | 0.8 | 同上 |
+| MI_LampShade (4B) | 0.9, 0.88, 0.85 | 0.4 | |
+| MI_Prisoner (4B) | 1, 1, 1 | 0.55 | 软胶手办的质感 |
+
+- 模型的正面都朝 +X，原点在底部中心。场景里的相机在 +Y 方向看向 −Y，所以**要让模型正面朝向镜头，Yaw 设为 90**。如果截图里看到的是背面，就改成 −90，并在交接记录里写明。
+
+### 4.1 所有装饰物都必须遵守（硬性规定）
+
+- Collision 设为 NoCollision，Cast Shadow 设为 false，**不加 `Occluder` 标签**。阴影判定只能来自玩法物体，装饰物一旦投影就会破坏""藏在阴影里""的规则。
+- 不移动、不修改任何玩法 Actor：Floor、墙、Beam、Ledge、Crate、CutMark、ExitZone、灯、相机、Director、ShadowService、StartPoint、Hero。
+- 装饰物在编辑器里预先摆好，作为 StaticMeshActor 保存，放进文件夹 `Set/Decor`，Label 命名为 `Decor_<名字>`。不要在 BeginPlay 里生成。
+- 下面给的坐标都是预期值。如果和关卡里实际的 ExitZone 或 Ledge 不一致，**以规则描述为准**，并在交接记录里写明偏差。
+
+### 4A-1 看守窗口：BP_GuardWindow 换成模型
+
+现在的窗户是在 `BuildGuard` 函数里用基础体拼的，所有坐标都是窗户局部坐标：原点在窗洞底边中心，Y 轴指向镜头。
+- **窗框和铁栏**：删掉 4 个 MI_SetPiece 方块（上框、左框、右框、窗台）和 4 根 Cylinder 铁栏。换成一个 SM_WindowBars，参数：父级 `w`，位置 (0, 72, −5)，旋转 Yaw 90，缩放 1。它的 120×90 外框正好包住 110×80 的窗洞。MI_Night 背板（y=2）和墙面遮挡板（MI_WallTex）保留不动。
+- **看守**：删掉看守的 10 个基础体部件（身体、头、帽子、帽檐、徽章、眼睛、手电、镜片、手），换成一个 SM_Guard，挂在 `g` 下，旋转 Yaw 90，材质 MI_Guard。具体要求：
+  - 缩放后头部宽约 50 cm，头的中心在局部 z≈40，也就是窗洞中间偏下，铁栏后面露出头和肩膀。参考缩放 0.75。
+  - 模型原本深度有 105 cm，**必须完整落在局部 y 6~66 之间**，不能穿过背板（y≈4），也不能顶到铁栏（y≈72）。允许只压缩深度轴（模型 X 轴）来塞进去，从正面看不出来。
+  - 降下时要整个藏好：改 `StepGuard` 里的下降量（现在是 −110），让 alpha=0 时头顶低于局部 z −12（窗台以下）。同时把 MI_WallTex 遮挡板向下加长，保证升起过程中身体下半截始终被它挡住。
+- **手电光**：把 SpotLight 的相对位置（现在是 34, 62, 10）移到模型手电的灯头位置。扫动的角度、频率、亮度、颜色逻辑都不改。
+- 验收截图：在 L03 给实例临时打开 `bAlwaysOn`，进 PIE，截一张全屏图，再放大截一张窗户。截完把 `bAlwaysOn` 改回 false。
+
+### 4A-2 牢门（出口标识），三关都要放
+
+- 放在出口正后方的后墙上：X 对准 ExitZone 的中心，底边和出口平台顶面齐平，贴着后墙，Y = −142.5（墙面 −150 加上半个门厚）。旋转 Yaw 90，材质 MI_CellDoor。
+- 预期位置：L01 约 (1350, −142.5, 200)，L02 约 (1350, −142.5, 300)，L03 底边 z=400，X 对准 ExitZone。
+- 门上方 20 cm 加一盏小出口灯，提示""往这走""：
+  - Cube，尺寸 30×10×12 cm；
+  - 材质 M_Emissive 的实例，颜色是暖琥珀 (1.0, 0.55, 0.15)，强度和现有灯泡差不多，不能抢 RuleLight 的戏；
+  - 同样无碰撞、不投影。
+
+### 4A-3 水桶
+
+- L01：(600, −120, 0)。L02：(90, −120, 0)。L03：(90, −120, 0)。底部贴地，Yaw 随意（110 左右显得自然）。
+- 如果截图里桶的轮廓和玩家要跳的东西混在一起，比如像一个台阶，就沿 X 挪到最近的空地，并在交接记录里说明。
+
+### 4B（等模型交付后再做）
+
+- **SM_Prisoner（主角）**：
+  - 在 `BP_EscapeCharacter` 里新增可编辑变量：`bUseModel`（bool，默认 true）、`HeroModel`（StaticMesh）、`HeroModelMat`（MaterialInterface），在 CDO 上分别设为 SM_Prisoner 和 MI_Prisoner。
+  - `BuildVisual` 改成：bUseModel 为 true 时，只调用一次 `AddPart`（模型、材质、位置 (0,0,0)、缩放 1）；为 false 时保留现在的基础体拼装。**不要用 IsValid 判空**，原因见指南第 4 节。
+  - `StepAnim` 的程序动画（跳着走、挤压拉伸、前倾、呼吸）作用在 Mesh 组件上，模型挂在 Mesh 下面会自动继承，不用改。
+  - 模型正面朝 +X，正好是角色的前进方向，**这里不加 Yaw 90**。
+  - 验收截图：L01 里，主角站立一张，跳到最高点一张。
+- **SM_LampShade**：三关都放。
+  - 挂到 RuleBulb 上（Actor 附着），玩家拖动灯时灯罩要跟着走。相对位置 z +12，在灯泡上方，像一顶小帽子。
+  - 不投影、无碰撞，不能挡住灯泡本身的发光。
+  - 在 PIE 里用探针命令 3 拖一下灯，截图确认灯罩跟着走了。
+- **SM_Cot**：只放 L01。
+  - 位置：靠后墙，X 范围 380~570，Y = −150 + 床宽的一半，贴地，Yaw 90，材质 MI_Cot。
+  - 如果截图里它看起来像能踩的台阶，就再压暗（Tint 降到 0.55），并告诉 Claude。
+
+### 交付
+
+- 截图存到 `EU/Saved/review/task4_<编号>.png`：
+  - 4A：三关各一张 PIE 摆灯阶段（phase 0）的全屏图，加上看守窗口的两张；
+  - 4B：主角两张、灯罩一张、L01 全景一张。
+- 提交信息分别写 ""Task 4A: …"" 和 ""Task 4B: …""，在本文件末尾追加交付说明，并在 `UE_LOCK.md` 里写交接记录。Claude 只看截图验收，有问题会再出修改单。",2026-11-13T13:17:41.925953+00:00,No additional generation API charge; assistant usage not measured,"Derived from user-provided GDD/task card, git history and official jam sources; no UE integration or submission performed"
+EU/SourceArt/Models/_work/SM_Prisoner_raw.zip,Tripo Studio H2.5,"Original cute chibi prisoner toy figure, 2.2 heads tall, very large round head and tiny body, simple black dot eyes and a tiny sly confident smile. Smooth vinyl toy surfaces and flat muted colors. Loose orange one-piece prison jumpsuit (#D9541A), one plain blank white rectangular chest patch with absolutely no letters or numbers. Dark charcoal knitted beanie with simple smooth shape, small round dark shoes. Standing upright, short arms hanging naturally slightly away from torso. Both legs together, feet touching, not spread. Clean readable side silhouette, compact depth. Full body single static unrigged model. Height 125 cm, width at most 58 cm, depth at most 45 cm. Soft bevels, simple low-poly shapes, no realistic skin, no logos, no text, no pedestal, no scene, no background, no lights, no extra objects. Original character design.",2026-11-13T13:53:52.739743+00:00,40 Studio credits,https://studio.tripo3d.ai/zh/workspace/generate/cb322669-b647-49e0-a074-107a1a220346; raw FBX export archive
+EU/SourceArt/Models/SM_Prisoner.fbx,Tripo Studio H2.5 + Blender 5.2.0 LTS MCP,"Original cute chibi prisoner toy figure, 2.2 heads tall, very large round head and tiny body, simple black dot eyes and a tiny sly confident smile. Smooth vinyl toy surfaces and flat muted colors. Loose orange one-piece prison jumpsuit (#D9541A), one plain blank white rectangular chest patch with absolutely no letters or numbers. Dark charcoal knitted beanie with simple smooth shape, small round dark shoes. Standing upright, short arms hanging naturally slightly away from torso. Both legs together, feet touching, not spread. Clean readable side silhouette, compact depth. Full body single static unrigged model. Height 125 cm, width at most 58 cm, depth at most 45 cm. Soft bevels, simple low-poly shapes, no realistic skin, no logos, no text, no pedestal, no scene, no background, no lights, no extra objects. Original character design.",2026-11-13T13:53:52.739743+00:00,40 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/cb322669-b647-49e0-a074-107a1a220346; static mesh; 14500 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/SM_Prisoner_baseColor.png,Tripo Studio H2.5 + Blender 5.2.0 LTS MCP,"Original cute chibi prisoner toy figure, 2.2 heads tall, very large round head and tiny body, simple black dot eyes and a tiny sly confident smile. Smooth vinyl toy surfaces and flat muted colors. Loose orange one-piece prison jumpsuit (#D9541A), one plain blank white rectangular chest patch with absolutely no letters or numbers. Dark charcoal knitted beanie with simple smooth shape, small round dark shoes. Standing upright, short arms hanging naturally slightly away from torso. Both legs together, feet touching, not spread. Clean readable side silhouette, compact depth. Full body single static unrigged model. Height 125 cm, width at most 58 cm, depth at most 45 cm. Soft bevels, simple low-poly shapes, no realistic skin, no logos, no text, no pedestal, no scene, no background, no lights, no extra objects. Original character design.",2026-11-13T13:53:52.739743+00:00,40 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/cb322669-b647-49e0-a074-107a1a220346; static mesh; 14500 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/SM_Prisoner.blend,Tripo Studio H2.5 + Blender 5.2.0 LTS MCP,"Original cute chibi prisoner toy figure, 2.2 heads tall, very large round head and tiny body, simple black dot eyes and a tiny sly confident smile. Smooth vinyl toy surfaces and flat muted colors. Loose orange one-piece prison jumpsuit (#D9541A), one plain blank white rectangular chest patch with absolutely no letters or numbers. Dark charcoal knitted beanie with simple smooth shape, small round dark shoes. Standing upright, short arms hanging naturally slightly away from torso. Both legs together, feet touching, not spread. Clean readable side silhouette, compact depth. Full body single static unrigged model. Height 125 cm, width at most 58 cm, depth at most 45 cm. Soft bevels, simple low-poly shapes, no realistic skin, no logos, no text, no pedestal, no scene, no background, no lights, no extra objects. Original character design.",2026-11-13T13:53:52.739743+00:00,40 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/cb322669-b647-49e0-a074-107a1a220346; static mesh; 14500 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/_work/SM_LampShade_raw.zip,Tripo Studio H3.0,"Single stylized low-poly industrial hanging lamp shade with a short suspension rod. Metal dome shade, 40 cm diameter and 30 cm total height, clearly hollow underside with a thick rim and empty interior cavity for a bulb to be added later. Muted cold gray metal outside, slightly lighter inside. Simple chunky planes, softly beveled edges, restrained colors, handmade prison movie set prop. Static unrigged mesh. No bulb, no light emission, no text, no logo, no decorative wires, no background, no scene, no stand.",2026-11-13T13:43:36.594412+00:00,40 Studio credits,https://studio.tripo3d.ai/zh/workspace/generate/e4c16e87-24fc-4b77-a1eb-78d2ca2b482d; raw FBX export archive
+EU/SourceArt/Models/SM_LampShade.fbx,Tripo Studio H3.0 + Blender 5.2.0 LTS MCP,"Single stylized low-poly industrial hanging lamp shade with a short suspension rod. Metal dome shade, 40 cm diameter and 30 cm total height, clearly hollow underside with a thick rim and empty interior cavity for a bulb to be added later. Muted cold gray metal outside, slightly lighter inside. Simple chunky planes, softly beveled edges, restrained colors, handmade prison movie set prop. Static unrigged mesh. No bulb, no light emission, no text, no logo, no decorative wires, no background, no scene, no stand.",2026-11-13T13:43:36.594412+00:00,40 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/e4c16e87-24fc-4b77-a1eb-78d2ca2b482d; static mesh; 14500 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/SM_LampShade_baseColor.png,Tripo Studio H3.0 + Blender 5.2.0 LTS MCP,"Single stylized low-poly industrial hanging lamp shade with a short suspension rod. Metal dome shade, 40 cm diameter and 30 cm total height, clearly hollow underside with a thick rim and empty interior cavity for a bulb to be added later. Muted cold gray metal outside, slightly lighter inside. Simple chunky planes, softly beveled edges, restrained colors, handmade prison movie set prop. Static unrigged mesh. No bulb, no light emission, no text, no logo, no decorative wires, no background, no scene, no stand.",2026-11-13T13:43:36.594412+00:00,40 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/e4c16e87-24fc-4b77-a1eb-78d2ca2b482d; static mesh; 14500 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/SM_LampShade.blend,Tripo Studio H3.0 + Blender 5.2.0 LTS MCP,"Single stylized low-poly industrial hanging lamp shade with a short suspension rod. Metal dome shade, 40 cm diameter and 30 cm total height, clearly hollow underside with a thick rim and empty interior cavity for a bulb to be added later. Muted cold gray metal outside, slightly lighter inside. Simple chunky planes, softly beveled edges, restrained colors, handmade prison movie set prop. Static unrigged mesh. No bulb, no light emission, no text, no logo, no decorative wires, no background, no scene, no stand.",2026-11-13T13:43:36.594412+00:00,40 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/e4c16e87-24fc-4b77-a1eb-78d2ca2b482d; static mesh; 14500 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/_work/SM_WindowBars_raw.zip,Tripo Studio H3.0,"One stylized low-poly high prison window frame with five simple vertical iron bars. A rectangular 120 cm wide by 90 cm high frame, shallow depth, bars evenly spaced, empty opening between bars, no glass. Chunky cold gray iron with soft bevels and simple flat shading. Restrained handmade prison movie set prop aesthetic. Single static unrigged mesh. No wall, no sill extension, no scenery visible behind it, no floor, no lights, no background, no text or logo.",2026-11-13T13:43:52.662627+00:00,40 Studio credits,https://studio.tripo3d.ai/zh/workspace/generate/0b3e719a-677c-46a5-8bf9-e69dba74617e; raw FBX export archive
+EU/SourceArt/Models/SM_WindowBars.fbx,Tripo Studio H3.0 + Blender 5.2.0 LTS MCP,"One stylized low-poly high prison window frame with five simple vertical iron bars. A rectangular 120 cm wide by 90 cm high frame, shallow depth, bars evenly spaced, empty opening between bars, no glass. Chunky cold gray iron with soft bevels and simple flat shading. Restrained handmade prison movie set prop aesthetic. Single static unrigged mesh. No wall, no sill extension, no scenery visible behind it, no floor, no lights, no background, no text or logo.",2026-11-13T13:43:52.662627+00:00,40 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/0b3e719a-677c-46a5-8bf9-e69dba74617e; static mesh; 14500 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/SM_WindowBars_baseColor.png,Tripo Studio H3.0 + Blender 5.2.0 LTS MCP,"One stylized low-poly high prison window frame with five simple vertical iron bars. A rectangular 120 cm wide by 90 cm high frame, shallow depth, bars evenly spaced, empty opening between bars, no glass. Chunky cold gray iron with soft bevels and simple flat shading. Restrained handmade prison movie set prop aesthetic. Single static unrigged mesh. No wall, no sill extension, no scenery visible behind it, no floor, no lights, no background, no text or logo.",2026-11-13T13:43:52.662627+00:00,40 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/0b3e719a-677c-46a5-8bf9-e69dba74617e; static mesh; 14500 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/SM_WindowBars.blend,Tripo Studio H3.0 + Blender 5.2.0 LTS MCP,"One stylized low-poly high prison window frame with five simple vertical iron bars. A rectangular 120 cm wide by 90 cm high frame, shallow depth, bars evenly spaced, empty opening between bars, no glass. Chunky cold gray iron with soft bevels and simple flat shading. Restrained handmade prison movie set prop aesthetic. Single static unrigged mesh. No wall, no sill extension, no scenery visible behind it, no floor, no lights, no background, no text or logo.",2026-11-13T13:43:52.662627+00:00,40 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/0b3e719a-677c-46a5-8bf9-e69dba74617e; static mesh; 14500 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/_work/SM_Cot_raw.zip,Tripo Studio H2.5,"One stylized low-poly prison cot, simple single bed with iron frame and thin plain mattress. Length 190 cm, mattress top height 45 cm, width about 70 cm. Four short legs, low modest head and foot rails, dark muted gray metal frame, plain desaturated gray beige thin mattress. Chunky simple shapes with soft bevels, restrained colors, a handmade prison movie set background prop. Static unrigged mesh. No pillow, blanket, person, floor, wall, scene, lights, background, text or logos.",2026-11-13T13:54:09.198141+00:00,40 Studio credits,https://studio.tripo3d.ai/zh/workspace/generate/a3a8dd75-df20-47ee-a6f3-9124fcd3d561; raw FBX export archive
+EU/SourceArt/Models/SM_Cot.fbx,Tripo Studio H2.5 + Blender 5.2.0 LTS MCP,"One stylized low-poly prison cot, simple single bed with iron frame and thin plain mattress. Length 190 cm, mattress top height 45 cm, width about 70 cm. Four short legs, low modest head and foot rails, dark muted gray metal frame, plain desaturated gray beige thin mattress. Chunky simple shapes with soft bevels, restrained colors, a handmade prison movie set background prop. Static unrigged mesh. No pillow, blanket, person, floor, wall, scene, lights, background, text or logos.",2026-11-13T13:54:09.198141+00:00,40 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/a3a8dd75-df20-47ee-a6f3-9124fcd3d561; static mesh; 14500 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/SM_Cot_baseColor.png,Tripo Studio H2.5 + Blender 5.2.0 LTS MCP,"One stylized low-poly prison cot, simple single bed with iron frame and thin plain mattress. Length 190 cm, mattress top height 45 cm, width about 70 cm. Four short legs, low modest head and foot rails, dark muted gray metal frame, plain desaturated gray beige thin mattress. Chunky simple shapes with soft bevels, restrained colors, a handmade prison movie set background prop. Static unrigged mesh. No pillow, blanket, person, floor, wall, scene, lights, background, text or logos.",2026-11-13T13:54:09.198141+00:00,40 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/a3a8dd75-df20-47ee-a6f3-9124fcd3d561; static mesh; 14500 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+EU/SourceArt/Models/SM_Cot.blend,Tripo Studio H2.5 + Blender 5.2.0 LTS MCP,"One stylized low-poly prison cot, simple single bed with iron frame and thin plain mattress. Length 190 cm, mattress top height 45 cm, width about 70 cm. Four short legs, low modest head and foot rails, dark muted gray metal frame, plain desaturated gray beige thin mattress. Chunky simple shapes with soft bevels, restrained colors, a handmade prison movie set background prop. Static unrigged mesh. No pillow, blanket, person, floor, wall, scene, lights, background, text or logos.",2026-11-13T13:54:09.198141+00:00,40 Studio credits (same source generation; do not double-count),https://studio.tripo3d.ai/zh/workspace/generate/a3a8dd75-df20-47ee-a6f3-9124fcd3d561; static mesh; 14500 triangles; cm; bottom-center pivot; +X front; +Z up; PNG baseColor
+Tripo request fe23686e-31f8-4863-8606-8c9ec6e75d16,Tripo Studio H3.1,"Original cute chibi prisoner toy figure, 2.2 heads tall, very large round head and tiny body, simple black dot eyes and a tiny sly confident smile. Smooth vinyl toy surfaces and flat muted colors. Loose orange one-piece prison jumpsuit (#D9541A), one plain blank white rectangular chest patch with absolutely no letters or numbers. Dark charcoal knitted beanie with simple smooth shape, small round dark shoes. Standing upright, short arms hanging naturally slightly away from torso. Both legs together, feet touching, not spread. Clean readable side silhouette, compact depth. Full body single static unrigged model. Height 125 cm, width at most 58 cm, depth at most 45 cm. Soft bevels, simple low-poly shapes, no realistic skin, no logos, no text, no pedestal, no scene, no background, no lights, no extra objects. Original character design.",2026-11-13T13:12:08Z,55 Studio credits; no refund observed,Request still showed generating/99% at last observation; not used in delivery. https://studio.tripo3d.ai/zh/workspace/generate/fe23686e-31f8-4863-8606-8c9ec6e75d16
+Tripo request ce9263ea-c0cd-49f6-b5b5-2b1fb1228979,Tripo Studio H3.0,"Original cute chibi prisoner toy figure, 2.2 heads tall, very large round head and tiny body, simple black dot eyes and a tiny sly confident smile. Smooth vinyl toy surfaces and flat muted colors. Loose orange one-piece prison jumpsuit (#D9541A), one plain blank white rectangular chest patch with absolutely no letters or numbers. Dark charcoal knitted beanie with simple smooth shape, small round dark shoes. Standing upright, short arms hanging naturally slightly away from torso. Both legs together, feet touching, not spread. Clean readable side silhouette, compact depth. Full body single static unrigged model. Height 125 cm, width at most 58 cm, depth at most 45 cm. Soft bevels, simple low-poly shapes, no realistic skin, no logos, no text, no pedestal, no scene, no background, no lights, no extra objects. Original character design.",2026-11-13T13:43:21.374722+00:00,40 Studio credits; no refund observed,Request still showed generating/99% at last observation; not used in delivery. https://studio.tripo3d.ai/zh/workspace/generate/ce9263ea-c0cd-49f6-b5b5-2b1fb1228979
+Tripo request 8908eaae-9cef-4d02-afe4-4ae717f647ed,Tripo Studio H3.1,"Single stylized low-poly industrial hanging lamp shade with a short suspension rod. Metal dome shade, 40 cm diameter and 30 cm total height, clearly hollow underside with a thick rim and empty interior cavity for a bulb to be added later. Muted cold gray metal outside, slightly lighter inside. Simple chunky planes, softly beveled edges, restrained colors, handmade prison movie set prop. Static unrigged mesh. No bulb, no light emission, no text, no logo, no decorative wires, no background, no scene, no stand.",2026-11-13T13:19:31Z,55 Studio credits; no refund observed,Request still showed generating/99% at last observation; not used in delivery. https://studio.tripo3d.ai/zh/workspace/generate/8908eaae-9cef-4d02-afe4-4ae717f647ed
+Tripo request 6ecc33ca-c179-4b58-b91c-312664fbdcc8,Tripo Studio H3.1,"One stylized low-poly high prison window frame with five simple vertical iron bars. A rectangular 120 cm wide by 90 cm high frame, shallow depth, bars evenly spaced, empty opening between bars, no glass. Chunky cold gray iron with soft bevels and simple flat shading. Restrained handmade prison movie set prop aesthetic. Single static unrigged mesh. No wall, no sill extension, no scenery visible behind it, no floor, no lights, no background, no text or logo.",2026-11-13T13:21:34.658881+00:00,55 Studio credits; no refund observed,Request still showed generating/99% at last observation; not used in delivery. https://studio.tripo3d.ai/zh/workspace/generate/6ecc33ca-c179-4b58-b91c-312664fbdcc8
+Tripo request f43fa7f7-d985-48b2-bc1b-b8e9dffa0108,Tripo Studio H3.1,"One stylized low-poly prison cot, simple single bed with iron frame and thin plain mattress. Length 190 cm, mattress top height 45 cm, width about 70 cm. Four short legs, low modest head and foot rails, dark muted gray metal frame, plain desaturated gray beige thin mattress. Chunky simple shapes with soft bevels, restrained colors, a handmade prison movie set background prop. Static unrigged mesh. No pillow, blanket, person, floor, wall, scene, lights, background, text or logos.",2026-11-13T13:21:50.254488+00:00,55 Studio credits; no refund observed,Request still showed generating/99% at last observation; not used in delivery. https://studio.tripo3d.ai/zh/workspace/generate/f43fa7f7-d985-48b2-bc1b-b8e9dffa0108
+Tripo request 84aedf40-35d5-486e-81a5-ce65e159d669,Tripo Studio H3.0,"One stylized low-poly prison cot, simple single bed with iron frame and thin plain mattress. Length 190 cm, mattress top height 45 cm, width about 70 cm. Four short legs, low modest head and foot rails, dark muted gray metal frame, plain desaturated gray beige thin mattress. Chunky simple shapes with soft bevels, restrained colors, a handmade prison movie set background prop. Static unrigged mesh. No pillow, blanket, person, floor, wall, scene, lights, background, text or logos.",2026-11-13T13:44:08.739574+00:00,40 Studio credits; no refund observed,Request still showed generating/99% at last observation; not used in delivery. https://studio.tripo3d.ai/zh/workspace/generate/84aedf40-35d5-486e-81a5-ce65e159d669
