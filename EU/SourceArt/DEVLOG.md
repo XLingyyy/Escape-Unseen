@@ -48,6 +48,16 @@ Codex imported the guard, window bars, cell door and bucket, created the shared 
 
 The modified guard Blueprint compiled. PIE screenshots cover each map's light-placement phase and the always-visible guard, including a crop from an actual 4x engine screenshot. The temporary always-on flag was restored to false. The extended wall mask remains visibly distinguishable from the wall and is identified for Claude's visual review. No full playthrough or packaging was performed.
 
+## Task 4B integration, 13 November UTC
+
+Codex imported the prisoner, lampshade and cot. The character's editable `bUseModel` switch defaults to true, with the original primitive assembly retained in the false branch. The imported model uses the existing Mesh parent and procedural animation. The modified character Blueprint compiled. The prisoner texture initially had no generated mip levels according to the engine log; its source pixels and UVs were intact. Rebuilding this texture's derived data restored its colors, which were confirmed in PIE.
+
+Each lampshade is a saved decoration attached to its map's RuleBulb. The bulb's 0.22 scale is compensated to retain the shade's 40 cm diameter; the specified relative Z=12 therefore produces a 2.64 cm world offset. In L03, probe command 3 moved the bulb to (1050, 0, 900) and the attached shade to (1050, 0, 902.64). The changes were confined to PIE and discarded when it stopped.
+
+The L01 cot spans X=380–570 at Y=-115, Z=0. The user explicitly approved Yaw=0 because the delivered source mesh's long axis is X. Its tint was reduced to (0.55, 0.55, 0.55), as the task card permits, to reduce its resemblance to a gameplay platform. All decorations remain non-colliding and do not cast shadows.
+
+Required review images are in `EU/Saved/review/task4_4B_*.png`: L01 overview, standing character, jump apex and lamp follow. The jump capture invoked the existing JumpPressed function and paused the actual simulation at the first descending sample (vertical velocity -16.69 cm/s), with temporary slow motion for capture precision. Runtime pause and time scale were restored. These are scoped art/integration checks, not a complete level playthrough. Both batches were saved and committed separately; final visual acceptance remains with Claude and the human developer.
+
 ## Evidence and handoff
 
 - `PROVENANCE.csv`: per-file tool/model, full prompt, UTC time and known or estimated generation cost. Derived files explicitly share their raw source's cost, so those rows must not be added twice.
