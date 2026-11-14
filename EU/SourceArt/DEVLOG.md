@@ -129,3 +129,15 @@ Added `Content/EscapeUnseen/Maps/L07_ReturnTicket.umap` from approved design L07
 Added `Content/EscapeUnseen/Maps/L08_FinalAssembly.umap` from approved design L08, with per-shot inventory A=3, B=3, pool=3 and editor-preplaced geometry. Both reference approvals passed; final camera framing contains the required door/platform/lamp bounds (FOV58 changed to 62; position/rotation retained from L03). The final camera-only recapture reused the completed A/B approvals. Screenshots: Saved/review/task7_L08.png, Saved/review/task7_L08_door_visible.png. Details: Docs/TASK6B_7_HANDOFF.md. No traversal, packaging or push.
 
 Task7 final integration: all six maps passed their required A/B reference approvals. L08 reports final-level state and restart target L00. All authored packages saved, temporary bridge deleted, PIE stopped, play settings restored and editor returned to L00 with no dirty packages. Door/card overlap in L07/L08 and supplemental hover-fade screenshots are documented in Docs/TASK6B_7_HANDOFF.md.
+
+
+## Task 8.0 — fallback package (14 November 2026 UTC)
+
+Built the v1-playable gameplay revision (6908dd9) as Win64 Development. Added
+the UE-provided GameFeatureData Asset Manager registration required by the
+enabled tool-plugin dependency; used the installed commandlet and -SkipZenStore
+after the documented receipt/Live Coding/Zen blockers. UAT completed with exit
+code 0. ZIP is 445,118,097 bytes; extracted content is 732,547,071 bytes. The
+extracted executable loaded L00 successfully. The user manually confirmed Enter,
+Esc and Q, because the desktop API could not present its application approval.
+Output and full issue record: SourceArt/Docs/TASK8_HANDOFF.md. No submission.
