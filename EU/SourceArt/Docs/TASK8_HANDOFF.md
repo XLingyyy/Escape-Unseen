@@ -110,7 +110,44 @@ Per-map bounds/placements and test results: EU/Saved/codex_task8/rail/*.json.
 Prior reference-approval results are reused because shadow geometry and its
 predicate are unchanged; no additional nine-map approval loop was run.
 
-## 8.3–8.5
+## 8.3 — physical crate pushing
+
+Implemented in BP_Block, BP_EscapeCharacter, BP_EscapePC and BP_ShotDirector,
+with bEnableCratePush=true. Only phase 4 enables crate simulation with SixDOF:
+all rotations and Y translation locked, X/Z free. The nine maps retain their
+existing build/approval behavior and have explicit SFX_CrateLand bindings.
+Grounded side contact drives the nearest crate at 150 cm/s and the hero at
+150 cm/s; ordinary walking remains 400 cm/s. StepAnim selects a 10-degree
+forward lean while pushing. SFX_CratePlace repeats at pitch .65 during pushing;
+the guarded native landing-hit path plays SFX_CrateLand.
+
+Runtime inspection found the imported hero visual still had BlockAllDynamic
+collision despite AddPart's SetCollisionEnabled call. Its mesh-default collision
+was overriding that setting and imparting excess force to crates. In enabled
+phase 4, the capsule now uses QueryOnly and visual StaticMeshComponents use the
+NoCollision profile. This keeps CharacterMovement sweeps/standing support while
+removing Chaos contact impulses from the hero. Disabling restores the observed
+v1 capsule QueryAndPhysics and visual BlockAllDynamic settings; the existing
+native enable_physics_interaction=false remains unchanged. The engine distinction
+is documented in [Epic's collision reference](https://dev.epicgames.com/documentation/unreal-engine/collision-response-reference-in-unreal-engine?lang=en-US).
+
+A native L03 PIE fixture observed actual crate X velocity near -150 cm/s,
+unchanged Y and rotation, a real edge fall, and rest at floor+50 cm with velocity
+(.099,0,-.022) cm/s. An airborne side-contact attempt left crate X unchanged.
+Actual TryCut restored B at X=1000 and discarded moved A; Retry restored A at
+X=650. Snapshot arrays remained unchanged. Master=false restored frozen crates,
+hero speed 400 and the original capsule collision mode. These fixtures seed
+runtime snapshots through public functions; they do not claim approval or full
+level traversal. The landing audio binding and guarded arm-reset path were
+observed indirectly; audio was not listened to.
+
+Native 1920x1080 captures: EU/Saved/review/task8_push.png and task8_fall.png,
+visually inspected. Detailed evidence: EU/Saved/codex_task8/push/verify_push_result.json.
+The editor's background 3 FPS throttle was temporarily disabled for these
+physics observations and restored without saving preferences. Blueprints compiled
+and all nine maps saved.
+
+## 8.4–8.5
 
 Pending integration. Task 8.5 was added by the user during implementation.
 No v2 gameplay assets are included in the fallback package.

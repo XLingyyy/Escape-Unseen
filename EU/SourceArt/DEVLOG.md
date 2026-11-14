@@ -161,3 +161,5 @@ and fixes Z; the phase-0 HUD draws a 2 px amber rail line. L01 endpoint and
 disabled-switch checks passed. Disabling restores free placement, original
 shade proportions and hides the added hardware. All blueprints compiled and
 maps saved. Screenshot: Saved/review/task8_rail.png; details in TASK8_HANDOFF.md.
+
+- 2026-11-14 UTC：任务 8.3 完成。phase4 真实推箱150 cm/s、旋转/Y约束、前倾和摩擦/落地音效已接入；修复外观网格默认碰撞造成额外冲量。L03 原生 PIE 验证推箱、下落停稳、空中不推、切镜/重来恢复快照及关闭总开关。截图 task8_push.png / task8_fall.png；详情 EU/SourceArt/Docs/TASK8_HANDOFF.md。未完整通关或人工试听。
