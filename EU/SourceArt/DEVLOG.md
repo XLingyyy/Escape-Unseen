@@ -103,3 +103,7 @@ Affected Blueprints/materials compiled and saved. Eight native 1920x1080 task6 P
 ## 2026-11-14 — Task 6B UI corrections
 
 Top hints, inspection letterboxes, panel overlap opacity and title Q quit are implemented and compiled. Four native 1920×1080 screenshots were visually checked; actual approval and lamp overlap (.25 opacity) were observed. Actual Q at the title exited PIE. Prior design commission files/logs are included; three binary resaves are restored with UE closed. Details: Docs/TASK6B_7_HANDOFF.md. No full traversal, packaging or push.
+
+## 2026-11-14 — Task 7 L00 First Cut
+
+Added editor-preplaced tutorial L00 from approved design, editable A/B crate relay, per-shot budgets, stage-specific tutorial text and spawn facing. Startup selects L00; completed-map order is L00–L03. Both reference approvals passed once; two native screenshots checked and full required geometry/lamp/door bounds are in frame at original FOV58. See Docs/TASK6B_7_HANDOFF.md. No traversal, packaging or push.
