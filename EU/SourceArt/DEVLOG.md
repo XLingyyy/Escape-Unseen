@@ -181,3 +181,6 @@ maps saved. Screenshot: Saved/review/task8_rail.png; details in TASK8_HANDOFF.md
 
 
 - 2026-11-14 UTC：Task 10 L00 完成。新布局、EntryScrim、粉笔线、首次推箱/巡视教学、逐关巡视最小间隔接口已编译保存；L01 移出主线。A/B 各一次审批及旗淡化、教学消耗/重来保持的定向 PIE 均通过。原生截图 task10_L00_FirstCut.png 已检查，门/最高横梁/灯完整可见。详见 Docs/TASK10A_HANDOFF.md；未完整通关、打包或推送。
+
+
+- 2026-11-14 UTC：Task 10 L02_HiddenStair 完成。灯轨；入口旗 X170..250 / Z160..164；补齐原本未绑定的 DebugProbe；保留空 A 自动进入 B 流程。A/B 参考审批通过，出生角色隐藏；task10_L02_HiddenStair.png 已检查，门、最高横梁、灯均在画面内。交接见 Docs/TASK10A_HANDOFF.md；未完整通关。
