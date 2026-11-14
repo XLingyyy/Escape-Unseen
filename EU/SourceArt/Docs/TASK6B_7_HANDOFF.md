@@ -37,3 +37,13 @@ Action spawn (100, 0, 67), yaw0; the editor spawn includes 2cm contact clearance
 Camera (750, 2000, 560), rotation (-2, -90, 0); position/rotation retained from L03, FOV58 changed to 62. Door, exit lamp, highest facility (Shade Bar), rule lamp and shade bounds are fully inside the viewport. Native screenshots: Saved/review/task7_L05.png. Evidence: Saved/codex_task7/task7_L05_report.json. No jump traversal, packaging or push was performed.
 
 L05 integration also removes the obsolete terminal Commit message that overwrote StartPlay.PlayHint. Actual final HUD now reads the design instruction about using two crates to reach the mark and saving the three-crate stair for the exit. Director compiled and saved. The map duplicate/unload path now clears inactive World packages before load; a repeated bridge invocation overwrote only the initial L05 report, which was recovered by reading the unchanged saved scene.
+
+## Task 7 — L06 Crossed Shadows, completed 2026-11-14 UTC
+
+Map `Content/EscapeUnseen/Maps/L06_CrossedShadows.umap` follows design L05; 4 fixed facilities are editor-preplaced with shared visible/collision/shadow bounds. Inventory A=3, B=3, pool=3; A is editable. Reference XZ coordinates in cm: lamp (850, 1080); A: #01 (1250, 50), #02 (1150, 50), #03 (1150, 150); B: #01 (750, 350), #02 (650, 350), #03 (650, 450). Both reference approvals passed.
+
+Action spawn (1360, 0, 67), yaw180; the editor spawn includes 2cm contact clearance. Door scale 1, bottom Z600, top Z840.00; exit-lamp top Z866.00. Guard (1250, -150, 650), scale1.4, window XZ bounds (1166, 643, 1334, 769); minimum facility clearance 166.36cm and horizontal reference-lamp gap 316.00cm.
+
+Camera (750, 2000, 560), rotation (-2, -90, 0); position/rotation retained from L03, FOV58 changed to 62. Door, exit lamp, highest facility (Left Shade), rule lamp and shade bounds are fully inside the viewport. The final camera-only recapture reused the completed A/B approvals. Native screenshots: Saved/review/task7_L06.png. Evidence: Saved/codex_task7/task7_L06_report.json, Saved/codex_task7/task7_L06_camera_report.json. No jump traversal, packaging or push was performed.
+
+L06 integration fits only over-width scene titles into the existing 480px text area; the CROSSED SHADOWS screenshot confirms it stays inside the card. L01 Director bTitle migrated true to false and saved, so only L00 presents the startup title. Evidence: Saved/codex_task7/title_migration.json; no new title-state framework.
