@@ -50,6 +50,31 @@ used. The user completed the actual packaged Enter, Esc and Q verification.
 Local build logs and the authorized desktop helper are in
 `EU/Saved/codex_task8/` (ignored work files).
 
-## 8.1–8.4
+## 8.1 — consistent hero model
 
-8.1 runtime diagnosis is underway. No v2 gameplay assets are included in the fallback package.
+The reported persistent L01 squash did not reproduce in the current PIE session.
+Measured L01 actor scale is (1,1,1), model child scale (1,1,1), model bounds
+45 x 58 x 125 cm, Squash=0 and IsFalling=false. The parent mesh only exhibits
+its existing roughly 2% breathing animation. No extra scale compensation was added.
+
+A separate, confirmed visual inconsistency was fixed: L00 and L03-derived maps
+retain old instance overrides (bUseModel=false and null model/material), while
+L01/L02 inherit the imported prisoner model. BP_EscapeCharacter.BuildVisual now
+uses the canonical SM_Prisoner and MI_Prisoner when bEnableHeroModelFix=true
+(the new default). Turning it off executes the complete previous BuildVisual
+branch, including those per-instance choices. Existing animation is unchanged.
+The disabled branch was observed rendering the original eight-part L00 placeholder;
+the enabled branch was then checked in every map.
+
+Nine native 1920 x 1080 standing captures:
+EU/Saved/review/task8_hero_L00.png through task8_hero_L08.png.
+Each runtime report confirms one SM_Prisoner component, zero falling, unit actor
+and child scale, and the same mesh bounds. Images were visually inspected.
+The fixture invokes StartPlay directly to expose the standing actor; these are
+appearance checks, not nine solved-level playthroughs. Per-map records are in
+EU/Saved/codex_task8/hero_after_*.json.
+
+## 8.2–8.5
+
+Pending integration. Task 8.5 was added by the user during implementation.
+No v2 gameplay assets are included in the fallback package.

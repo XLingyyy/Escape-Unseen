@@ -141,3 +141,13 @@ code 0. ZIP is 445,118,097 bytes; extracted content is 732,547,071 bytes. The
 extracted executable loaded L00 successfully. The user manually confirmed Enter,
 Esc and Q, because the desktop API could not present its application approval.
 Output and full issue record: SourceArt/Docs/TASK8_HANDOFF.md. No submission.
+
+
+## Task 8.1 - consistent hero model (14 November 2026 UTC)
+
+L01 persistent squash did not reproduce: actor/child unit scale, Squash=0,
+45 x 58 x 125 cm source bounds. Runtime checks did confirm old model overrides
+in L00 and L03-derived levels. A default-on bEnableHeroModelFix branch now uses
+the same prisoner asset in every level; the disabled branch preserves v1.
+Nine native standing screenshots and transform records were checked; animation
+was retained. See Docs/TASK8_HANDOFF.md for evidence and test limitations.
