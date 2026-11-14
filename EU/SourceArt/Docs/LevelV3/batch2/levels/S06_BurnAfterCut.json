@@ -1,0 +1,301 @@
+{
+  "id": "S06_BurnAfterCut",
+  "name": "BurnAfterCut",
+  "width": 19,
+  "height": 11.5,
+  "floor": false,
+  "rail": {
+    "z": 10.5,
+    "start": "left",
+    "x0": 0.6,
+    "x1": 18.4
+  },
+  "solids": [
+    {
+      "id": "DollyLane",
+      "box": [
+        1.45,
+        9.15,
+        -0.35,
+        0
+      ]
+    },
+    {
+      "id": "TapeDock",
+      "box": [
+        10.25,
+        11.05,
+        1.75,
+        2
+      ]
+    },
+    {
+      "id": "WestStep",
+      "box": [
+        12.4,
+        13.75,
+        1.75,
+        2
+      ]
+    },
+    {
+      "id": "ThresholdLip",
+      "box": [
+        14.9,
+        15.5,
+        3.75,
+        4
+      ]
+    },
+    {
+      "id": "EntryStool",
+      "box": [
+        0.5,
+        1.25,
+        -0.35,
+        0
+      ]
+    },
+    {
+      "id": "SecondKey",
+      "box": [
+        15.68,
+        17.03,
+        3.75,
+        4
+      ]
+    },
+    {
+      "id": "Door",
+      "box": [
+        17.78,
+        19,
+        5.75,
+        6
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "id": "LoadingLid",
+      "box": [
+        3.75,
+        4.9,
+        3.5,
+        3.54
+      ]
+    },
+    {
+      "id": "EastLid",
+      "box": [
+        8.75,
+        9.65,
+        7.8,
+        7.84
+      ]
+    },
+    {
+      "id": "MarkerCloth",
+      "box": [
+        9.8,
+        10.6,
+        3.7,
+        3.74
+      ]
+    },
+    {
+      "id": "CallFlag",
+      "box": [
+        1.1,
+        1.9,
+        1.65,
+        1.69
+      ]
+    },
+    {
+      "id": "LastIris",
+      "box": [
+        9.27,
+        10.47,
+        8.7,
+        8.74
+      ]
+    }
+  ],
+  "platforms": [],
+  "spawn": [
+    0.9,
+    0
+  ],
+  "mark": [
+    10.55,
+    10.75,
+    2
+  ],
+  "exit": [
+    18.1,
+    18.7,
+    6
+  ],
+  "inventory": {
+    "A": 1,
+    "B": 2,
+    "pool": 2
+  },
+  "primary": "push",
+  "primary_platform": null,
+  "reference": {
+    "lamp": 7.05,
+    "A": [
+      [
+        2.7,
+        0
+      ]
+    ],
+    "B": [
+      [
+        12.65,
+        2
+      ],
+      [
+        15.85,
+        4
+      ]
+    ],
+    "A_push": [
+      [
+        2.7,
+        0
+      ],
+      [
+        8.15,
+        0
+      ]
+    ],
+    "jumps": [
+      {
+        "from": [
+          0.9,
+          0
+        ],
+        "to": [
+          1.85,
+          0
+        ],
+        "shot": "A"
+      },
+      {
+        "from": [
+          7.45,
+          0
+        ],
+        "to": [
+          8.65,
+          1
+        ],
+        "shot": "A"
+      },
+      {
+        "from": [
+          8.65,
+          1
+        ],
+        "to": [
+          10.6,
+          2
+        ],
+        "shot": "A"
+      },
+      {
+        "from": [
+          10.75,
+          2
+        ],
+        "to": [
+          12.85,
+          3
+        ],
+        "shot": "B"
+      },
+      {
+        "from": [
+          13.18,
+          3
+        ],
+        "to": [
+          15.2,
+          4
+        ],
+        "shot": "B"
+      },
+      {
+        "from": [
+          15.2,
+          4
+        ],
+        "to": [
+          16.25,
+          5
+        ],
+        "shot": "B"
+      },
+      {
+        "from": [
+          16.25,
+          5
+        ],
+        "to": [
+          18.12,
+          6
+        ],
+        "shot": "B"
+      }
+    ],
+    "safe_stops": [
+      [
+        0.9,
+        0
+      ],
+      [
+        10.65,
+        2
+      ]
+    ],
+    "patrol_legs": [
+      {
+        "shot": "A→B",
+        "from": [
+          0.9,
+          0
+        ],
+        "to": [
+          10.65,
+          2
+        ],
+        "seconds": 7.5,
+        "signal": "看守完全缩回，立即出发；剪后进入共同暗处"
+      },
+      {
+        "shot": "B",
+        "from": [
+          10.65,
+          2
+        ],
+        "to": null,
+        "seconds": 4.15,
+        "signal": "守卫完全缩回；未预警"
+      }
+    ],
+    "actor_exposure_seconds": [
+      7.5,
+      4.15
+    ],
+    "exposures_are_joint_legs_upper_bounds": true,
+    "transport_safe_landing": null,
+    "safe_stops_shots": [
+      "A",
+      "A/B"
+    ]
+  },
+  "no_floor_behavior": "retake_below_floor"
+}

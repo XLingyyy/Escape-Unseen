@@ -1,0 +1,376 @@
+{
+  "id": "S08_ChangeOfPlatform",
+  "name": "Change of Platform",
+  "width": 24,
+  "height": 11.5,
+  "floor": false,
+  "rail": {
+    "z": 10.5,
+    "start": "right",
+    "x0": 0.6,
+    "x1": 23.4
+  },
+  "solids": [
+    {
+      "id": "Wedge",
+      "box": [
+        5.25,
+        6.6,
+        -0.4,
+        0
+      ]
+    },
+    {
+      "id": "PlatformWing",
+      "box": [
+        9.3,
+        11.7,
+        5.7,
+        6
+      ]
+    },
+    {
+      "id": "UpperKey",
+      "box": [
+        18.6,
+        19.95,
+        5.7,
+        6
+      ]
+    },
+    {
+      "id": "ThresholdLip",
+      "box": [
+        20.85,
+        21.49,
+        7.55,
+        7.85
+      ]
+    },
+    {
+      "id": "Stand",
+      "box": [
+        4.35,
+        5.05,
+        -0.4,
+        0
+      ]
+    },
+    {
+      "id": "SecondKey",
+      "box": [
+        21.61,
+        22.96,
+        7.55,
+        7.85
+      ]
+    },
+    {
+      "id": "Door",
+      "box": [
+        23.35,
+        24,
+        9.45,
+        9.75
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "id": "UpperIris",
+      "box": [
+        15.52,
+        16.85,
+        8.7,
+        8.74
+      ]
+    },
+    {
+      "id": "CallFlag",
+      "box": [
+        5.12,
+        6.04,
+        1.72,
+        1.76
+      ]
+    },
+    {
+      "id": "UpperCall",
+      "box": [
+        10.5,
+        11.6,
+        7.72,
+        7.76
+      ]
+    },
+    {
+      "id": "BoardingCap",
+      "box": [
+        6.1,
+        6.92,
+        2.6,
+        2.64
+      ]
+    },
+    {
+      "id": "FarWait",
+      "box": [
+        18.03,
+        19.27,
+        8.36,
+        8.4
+      ]
+    },
+    {
+      "id": "LastIris",
+      "box": [
+        16.01,
+        18.57,
+        9.65,
+        9.69
+      ]
+    }
+  ],
+  "platforms": [
+    {
+      "id": "Lift",
+      "axis": "Z",
+      "start": [
+        7.85,
+        1.85
+      ],
+      "travel": 4,
+      "speed": 1.5,
+      "phase": 0.7
+    },
+    {
+      "id": "Ferry",
+      "axis": "X",
+      "start": [
+        13.05,
+        5.85
+      ],
+      "travel": 4.2,
+      "speed": 1.5,
+      "phase": 0.33
+    }
+  ],
+  "spawn": [
+    4.7,
+    0
+  ],
+  "mark": [
+    10.35,
+    11.3,
+    6
+  ],
+  "exit": [
+    23.64,
+    23.78,
+    9.75
+  ],
+  "inventory": {
+    "A": 1,
+    "B": 2,
+    "pool": 2
+  },
+  "primary": "platform",
+  "primary_platform": "Lift",
+  "reference": {
+    "lamp": 13.6,
+    "A": [
+      [
+        5.45,
+        0
+      ]
+    ],
+    "B": [
+      [
+        18.8,
+        6
+      ],
+      [
+        21.8,
+        7.85
+      ]
+    ],
+    "jumps": [
+      {
+        "from": [
+          4.7,
+          0
+        ],
+        "to": [
+          5.95,
+          1
+        ],
+        "shot": "A"
+      },
+      {
+        "from": [
+          5.95,
+          1
+        ],
+        "to": [
+          7.52,
+          2
+        ],
+        "shot": "A"
+      },
+      {
+        "from": [
+          8.15,
+          5.25
+        ],
+        "to": [
+          10.5,
+          6.0
+        ],
+        "shot": "A"
+      },
+      {
+        "from": [
+          10.76,
+          6
+        ],
+        "to": [
+          13.65,
+          6
+        ],
+        "shot": "B"
+      },
+      {
+        "from": [
+          17.52,
+          6
+        ],
+        "to": [
+          19.25,
+          7
+        ],
+        "shot": "B"
+      },
+      {
+        "from": [
+          19.4,
+          7
+        ],
+        "to": [
+          21.13,
+          7.85
+        ],
+        "shot": "B"
+      },
+      {
+        "from": [
+          21.13,
+          7.85
+        ],
+        "to": [
+          22.22,
+          8.85
+        ],
+        "shot": "B"
+      },
+      {
+        "from": [
+          22.22,
+          8.85
+        ],
+        "to": [
+          23.66,
+          9.75
+        ],
+        "shot": "B"
+      }
+    ],
+    "safe_stops": [
+      [
+        4.7,
+        0
+      ],
+      [
+        5.95,
+        1
+      ],
+      [
+        10.76,
+        6
+      ],
+      [
+        19.25,
+        7
+      ]
+    ],
+    "patrol_legs": [
+      {
+        "shot": "A",
+        "from": [
+          4.7,
+          0
+        ],
+        "to": [
+          5.95,
+          1
+        ],
+        "seconds": 1.25,
+        "signal": "守卫完全缩回；未预警"
+      },
+      {
+        "shot": "A→B",
+        "from": [
+          5.95,
+          1
+        ],
+        "to": [
+          10.76,
+          6
+        ],
+        "seconds": 4.55,
+        "signal": "在共同暗处等看守完全缩回，按下面靠站行程的10秒上限调度；升到距上岸0.75B即跳。"
+      },
+      {
+        "shot": "B",
+        "from": [
+          10.76,
+          6
+        ],
+        "to": [
+          19.25,
+          7
+        ],
+        "seconds": 4.65,
+        "signal": "西回接近时上船，抵东前跳至第一只B箱的共同暗处"
+      },
+      {
+        "shot": "B",
+        "from": [
+          19.25,
+          7
+        ],
+        "to": null,
+        "seconds": 2.8,
+        "signal": "守卫完全缩回；未预警"
+      }
+    ],
+    "actor_exposure_seconds": [
+      1.25,
+      4.55,
+      4.65,
+      2.8
+    ],
+    "exposures_are_joint_legs_upper_bounds": true,
+    "transport_safe_landing": [
+      10.5,
+      6.0
+    ],
+    "secondary_required_platform": "Ferry",
+    "safe_stops_shots": [
+      "A",
+      "A",
+      "A/B",
+      "B"
+    ]
+  },
+  "no_floor_behavior": "retake_below_floor"
+}

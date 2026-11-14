@@ -1,0 +1,172 @@
+{
+  "id": "L02",
+  "scene": "01",
+  "name": "Hidden Stair",
+  "width": 15,
+  "room_height": 11.5,
+  "rail": {
+    "z": 8.7,
+    "start": "left",
+    "x": [
+      0.6,
+      14.4
+    ]
+  },
+  "spawn": [
+    2,
+    0
+  ],
+  "mark": [
+    7.5,
+    8.5,
+    0
+  ],
+  "exit": [
+    12.2,
+    14.8,
+    3
+  ],
+  "solids": [
+    {
+      "id": "Exit Ledge",
+      "box": [
+        12,
+        15,
+        0,
+        3
+      ]
+    },
+    {
+      "id": "Beam",
+      "box": [
+        6.4,
+        8,
+        6,
+        6.3
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "id": "Entry Flag",
+      "box": [
+        1.7,
+        2.5,
+        1.6,
+        1.64
+      ]
+    }
+  ],
+  "platforms": [],
+  "inventory": {
+    "A": 0,
+    "B": 3,
+    "pool": 3
+  },
+  "primary": "cut",
+  "reference": {
+    "lamp": 5.45,
+    "A": [],
+    "B": [
+      [
+        9.5,
+        0
+      ],
+      [
+        10.5,
+        0
+      ],
+      [
+        10.5,
+        1
+      ]
+    ],
+    "jumps": [
+      {
+        "from": [
+          8.7,
+          0
+        ],
+        "to": [
+          10,
+          1
+        ]
+      },
+      {
+        "from": [
+          10,
+          1
+        ],
+        "to": [
+          11,
+          2
+        ]
+      },
+      {
+        "from": [
+          11,
+          2
+        ],
+        "to": [
+          12.4,
+          3
+        ]
+      }
+    ],
+    "safe_stops": [
+      [
+        2,
+        0
+      ],
+      [
+        10,
+        1
+      ],
+      [
+        11,
+        2
+      ]
+    ],
+    "actor_exposure_seconds": [
+      1.76,
+      0.94
+    ],
+    "pushes": [],
+    "patrol_legs": [
+      {
+        "from": [
+          2,
+          0
+        ],
+        "to": [
+          10,
+          1
+        ],
+        "seconds": 2.66
+      },
+      {
+        "from": [
+          10,
+          1
+        ],
+        "to": [
+          11,
+          2
+        ],
+        "seconds": 0.74
+      },
+      {
+        "from": [
+          11,
+          2
+        ],
+        "to": null,
+        "seconds": 0.99
+      }
+    ]
+  },
+  "hints": [
+    "Leave one low crate top free to stand on.",
+    "Cut on the floor mark. Climb the low crate first."
+  ]
+}

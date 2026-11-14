@@ -1,0 +1,249 @@
+{
+  "id": "L00",
+  "scene": "00",
+  "name": "First Cut",
+  "width": 15,
+  "room_height": 11.5,
+  "rail": {
+    "z": 10,
+    "start": "left",
+    "x": [
+      0.6,
+      14.4
+    ]
+  },
+  "spawn": [
+    0.75,
+    0
+  ],
+  "mark": [
+    7.55,
+    8.05,
+    2
+  ],
+  "exit": [
+    11.5,
+    13.5,
+    4
+  ],
+  "solids": [
+    {
+      "id": "Middle Ledge",
+      "box": [
+        7.1,
+        9.5,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "Exit Ledge",
+      "box": [
+        10.5,
+        14,
+        0,
+        4
+      ]
+    },
+    {
+      "id": "Lower Shade",
+      "box": [
+        2.38,
+        3.16,
+        6,
+        6.2
+      ]
+    },
+    {
+      "id": "Upper Shade",
+      "box": [
+        5.08,
+        6.03,
+        7,
+        7.2
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "id": "Entry Scrim",
+      "box": [
+        0.72,
+        1.52,
+        1.65,
+        1.69
+      ]
+    }
+  ],
+  "platforms": [],
+  "inventory": {
+    "A": 1,
+    "B": 1,
+    "pool": 1
+  },
+  "primary": "cut",
+  "reference": {
+    "lamp": 3.2,
+    "A": [
+      [
+        1.6,
+        0
+      ]
+    ],
+    "B": [
+      [
+        8.5,
+        2
+      ]
+    ],
+    "jumps": [
+      {
+        "from": [
+          5.45,
+          0
+        ],
+        "to": [
+          6.58,
+          1
+        ]
+      },
+      {
+        "from": [
+          6.58,
+          1
+        ],
+        "to": [
+          7.65,
+          2
+        ]
+      },
+      {
+        "from": [
+          7.85,
+          2
+        ],
+        "to": [
+          9.02,
+          3
+        ]
+      },
+      {
+        "from": [
+          9.02,
+          3
+        ],
+        "to": [
+          10.95,
+          4
+        ]
+      }
+    ],
+    "safe_stops": [
+      [
+        0.75,
+        0
+      ],
+      [
+        1.6,
+        0
+      ],
+      [
+        7.85,
+        2
+      ],
+      [
+        9.02,
+        3
+      ]
+    ],
+    "actor_exposure_seconds": [
+      3.11,
+      1.0
+    ],
+    "pushes": [
+      {
+        "shot": "A",
+        "crate": 1,
+        "via": [
+          [
+            1.6,
+            0
+          ],
+          [
+            1.9,
+            0
+          ],
+          [
+            6.1,
+            0
+          ]
+        ]
+      }
+    ],
+    "patrol_legs": [
+      {
+        "from": [
+          0.75,
+          0
+        ],
+        "to": [
+          1.6,
+          0
+        ],
+        "seconds": 0.35
+      },
+      {
+        "from": [
+          1.6,
+          0
+        ],
+        "to": [
+          7.85,
+          2
+        ],
+        "seconds": 5.3
+      },
+      {
+        "from": [
+          7.85,
+          2
+        ],
+        "to": [
+          9.02,
+          3
+        ],
+        "seconds": 0.69
+      },
+      {
+        "from": [
+          9.02,
+          3
+        ],
+        "to": null,
+        "seconds": 1.02
+      }
+    ]
+  },
+  "hints": [
+    "Nudge the crate to the chalk line. Wait there for the first patrol.",
+    "Push to the wall, jump twice, and cut before the guard looks."
+  ],
+  "tutorial": [
+    "This lamp is the guard's flashlight. Drag it.",
+    "Drag the lamp along the rail.",
+    "Press Enter to lock the light.",
+    "Shot A. Put the crate where the light can't reach.",
+    "Cyan: hidden. Red: exposed.",
+    "Call the guard. Press Enter.",
+    "LOCKED",
+    "Shot B. Same crate, new place.",
+    "Call the guard. Press Enter.",
+    "LOCKED",
+    "Action! A/D to move, W to jump.",
+    "Walk into a crate to push it.",
+    "Footsteps! Hide yourself and every crate.",
+    "Stand on the mark. Press E to cut to Shot B.",
+    "You stay. The set changes.",
+    "Press E to escape."
+  ]
+}

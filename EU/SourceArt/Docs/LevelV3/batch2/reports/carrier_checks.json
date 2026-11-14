@@ -1,0 +1,3201 @@
+{
+  "format": 1,
+  "maximum_interval_s": 0.002,
+  "input": "shipped scene JSON and constructive per-lamp crate layouts in matching reports, reproduced by level_solver.py",
+  "scope": "independent timed carrier-transfer geometry and patrol schedule; non-carrier jumps, crate approval and rest of route are in the main solver",
+  "clock": "time advances through cuts/retakes; choose next dock event from a dark wait, independent of load phase",
+  "collision": "floating-point continuous interval enclosure, 1e-8 B strict-overlap tolerance; moving plate sinusoid extrema and parabolic apex included; touching a face is legal",
+  "assumptions": [
+    "4 B/s controllable world-horizontal air speed with a 0–4 B/s input (choose zero or four); each arc begins at the listed foot position with vertical impulse 6.5 B/s, no added carrier impulse",
+    "standing rider is transported by deck and may walk on it; other independently phased plates are represented by their full swept volumes",
+    "guard entirely absent for at least 10 s after full retraction, or sends 5 s notice before inspection; boarding signals observed in play"
+  ],
+  "scenes": [
+    {
+      "scene": "S07",
+      "lamp_count": 17,
+      "intervals": [
+        [
+          13.25,
+          14.05
+        ]
+      ],
+      "witnesses": [
+        {
+          "lamp": 13.25,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              15.15,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.3,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              15.1,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.35,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              15.05,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.4,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              15.0,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.45,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              15.0,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.5,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              15.0,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.55,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              15.0,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.6,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              15.0,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.65,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              15.0,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.7,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              15.0,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.75,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              15.0,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.8,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              15.0,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.85,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              15.0,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.9,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              14.95,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.95,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              14.9,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 14.0,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              14.85,
+              5.5
+            ],
+            [
+              17.8,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 14.05,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              14.85,
+              5.5
+            ],
+            [
+              17.75,
+              7.5
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 5.866667,
+              "initial_phase_fraction": 0.2,
+              "first_signal_from_load_s": 4.543333,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.218425,
+              "local_fixed_dark_landing_s": 2.891675,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  4.75
+                ],
+                [
+                  10.43,
+                  5.5
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.357533,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 882,
+              "complete_exposure_ceiling_s": 3.041675,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 8.908341,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 1.091659
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene": "S08",
+      "lamp_count": 17,
+      "intervals": [
+        [
+          13.25,
+          14.05
+        ]
+      ],
+      "witnesses": [
+        {
+          "lamp": 13.25,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.95,
+              6
+            ],
+            [
+              21.9,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.3,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.9,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.35,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.8,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.4,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.8,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.45,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.8,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.5,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.8,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.55,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.8,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.6,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.8,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.65,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.8,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.7,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.8,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.75,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.8,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.8,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.8,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.85,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.8,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.9,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.75,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 13.95,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.7,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 14.0,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.65,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 14.05,
+          "A": [
+            [
+              5.45,
+              0
+            ]
+          ],
+          "B": [
+            [
+              18.6,
+              6
+            ],
+            [
+              21.8,
+              7.85
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Lift",
+              "shot": "A",
+              "period_s": 6.533333,
+              "initial_phase_fraction": 0.7,
+              "first_signal_from_load_s": 1.81,
+              "local_board_signal_s": -0.15,
+              "local_board_contact_s": 0.456348,
+              "local_disembark_signal_s": 2.506403,
+              "local_fixed_dark_landing_s": 3.179653,
+              "actor_endpoints": [
+                [
+                  5.95,
+                  1
+                ],
+                [
+                  7.52,
+                  2
+                ],
+                [
+                  8.15,
+                  5.25
+                ],
+                [
+                  10.5,
+                  6.0
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.307309,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.064154,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.67325,
+                "intervals": 337
+              },
+              "deck_intervals": 1026,
+              "complete_exposure_ceiling_s": 3.329653,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.862986,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.137014
+              }
+            },
+            {
+              "platform": "Ferry",
+              "shot": "B",
+              "period_s": 6.8,
+              "initial_phase_fraction": 0.33,
+              "first_signal_from_load_s": 5.156,
+              "local_board_signal_s": 0.6,
+              "local_board_contact_s": 1.4125,
+              "local_disembark_signal_s": 2.785281,
+              "local_fixed_dark_landing_s": 3.391629,
+              "actor_endpoints": [
+                [
+                  10.76,
+                  6
+                ],
+                [
+                  13.65,
+                  6
+                ],
+                [
+                  17.52,
+                  6
+                ],
+                [
+                  19.25,
+                  7
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.702098,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.017385,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "deck_intervals": 687,
+              "complete_exposure_ceiling_s": 2.791629,
+              "patrol": {
+                "policy": "at full guard retraction take the next authored dock signal",
+                "arbitrary_phase_to_dark_bound_s": 9.591629,
+                "earliest_inspection_s": 10.0,
+                "remaining_slack_s": 0.408371
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

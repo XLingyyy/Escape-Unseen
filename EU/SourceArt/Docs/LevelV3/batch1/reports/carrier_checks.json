@@ -1,0 +1,927 @@
+{
+  "format": 1,
+  "maximum_interval_s": 0.002,
+  "input": "shipped scene JSON and constructive per-lamp crate layouts in matching reports, reproduced by level_solver.py",
+  "scope": "independent timed carrier-transfer geometry and patrol schedule; non-carrier jumps, crate approval and rest of route are in the main solver",
+  "clock": "time advances through cuts/retakes; choose next dock event from a dark wait, independent of load phase",
+  "collision": "floating-point continuous interval enclosure, 1e-8 B strict-overlap tolerance; moving plate sinusoid extrema and parabolic apex included; touching a face is legal",
+  "assumptions": [
+    "4 B/s controllable world-horizontal air speed with a 0–4 B/s input (choose zero or four); each arc begins at the listed foot position with vertical impulse 6.5 B/s, no added carrier impulse",
+    "standing rider is transported by deck and may walk on it; other independently phased plates are represented by their full swept volumes",
+    "guard entirely absent for at least 10 s after full retraction, or sends 5 s notice before inspection; boarding signals observed in play"
+  ],
+  "scenes": [
+    {
+      "scene": "S05",
+      "lamp_count": 12,
+      "intervals": [
+        [
+          7.15,
+          7.7
+        ]
+      ],
+      "witnesses": [
+        {
+          "lamp": 7.15,
+          "A": [
+            [
+              1.35,
+              0
+            ],
+            [
+              5.75,
+              2
+            ]
+          ],
+          "B": [
+            [
+              8.8,
+              4
+            ],
+            [
+              20.15,
+              6
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Camera Dolly",
+              "shot": "B",
+              "period_s": 7.2,
+              "initial_phase_fraction": 0.35,
+              "first_signal_from_load_s": 4.88,
+              "local_board_signal_s": 0.2,
+              "local_board_contact_s": 0.806348,
+              "local_disembark_signal_s": 3.6,
+              "local_fixed_dark_landing_s": 4.4125,
+              "actor_endpoints": [
+                [
+                  9.1,
+                  5
+                ],
+                [
+                  10.99,
+                  6
+                ],
+                [
+                  16.45,
+                  6
+                ],
+                [
+                  19.35,
+                  6
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.362367,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "deck_intervals": 1397,
+              "complete_exposure_ceiling_s": 4.2125,
+              "patrol": {
+                "policy": "take first west call without warning or active inspection",
+                "at_most_calls": 3,
+                "warning_and_inspection_s": 6.5,
+                "min_guard_cycle_s": 11.5,
+                "action_plus_allowance_s": 4.4125,
+                "guaranteed_notice_s": 5.0
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 7.2,
+          "A": [
+            [
+              1.35,
+              0
+            ],
+            [
+              5.7,
+              2
+            ]
+          ],
+          "B": [
+            [
+              8.75,
+              4
+            ],
+            [
+              20.1,
+              6
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Camera Dolly",
+              "shot": "B",
+              "period_s": 7.2,
+              "initial_phase_fraction": 0.35,
+              "first_signal_from_load_s": 4.88,
+              "local_board_signal_s": 0.2,
+              "local_board_contact_s": 0.806348,
+              "local_disembark_signal_s": 3.6,
+              "local_fixed_dark_landing_s": 4.4125,
+              "actor_endpoints": [
+                [
+                  9.1,
+                  5
+                ],
+                [
+                  10.99,
+                  6
+                ],
+                [
+                  16.45,
+                  6
+                ],
+                [
+                  19.35,
+                  6
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.362367,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "deck_intervals": 1397,
+              "complete_exposure_ceiling_s": 4.2125,
+              "patrol": {
+                "policy": "take first west call without warning or active inspection",
+                "at_most_calls": 3,
+                "warning_and_inspection_s": 6.5,
+                "min_guard_cycle_s": 11.5,
+                "action_plus_allowance_s": 4.4125,
+                "guaranteed_notice_s": 5.0
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 7.25,
+          "A": [
+            [
+              1.35,
+              0
+            ],
+            [
+              5.65,
+              2
+            ]
+          ],
+          "B": [
+            [
+              8.7,
+              4
+            ],
+            [
+              20.1,
+              6
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Camera Dolly",
+              "shot": "B",
+              "period_s": 7.2,
+              "initial_phase_fraction": 0.35,
+              "first_signal_from_load_s": 4.88,
+              "local_board_signal_s": 0.2,
+              "local_board_contact_s": 0.806348,
+              "local_disembark_signal_s": 3.6,
+              "local_fixed_dark_landing_s": 4.4125,
+              "actor_endpoints": [
+                [
+                  9.1,
+                  5
+                ],
+                [
+                  10.99,
+                  6
+                ],
+                [
+                  16.45,
+                  6
+                ],
+                [
+                  19.35,
+                  6
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.362367,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "deck_intervals": 1397,
+              "complete_exposure_ceiling_s": 4.2125,
+              "patrol": {
+                "policy": "take first west call without warning or active inspection",
+                "at_most_calls": 3,
+                "warning_and_inspection_s": 6.5,
+                "min_guard_cycle_s": 11.5,
+                "action_plus_allowance_s": 4.4125,
+                "guaranteed_notice_s": 5.0
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 7.3,
+          "A": [
+            [
+              1.35,
+              0
+            ],
+            [
+              5.6,
+              2
+            ]
+          ],
+          "B": [
+            [
+              8.65,
+              4
+            ],
+            [
+              20.1,
+              6
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Camera Dolly",
+              "shot": "B",
+              "period_s": 7.2,
+              "initial_phase_fraction": 0.35,
+              "first_signal_from_load_s": 4.88,
+              "local_board_signal_s": 0.2,
+              "local_board_contact_s": 0.806348,
+              "local_disembark_signal_s": 3.6,
+              "local_fixed_dark_landing_s": 4.4125,
+              "actor_endpoints": [
+                [
+                  9.1,
+                  5
+                ],
+                [
+                  10.99,
+                  6
+                ],
+                [
+                  16.45,
+                  6
+                ],
+                [
+                  19.35,
+                  6
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.362367,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "deck_intervals": 1397,
+              "complete_exposure_ceiling_s": 4.2125,
+              "patrol": {
+                "policy": "take first west call without warning or active inspection",
+                "at_most_calls": 3,
+                "warning_and_inspection_s": 6.5,
+                "min_guard_cycle_s": 11.5,
+                "action_plus_allowance_s": 4.4125,
+                "guaranteed_notice_s": 5.0
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 7.35,
+          "A": [
+            [
+              1.35,
+              0
+            ],
+            [
+              5.55,
+              2
+            ]
+          ],
+          "B": [
+            [
+              8.6,
+              4
+            ],
+            [
+              20.1,
+              6
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Camera Dolly",
+              "shot": "B",
+              "period_s": 7.2,
+              "initial_phase_fraction": 0.35,
+              "first_signal_from_load_s": 4.88,
+              "local_board_signal_s": 0.2,
+              "local_board_contact_s": 0.806348,
+              "local_disembark_signal_s": 3.6,
+              "local_fixed_dark_landing_s": 4.4125,
+              "actor_endpoints": [
+                [
+                  9.1,
+                  5
+                ],
+                [
+                  10.99,
+                  6
+                ],
+                [
+                  16.45,
+                  6
+                ],
+                [
+                  19.35,
+                  6
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.362367,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "deck_intervals": 1397,
+              "complete_exposure_ceiling_s": 4.2125,
+              "patrol": {
+                "policy": "take first west call without warning or active inspection",
+                "at_most_calls": 3,
+                "warning_and_inspection_s": 6.5,
+                "min_guard_cycle_s": 11.5,
+                "action_plus_allowance_s": 4.4125,
+                "guaranteed_notice_s": 5.0
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 7.4,
+          "A": [
+            [
+              1.35,
+              0
+            ],
+            [
+              5.55,
+              2
+            ]
+          ],
+          "B": [
+            [
+              8.55,
+              4
+            ],
+            [
+              20.1,
+              6
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Camera Dolly",
+              "shot": "B",
+              "period_s": 7.2,
+              "initial_phase_fraction": 0.35,
+              "first_signal_from_load_s": 4.88,
+              "local_board_signal_s": 0.2,
+              "local_board_contact_s": 0.806348,
+              "local_disembark_signal_s": 3.6,
+              "local_fixed_dark_landing_s": 4.4125,
+              "actor_endpoints": [
+                [
+                  9.1,
+                  5
+                ],
+                [
+                  10.99,
+                  6
+                ],
+                [
+                  16.45,
+                  6
+                ],
+                [
+                  19.35,
+                  6
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.362367,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "deck_intervals": 1397,
+              "complete_exposure_ceiling_s": 4.2125,
+              "patrol": {
+                "policy": "take first west call without warning or active inspection",
+                "at_most_calls": 3,
+                "warning_and_inspection_s": 6.5,
+                "min_guard_cycle_s": 11.5,
+                "action_plus_allowance_s": 4.4125,
+                "guaranteed_notice_s": 5.0
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 7.45,
+          "A": [
+            [
+              1.35,
+              0
+            ],
+            [
+              5.55,
+              2
+            ]
+          ],
+          "B": [
+            [
+              8.5,
+              4
+            ],
+            [
+              20.1,
+              6
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Camera Dolly",
+              "shot": "B",
+              "period_s": 7.2,
+              "initial_phase_fraction": 0.35,
+              "first_signal_from_load_s": 4.88,
+              "local_board_signal_s": 0.2,
+              "local_board_contact_s": 0.806348,
+              "local_disembark_signal_s": 3.6,
+              "local_fixed_dark_landing_s": 4.4125,
+              "actor_endpoints": [
+                [
+                  9.1,
+                  5
+                ],
+                [
+                  10.99,
+                  6
+                ],
+                [
+                  16.45,
+                  6
+                ],
+                [
+                  19.35,
+                  6
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.362367,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "deck_intervals": 1397,
+              "complete_exposure_ceiling_s": 4.2125,
+              "patrol": {
+                "policy": "take first west call without warning or active inspection",
+                "at_most_calls": 3,
+                "warning_and_inspection_s": 6.5,
+                "min_guard_cycle_s": 11.5,
+                "action_plus_allowance_s": 4.4125,
+                "guaranteed_notice_s": 5.0
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 7.5,
+          "A": [
+            [
+              1.35,
+              0
+            ],
+            [
+              5.55,
+              2
+            ]
+          ],
+          "B": [
+            [
+              8.45,
+              4
+            ],
+            [
+              20.1,
+              6
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Camera Dolly",
+              "shot": "B",
+              "period_s": 7.2,
+              "initial_phase_fraction": 0.35,
+              "first_signal_from_load_s": 4.88,
+              "local_board_signal_s": 0.2,
+              "local_board_contact_s": 0.806348,
+              "local_disembark_signal_s": 3.6,
+              "local_fixed_dark_landing_s": 4.4125,
+              "actor_endpoints": [
+                [
+                  9.1,
+                  5
+                ],
+                [
+                  10.99,
+                  6
+                ],
+                [
+                  16.45,
+                  6
+                ],
+                [
+                  19.35,
+                  6
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.362367,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "deck_intervals": 1397,
+              "complete_exposure_ceiling_s": 4.2125,
+              "patrol": {
+                "policy": "take first west call without warning or active inspection",
+                "at_most_calls": 3,
+                "warning_and_inspection_s": 6.5,
+                "min_guard_cycle_s": 11.5,
+                "action_plus_allowance_s": 4.4125,
+                "guaranteed_notice_s": 5.0
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 7.55,
+          "A": [
+            [
+              1.35,
+              0
+            ],
+            [
+              5.55,
+              2
+            ]
+          ],
+          "B": [
+            [
+              8.45,
+              4
+            ],
+            [
+              20.1,
+              6
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Camera Dolly",
+              "shot": "B",
+              "period_s": 7.2,
+              "initial_phase_fraction": 0.35,
+              "first_signal_from_load_s": 4.88,
+              "local_board_signal_s": 0.2,
+              "local_board_contact_s": 0.806348,
+              "local_disembark_signal_s": 3.6,
+              "local_fixed_dark_landing_s": 4.4125,
+              "actor_endpoints": [
+                [
+                  9.1,
+                  5
+                ],
+                [
+                  10.99,
+                  6
+                ],
+                [
+                  16.45,
+                  6
+                ],
+                [
+                  19.35,
+                  6
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.362367,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "deck_intervals": 1397,
+              "complete_exposure_ceiling_s": 4.2125,
+              "patrol": {
+                "policy": "take first west call without warning or active inspection",
+                "at_most_calls": 3,
+                "warning_and_inspection_s": 6.5,
+                "min_guard_cycle_s": 11.5,
+                "action_plus_allowance_s": 4.4125,
+                "guaranteed_notice_s": 5.0
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 7.6,
+          "A": [
+            [
+              1.35,
+              0
+            ],
+            [
+              5.55,
+              2
+            ]
+          ],
+          "B": [
+            [
+              8.45,
+              4
+            ],
+            [
+              20.1,
+              6
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Camera Dolly",
+              "shot": "B",
+              "period_s": 7.2,
+              "initial_phase_fraction": 0.35,
+              "first_signal_from_load_s": 4.88,
+              "local_board_signal_s": 0.2,
+              "local_board_contact_s": 0.806348,
+              "local_disembark_signal_s": 3.6,
+              "local_fixed_dark_landing_s": 4.4125,
+              "actor_endpoints": [
+                [
+                  9.1,
+                  5
+                ],
+                [
+                  10.99,
+                  6
+                ],
+                [
+                  16.45,
+                  6
+                ],
+                [
+                  19.35,
+                  6
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.362367,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "deck_intervals": 1397,
+              "complete_exposure_ceiling_s": 4.2125,
+              "patrol": {
+                "policy": "take first west call without warning or active inspection",
+                "at_most_calls": 3,
+                "warning_and_inspection_s": 6.5,
+                "min_guard_cycle_s": 11.5,
+                "action_plus_allowance_s": 4.4125,
+                "guaranteed_notice_s": 5.0
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 7.65,
+          "A": [
+            [
+              1.35,
+              0
+            ],
+            [
+              5.55,
+              2
+            ]
+          ],
+          "B": [
+            [
+              8.45,
+              4
+            ],
+            [
+              20.05,
+              6
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Camera Dolly",
+              "shot": "B",
+              "period_s": 7.2,
+              "initial_phase_fraction": 0.35,
+              "first_signal_from_load_s": 4.88,
+              "local_board_signal_s": 0.2,
+              "local_board_contact_s": 0.806348,
+              "local_disembark_signal_s": 3.6,
+              "local_fixed_dark_landing_s": 4.4125,
+              "actor_endpoints": [
+                [
+                  9.1,
+                  5
+                ],
+                [
+                  10.99,
+                  6
+                ],
+                [
+                  16.45,
+                  6
+                ],
+                [
+                  19.35,
+                  6
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.362367,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "deck_intervals": 1397,
+              "complete_exposure_ceiling_s": 4.2125,
+              "patrol": {
+                "policy": "take first west call without warning or active inspection",
+                "at_most_calls": 3,
+                "warning_and_inspection_s": 6.5,
+                "min_guard_cycle_s": 11.5,
+                "action_plus_allowance_s": 4.4125,
+                "guaranteed_notice_s": 5.0
+              }
+            }
+          ]
+        },
+        {
+          "lamp": 7.7,
+          "A": [
+            [
+              1.35,
+              0
+            ],
+            [
+              5.55,
+              2
+            ]
+          ],
+          "B": [
+            [
+              8.45,
+              4
+            ],
+            [
+              20.0,
+              6
+            ]
+          ],
+          "rides": [
+            {
+              "platform": "Camera Dolly",
+              "shot": "B",
+              "period_s": 7.2,
+              "initial_phase_fraction": 0.35,
+              "first_signal_from_load_s": 4.88,
+              "local_board_signal_s": 0.2,
+              "local_board_contact_s": 0.806348,
+              "local_disembark_signal_s": 3.6,
+              "local_fixed_dark_landing_s": 4.4125,
+              "actor_endpoints": [
+                [
+                  9.1,
+                  5
+                ],
+                [
+                  10.99,
+                  6
+                ],
+                [
+                  16.45,
+                  6
+                ],
+                [
+                  19.35,
+                  6
+                ]
+              ],
+              "max_deck_relative_speed_B_per_s": 0.362367,
+              "board_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.606348,
+                "intervals": 304
+              },
+              "depart_arc": {
+                "delayed_horizontal_input_s": 0.0,
+                "flight_s": 0.8125,
+                "intervals": 407
+              },
+              "deck_intervals": 1397,
+              "complete_exposure_ceiling_s": 4.2125,
+              "patrol": {
+                "policy": "take first west call without warning or active inspection",
+                "at_most_calls": 3,
+                "warning_and_inspection_s": 6.5,
+                "min_guard_cycle_s": 11.5,
+                "action_plus_allowance_s": 4.4125,
+                "guaranteed_notice_s": 5.0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

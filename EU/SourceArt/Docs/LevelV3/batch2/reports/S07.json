@@ -1,0 +1,1304 @@
+{
+  "id": "S07_HighWater",
+  "grid_step_B": 0.05,
+  "model": "relaxed_reachability_ceiling",
+  "lamp_samples": 377,
+  "count": 17,
+  "ratio": 0.04509284,
+  "intervals": [
+    [
+      13.25,
+      14.05
+    ]
+  ],
+  "start": 0.6,
+  "start_solved": false,
+  "mid_solved": false,
+  "opposite_solved": false,
+  "highest_tests": [
+    {
+      "id": "LastIris",
+      "x": 15.31,
+      "solved": false
+    }
+  ],
+  "inventory_minus_one": {
+    "count": 0,
+    "intervals": []
+  },
+  "disable_primary": {
+    "count": 0,
+    "intervals": []
+  },
+  "no_push": {
+    "count": 17,
+    "intervals": [
+      [
+        13.25,
+        14.05
+      ]
+    ]
+  },
+  "no_cut": {
+    "count": 0,
+    "intervals": []
+  },
+  "no_ride": {
+    "count": 0,
+    "intervals": []
+  },
+  "remove_required_platform": {
+    "count": 0,
+    "intervals": []
+  },
+  "same_column_per_shot": {
+    "count": 0,
+    "intervals": []
+  },
+  "same_pose_both_shots": {
+    "count": 0,
+    "intervals": []
+  },
+  "same_world_column_both_shots": {
+    "count": 0,
+    "intervals": []
+  },
+  "families": {
+    "upper": 1,
+    "lower": 1,
+    "pair_count": 448,
+    "cells": [
+      {
+        "A_B_counts": [
+          1,
+          2
+        ],
+        "minimum": [
+          5.25,
+          0.0,
+          14.8,
+          5.5,
+          17.7,
+          7.5
+        ],
+        "maximum": [
+          5.6,
+          0.0,
+          15.15,
+          5.5,
+          18.0,
+          7.5
+        ],
+        "pairs": 448
+      }
+    ],
+    "packing": [
+      {
+        "A_B_counts": [
+          1,
+          2
+        ],
+        "vector": [
+          5.25,
+          0.0,
+          14.8,
+          5.5,
+          17.7,
+          7.5
+        ]
+      }
+    ]
+  },
+  "reference": {
+    "max_jump_rise": 1,
+    "min_horizontal_margin": 0.3654,
+    "jumps_pass": true,
+    "A_whole_box": true,
+    "A_support_clearance": true,
+    "B_whole_box": true,
+    "B_support_clearance": true,
+    "spawn_dark_all_endpoints": true,
+    "conservative_timed_route": {
+      "lamp": 13.45,
+      "A": [
+        [
+          5.45,
+          0
+        ]
+      ],
+      "B": [
+        [
+          15.0,
+          5.5
+        ],
+        [
+          17.8,
+          7.5
+        ]
+      ],
+      "max_joint_leg_s": 4.6,
+      "safe_waits": [
+        [
+          4.7,
+          0
+        ],
+        [
+          5.95,
+          1
+        ],
+        [
+          10.96,
+          5.5
+        ]
+      ],
+      "legs_s": [
+        1.25,
+        4.55,
+        4.6
+      ],
+      "jump_shift": [
+        0.0,
+        0.0
+      ],
+      "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+    }
+  },
+  "witnesses": [
+    {
+      "lamp": 13.25,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          15.15,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 7
+    },
+    {
+      "lamp": 13.3,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          15.1,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 14
+    },
+    {
+      "lamp": 13.35,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          15.05,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 21
+    },
+    {
+      "lamp": 13.4,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          15.0,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 28
+    },
+    {
+      "lamp": 13.45,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14.9,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 42
+    },
+    {
+      "lamp": 13.5,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14.85,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 49
+    },
+    {
+      "lamp": 13.55,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14.8,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 56
+    },
+    {
+      "lamp": 13.6,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14.8,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 56
+    },
+    {
+      "lamp": 13.65,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14.8,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 56
+    },
+    {
+      "lamp": 13.7,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14.8,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 49
+    },
+    {
+      "lamp": 13.75,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14.8,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 42
+    },
+    {
+      "lamp": 13.8,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14.8,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 42
+    },
+    {
+      "lamp": 13.85,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14.8,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 35
+    },
+    {
+      "lamp": 13.9,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14.8,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 24
+    },
+    {
+      "lamp": 13.95,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14.8,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 12
+    },
+    {
+      "lamp": 14.0,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14.8,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 6
+    },
+    {
+      "lamp": 14.05,
+      "A": [
+        [
+          5.25,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14.8,
+          5.5
+        ],
+        [
+          17.7,
+          7.5
+        ]
+      ],
+      "A_options": 8,
+      "B_options": 4
+    }
+  ],
+  "checks": {
+    "ratio": true,
+    "width": true,
+    "displacement": true,
+    "start_impossible": true,
+    "tight_inventory": true,
+    "essential_primary": true,
+    "families_at_most_three": true,
+    "reference_approved": true,
+    "width_on_constructive_lamps": true,
+    "all_ceiling_lamps_witnessed": true
+  },
+  "constructive": {
+    "count": 17,
+    "intervals": [
+      [
+        13.25,
+        14.05
+      ]
+    ],
+    "witnesses": [
+      {
+        "lamp": 13.25,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            15.15,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.675,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.325,
+          4.625,
+          4.675
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.3,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            15.1,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.65,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.3,
+          4.6,
+          4.65
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.35,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            15.05,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.625,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.275,
+          4.575,
+          4.625
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.4,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            15.0,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.6,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.25,
+          4.55,
+          4.6
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.45,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            15.0,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.6,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.25,
+          4.55,
+          4.6
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.5,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            15.0,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.6,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.25,
+          4.55,
+          4.6
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.55,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            15.0,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.6,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.25,
+          4.55,
+          4.6
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.6,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            15.0,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.6,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.25,
+          4.55,
+          4.6
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.65,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            15.0,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.6,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.25,
+          4.55,
+          4.6
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.7,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            15.0,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.6,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.25,
+          4.55,
+          4.6
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.75,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            15.0,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.6,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.25,
+          4.55,
+          4.6
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.8,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            15.0,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.6,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.25,
+          4.55,
+          4.6
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.85,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            15.0,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.6,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.25,
+          4.55,
+          4.6
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.9,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            14.95,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.625,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.275,
+          4.575,
+          4.625
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 13.95,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            14.9,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.65,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.3,
+          4.6,
+          4.65
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 14.0,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            14.85,
+            5.5
+          ],
+          [
+            17.8,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.675,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.325,
+          4.625,
+          4.675
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      },
+      {
+        "lamp": 14.05,
+        "A": [
+          [
+            5.45,
+            0
+          ]
+        ],
+        "B": [
+          [
+            14.85,
+            5.5
+          ],
+          [
+            17.75,
+            7.5
+          ]
+        ],
+        "max_joint_leg_s": 4.7,
+        "safe_waits": [
+          [
+            4.7,
+            0
+          ],
+          [
+            5.95,
+            1
+          ],
+          [
+            10.96,
+            5.5
+          ]
+        ],
+        "legs_s": [
+          1.35,
+          4.65,
+          4.7
+        ],
+        "jump_shift": [
+          0.0,
+          0.0
+        ],
+        "route_basis": "authored_carrier_events_and_leg_times; analytic_swept_jump_clearance"
+      }
+    ],
+    "checks": [
+      "grid placement approvals",
+      "conservative jump arc, swept actor envelope",
+      "fixed-scene all-phase shadow at waits",
+      "whole active crates at waits",
+      "continuous supported walks, cut point and exit interaction",
+      "authored route times merged across lit stops; every joint exposure <=8 s"
+    ]
+  }
+}

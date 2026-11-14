@@ -1,0 +1,205 @@
+{
+  "id": "L03",
+  "scene": "02",
+  "name": "Match Cut",
+  "width": 15,
+  "room_height": 11.5,
+  "rail": {
+    "z": 10,
+    "start": "left",
+    "x": [
+      0.6,
+      14.4
+    ]
+  },
+  "spawn": [
+    3.85,
+    0
+  ],
+  "mark": [
+    7,
+    8,
+    2
+  ],
+  "exit": [
+    11.7,
+    14.8,
+    4
+  ],
+  "solids": [
+    {
+      "id": "Mid Ledge",
+      "box": [
+        6,
+        10.5,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "Exit Ledge",
+      "box": [
+        11.5,
+        15,
+        0,
+        4
+      ]
+    },
+    {
+      "id": "Beam A",
+      "box": [
+        9.1,
+        10.1,
+        6,
+        6.3
+      ]
+    },
+    {
+      "id": "Beam B",
+      "box": [
+        11.4,
+        12.2,
+        7,
+        7.3
+      ]
+    }
+  ],
+  "flags": [],
+  "platforms": [],
+  "inventory": {
+    "A": 1,
+    "B": 1,
+    "pool": 1
+  },
+  "primary": "cut",
+  "reference": {
+    "lamp": 13,
+    "A": [
+      [
+        4.5,
+        0
+      ]
+    ],
+    "B": [
+      [
+        9.5,
+        2
+      ]
+    ],
+    "jumps": [
+      {
+        "from": [
+          3.85,
+          0
+        ],
+        "to": [
+          5,
+          1
+        ]
+      },
+      {
+        "from": [
+          5,
+          1
+        ],
+        "to": [
+          6.4,
+          2
+        ]
+      },
+      {
+        "from": [
+          8.7,
+          2
+        ],
+        "to": [
+          10,
+          3
+        ]
+      },
+      {
+        "from": [
+          10,
+          3
+        ],
+        "to": [
+          11.85,
+          4
+        ]
+      }
+    ],
+    "safe_stops": [
+      [
+        3.85,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        7.5,
+        2
+      ],
+      [
+        10,
+        3
+      ]
+    ],
+    "actor_exposure_seconds": [
+      0.56,
+      0.49,
+      0.74,
+      0.03,
+      0.42
+    ],
+    "pushes": [],
+    "patrol_legs": [
+      {
+        "from": [
+          3.85,
+          0
+        ],
+        "to": [
+          5,
+          1
+        ],
+        "seconds": 0.74
+      },
+      {
+        "from": [
+          5,
+          1
+        ],
+        "to": [
+          7.5,
+          2
+        ],
+        "seconds": 1.27
+      },
+      {
+        "from": [
+          7.5,
+          2
+        ],
+        "to": [
+          10,
+          3
+        ],
+        "seconds": 1.04
+      },
+      {
+        "from": [
+          10,
+          3
+        ],
+        "to": null,
+        "seconds": 0.99
+      }
+    ]
+  },
+  "hints": [
+    "Use the striped crate to reach the middle mark.",
+    "After the cut, look for that same crate on the upper ledge."
+  ]
+}

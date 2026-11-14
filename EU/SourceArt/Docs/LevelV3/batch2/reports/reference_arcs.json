@@ -1,0 +1,425 @@
+[
+  {
+    "id": "S06_BurnAfterCut",
+    "rail_clearance_B": 1.76,
+    "rail_clear": true,
+    "jump_inputs": [
+      {
+        "shot": "A",
+        "from": [
+          0.9,
+          0
+        ],
+        "to": [
+          1.85,
+          0
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.8125,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.2375,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "A",
+        "from": [
+          7.45,
+          0
+        ],
+        "to": [
+          8.65,
+          1
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.11488,
+          "horizontal_time_s": 0.3,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "A",
+        "from": [
+          8.65,
+          1
+        ],
+        "to": [
+          10.6,
+          2
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.4875,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "B",
+        "from": [
+          10.75,
+          2
+        ],
+        "to": [
+          12.85,
+          3
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.525,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "B",
+        "from": [
+          13.18,
+          3
+        ],
+        "to": [
+          15.2,
+          4
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.505,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "B",
+        "from": [
+          15.2,
+          4
+        ],
+        "to": [
+          16.25,
+          5
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.128943,
+          "horizontal_time_s": 0.2625,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "B",
+        "from": [
+          16.25,
+          5
+        ],
+        "to": [
+          18.12,
+          6
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.4675,
+          "horizontal_speed_Bps": 4.0
+        }
+      }
+    ],
+    "all_fixed_arcs_clear": true,
+    "excludes": "moving steel plates during flight; inspect platform schedule in design document"
+  },
+  {
+    "id": "S07_HighWater",
+    "rail_clearance_B": 0.86,
+    "rail_clear": true,
+    "jump_inputs": [
+      {
+        "shot": "A",
+        "from": [
+          4.7,
+          0
+        ],
+        "to": [
+          5.95,
+          1
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.110193,
+          "horizontal_time_s": 0.3125,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "A",
+        "from": [
+          5.95,
+          1
+        ],
+        "to": [
+          7.52,
+          2
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.3925,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "A",
+        "from": [
+          8.15,
+          4.75
+        ],
+        "to": [
+          10.43,
+          5.5
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.67325,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.57,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "B",
+        "from": [
+          13.18,
+          5.5
+        ],
+        "to": [
+          15.24,
+          6.5
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.515,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "B",
+        "from": [
+          15.46,
+          6.5
+        ],
+        "to": [
+          17.26,
+          7.5
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.45,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "B",
+        "from": [
+          17.26,
+          7.5
+        ],
+        "to": [
+          18.28,
+          8.5
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.153715,
+          "horizontal_time_s": 0.255,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "B",
+        "from": [
+          18.28,
+          8.5
+        ],
+        "to": [
+          19.68,
+          9.5
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.016022,
+          "horizontal_time_s": 0.35,
+          "horizontal_speed_Bps": 4.0
+        }
+      }
+    ],
+    "all_fixed_arcs_clear": true,
+    "excludes": "moving steel plates during flight; inspect platform schedule in design document"
+  },
+  {
+    "id": "S08_ChangeOfPlatform",
+    "rail_clearance_B": 0.75,
+    "rail_clear": true,
+    "jump_inputs": [
+      {
+        "shot": "A",
+        "from": [
+          4.7,
+          0
+        ],
+        "to": [
+          5.95,
+          1
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.110193,
+          "horizontal_time_s": 0.3125,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "A",
+        "from": [
+          5.95,
+          1
+        ],
+        "to": [
+          7.52,
+          2
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.3925,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "A",
+        "from": [
+          8.15,
+          5.25
+        ],
+        "to": [
+          10.5,
+          6.0
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.67325,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.5875,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "B",
+        "from": [
+          10.76,
+          6
+        ],
+        "to": [
+          13.65,
+          6
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.8125,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.7225,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "B",
+        "from": [
+          17.52,
+          6
+        ],
+        "to": [
+          19.25,
+          7
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.4325,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "B",
+        "from": [
+          19.4,
+          7
+        ],
+        "to": [
+          21.13,
+          7.85
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.648715,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.4325,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "B",
+        "from": [
+          21.13,
+          7.85
+        ],
+        "to": [
+          22.22,
+          8.85
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.606348,
+          "horizontal_delay_s": 0.125193,
+          "horizontal_time_s": 0.2725,
+          "horizontal_speed_Bps": 4.0
+        }
+      },
+      {
+        "shot": "B",
+        "from": [
+          22.22,
+          8.85
+        ],
+        "to": [
+          23.66,
+          9.75
+        ],
+        "collision_free": true,
+        "input": {
+          "flight_s": 0.635464,
+          "horizontal_delay_s": 0.0,
+          "horizontal_time_s": 0.36,
+          "horizontal_speed_Bps": 4.0
+        }
+      }
+    ],
+    "all_fixed_arcs_clear": true,
+    "excludes": "moving steel plates during flight; inspect platform schedule in design document"
+  }
+]
