@@ -205,3 +205,6 @@ maps saved. Screenshot: Saved/review/task8_rail.png; details in TASK8_HANDOFF.md
 
 
 - 2026-11-14 UTC：Task 10 L09_NoRetake 完成。由已完成 L00 复制，改为 No Retake 布局；出生 X120、EntryFlag X87..167 / Z165..169；教程关闭、移除粉笔线；加入主线。A/B 参考审批通过，出生角色隐藏；task10_L09_NoRetake.png 已检查，门、最高横梁、灯均在画面内。交接见 Docs/TASK10A_HANDOFF.md；未完整通关。
+
+
+- 2026-11-14 UTC：Task 10 L10_FlyRail 完成，已保存。参考A/B及平台双端点共4次审批通过，端点出生头胸隐藏。门、最高横梁、灯及平台端点预览均在画面内；顶部提示条按原规则淡化。详情 Docs/TASK10B_HANDOFF.md；未完整通关、打包或推送。
