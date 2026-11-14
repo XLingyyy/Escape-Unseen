@@ -167,3 +167,5 @@ maps saved. Screenshot: Saved/review/task8_rail.png; details in TASK8_HANDOFF.md
 - 2026-11-14 UTC：任务 8.4 完成。10–20秒巡视、5秒暖窗/双倒计时、1.5秒检查、CLEAR及失败1.2秒后重开A已接入；间隔从看守完全离窗起算。L03两轮自然计时和关闭总开关验证通过，切镜计时不变。截图 task8_warn.png / task8_clear.png / task8_caught.png；详情 EU/SourceArt/Docs/TASK8_HANDOFF.md。未完整通关或人工试听。
 
 - 2026-11-14 UTC：任务 8.5 完成。BP_SpawnMark、纸白胶带T、30%幽灵、START标签已预摆并绑定九关出生点；L02实测StartPlay后0.200秒淡出、胶带保留、返回摆灯恢复及总开关生效。截图 EU/Saved/review/task8_spawn.png。任务8全部交付，详见 EU/SourceArt/Docs/TASK8_HANDOFF.md；PIE已停、临时桥删除、播放设置恢复、编辑器L00无弹窗。任务9/10未启动，等待用户试玩手感。
+
+- 2026-11-14 UTC：任务 8.6 完成。头胸逐帧巡视判定、主角优先失败原因、眼睛、三闪轮廓和出生幽灵露光提示已接入并编译；L03 两次原生 PIE 验证审批排除主角、检查中途暴露、自动重开、藏好通过及开关回退。四张 task8_6_*.png 已检查，详见 EU/SourceArt/Docs/TASK86_9_HANDOFF.md。未改布局、未完整通关或打包；按用户授权继续任务 9。
