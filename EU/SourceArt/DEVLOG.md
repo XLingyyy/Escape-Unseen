@@ -184,3 +184,6 @@ maps saved. Screenshot: Saved/review/task8_rail.png; details in TASK8_HANDOFF.md
 
 
 - 2026-11-14 UTC：Task 10 L02_HiddenStair 完成。灯轨；入口旗 X170..250 / Z160..164；补齐原本未绑定的 DebugProbe；保留空 A 自动进入 B 流程。A/B 参考审批通过，出生角色隐藏；task10_L02_HiddenStair.png 已检查，门、最高横梁、灯均在画面内。交接见 Docs/TASK10A_HANDOFF.md；未完整通关。
+
+
+- 2026-11-14 UTC：Task 10 L03_MatchCut 完成。灯轨；出生 X200→385，同步出生标记。A/B 参考审批通过，出生角色隐藏；task10_L03_MatchCut.png 已检查，门、最高横梁、灯均在画面内；灯后提示条按原遮挡规则淡化。交接见 Docs/TASK10A_HANDOFF.md；未完整通关。
