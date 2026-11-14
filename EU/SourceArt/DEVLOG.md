@@ -202,3 +202,6 @@ maps saved. Screenshot: Saved/review/task8_rail.png; details in TASK8_HANDOFF.md
 
 
 - 2026-11-14 UTC：Task 10 L07_ReturnTicket 完成。灯轨；出生 X1300→1120；MarkDeck 底缘 460→480、顶面500；采用新 A#02–04 参考位。A/B 参考审批通过，出生角色隐藏；task10_L07_ReturnTicket.png 已检查，门、最高设施、灯均在镜头内；phase 0 门的左上部分仍被场记板覆盖。交接见 Docs/TASK10A_HANDOFF.md；未完整通关。
+
+
+- 2026-11-14 UTC：Task 10 L09_NoRetake 完成。由已完成 L00 复制，改为 No Retake 布局；出生 X120、EntryFlag X87..167 / Z165..169；教程关闭、移除粉笔线；加入主线。A/B 参考审批通过，出生角色隐藏；task10_L09_NoRetake.png 已检查，门、最高横梁、灯均在画面内。交接见 Docs/TASK10A_HANDOFF.md；未完整通关。
