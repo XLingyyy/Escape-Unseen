@@ -467,6 +467,186 @@ Tripo request 8908eaae-9cef-4d02-afe4-4ae717f647ed,Tripo Studio H3.1,"Single sty
 Tripo request 6ecc33ca-c179-4b58-b91c-312664fbdcc8,Tripo Studio H3.1,"One stylized low-poly high prison window frame with five simple vertical iron bars. A rectangular 120 cm wide by 90 cm high frame, shallow depth, bars evenly spaced, empty opening between bars, no glass. Chunky cold gray iron with soft bevels and simple flat shading. Restrained handmade prison movie set prop aesthetic. Single static unrigged mesh. No wall, no sill extension, no scenery visible behind it, no floor, no lights, no background, no text or logo.",2026-11-13T13:21:34.658881+00:00,55 Studio credits; no refund observed,Request still showed generating/99% at last observation; not used in delivery. https://studio.tripo3d.ai/zh/workspace/generate/6ecc33ca-c179-4b58-b91c-312664fbdcc8
 Tripo request f43fa7f7-d985-48b2-bc1b-b8e9dffa0108,Tripo Studio H3.1,"One stylized low-poly prison cot, simple single bed with iron frame and thin plain mattress. Length 190 cm, mattress top height 45 cm, width about 70 cm. Four short legs, low modest head and foot rails, dark muted gray metal frame, plain desaturated gray beige thin mattress. Chunky simple shapes with soft bevels, restrained colors, a handmade prison movie set background prop. Static unrigged mesh. No pillow, blanket, person, floor, wall, scene, lights, background, text or logos.",2026-11-13T13:21:50.254488+00:00,55 Studio credits; no refund observed,Request still showed generating/99% at last observation; not used in delivery. https://studio.tripo3d.ai/zh/workspace/generate/f43fa7f7-d985-48b2-bc1b-b8e9dffa0108
 Tripo request 84aedf40-35d5-486e-81a5-ce65e159d669,Tripo Studio H3.0,"One stylized low-poly prison cot, simple single bed with iron frame and thin plain mattress. Length 190 cm, mattress top height 45 cm, width about 70 cm. Four short legs, low modest head and foot rails, dark muted gray metal frame, plain desaturated gray beige thin mattress. Chunky simple shapes with soft bevels, restrained colors, a handmade prison movie set background prop. Static unrigged mesh. No pillow, blanket, person, floor, wall, scene, lights, background, text or logos.",2026-11-13T13:44:08.739574+00:00,40 Studio credits; no refund observed,Request still showed generating/99% at last observation; not used in delivery. https://studio.tripo3d.ai/zh/workspace/generate/84aedf40-35d5-486e-81a5-ce65e159d669
+Docs/GPT_LEVEL_DESIGN.md,Codex; Python analytical geometry,"用户：现在找到F:\Escape Unseen\GPT_LEVEL_BRIEF.md，完成Claude的委托。
+
+# Escape Unseen 关卡设计委托（给 GPT）
+
+日期：2026-11-13。截止提交：2026-11-16 01:59 UTC。请尽快交付，**最好 6 小时内**，之后还要留时间搭建和试玩。
+
+你写过 GDD v1.3，规则和参数以 v1.3 为准。下面只列这次的变化和硬约束。
+
+## 1. 要交什么
+
+1. **新手教程关 L00**：几何布局由你设计，教学步骤按第 4 节的脚本来。
+2. **5 个新关卡**，难度要明显高于现有的 L01–L03。
+3. **整体关卡顺序**：L00 + 现有三关 + 新五关，一共 9 关，排出难度逐步上升的曲线。现有三关可以插在中间，不一定放在最前面。
+
+玩家试玩反馈：现有三关都太简单，内容量显得不够。
+
+## 2. 这次的规则变化（必须考虑进去）
+
+- **灯可以放在整个房间的任何位置**，不再限定灯区。只有两种位置不行：在实体（墙、平台、横梁）里面，或者离实体不到 0.3B。
+  - 这样一来，靠""藏好箱子""制造难度会变弱，因为玩家可以把灯压低，打出很大的阴影。
+  - **难度主要要来自剪辑和箱子的调度**。另外 A、B 两镜**共用同一个灯位**：找一个能让两镜的搭建同时藏好的灯位，本身就是谜题的一部分。请利用这一点。
+- 关卡出口改成：走到门口按 E 进门（E 同时也是剪辑键）。**剪辑标记和出口区域在 X 方向至少相隔 1.5B**，不能重叠。
+
+## 3. 硬约束（都是现有代码能做的，不加新机制）
+
+- **只能用现有机制**：
+  - 每关两个镜头 A/B，一个剪辑标记，只能切一次（A→B）；
+  - 箱子是同一个实体池（编号 #01…），每镜各有库存上限，同一只箱子在 A、B 两镜里可以放在不同位置；
+  - 可以叠箱，可以悬挑，但必须落稳；
+  - 固定设施只有地面、平台（矩形实体）、横梁（矩形实体，遮光，也能踩）、出口平台；
+  - 一盏规则灯。
+- **不能用的**：移动平台、开关、钥匙、第二个剪辑点、新的道具类型。
+- **单位和参数**（GDD 第 26 章）：
+  - B = 100 cm；
+  - 胶囊半径 0.30B，半高 0.65B；
+  - 水平速度 4.0B/s；起跳 6.5B/s，重力 16B/s²，理论跳高 1.32B；
+  - **主解中每次上升 ≤ 1.00B**；
+  - 水平跳跃间隙 ≤ 1.5B，留余量；
+  - 头顶净空 ≥ 1.6B；
+  - 自动台阶高度 0.20B。
+- **房间范围**：可玩区域 X 0–14，Z 0–11.5，单位 B。相机机位不变，超出范围的东西看不见。
+- **每关的箱子总数不超过 4**，每镜库存不超过 4。
+- **""空场无逃路""**：任何一镜只放现成设施、不加箱子时，都不能直接走到出口；只用一镜的搭建，也不能解决全部高差。
+
+## 4. 新手教程 L00 的教学脚本
+
+几何由你设计，每一步都要非常简单，只有一种做法。所有提示都用英文，每句不超过 70 个字符。
+
+1. **摆灯（phase 0）**：""This lamp is the guard's flashlight. Drag it."" → 拖动以后显示 ""Press Enter to lock the light.""
+2. **搭 A 镜**：""Shot A. Put the crate where the light can't reach."" 预览颜色：青色＝藏好了，红色＝会露光。只需放 1 只箱子，藏身处只有一个，而且非常明显。
+3. **审批**：""Call the guard. Press [审批键]."" 看守巡检，显示 LOCKED。
+4. **搭 B 镜**：""Shot B. Same crate, new place."" 把同一只 #01 放到另一处阴影里，然后审批。
+5. **表演**：""Action! A/D to move, W to jump."" 在 A 镜里借箱子上一级台阶，走到标记上：""Stand on the mark. Press E to cut to Shot B.""
+6. **切镜之后**：""You stay. The set changes."" 借 B 镜里的箱子继续往上爬，到门口：""Press E to escape.""
+
+整个教程的高差只要求两次 1B 的上升。
+
+## 5. 每关的交付格式（Codex 会照着搭，请严格按这个写）
+
+每关一节：
+
+- **关卡编号、英文名（2–3 个词）、难度 1–10、一句话核心巧思**
+- **固定设施表**：名称｜类型（platform/beam/exit）｜X0｜X1｜Z0｜Z1（单位 B）
+- **出生点**：(X, Z)；**剪辑标记**：X 范围和承托面 Z；**出口区**：X 范围和顶面 Z
+- **库存**：A 镜 n 只，B 镜 n 只；总实体数
+- **参考解**：
+  - 灯位；
+  - A 镜每只箱子的 X0、X1、Z0、Z1；
+  - B 镜每只箱子的 X0、X1、Z0、Z1；
+  - 逐步路线：每一次跳跃的起点、落点和上升量。
+- **阴影核算**：参考灯位下，参考解里的每只箱子都完整处在阴影里（按 GDD 第 27 章的二维方法核算，安全余量 0.005B）。另给一个**露光反例**，说明哪种看似合理的灯位或摆法会失败。
+- **""空场无逃路""的简短论证**
+- **两条英文提示**：第一条是方向性的，第二条更具体。每条不超过 90 个字符。
+
+最后附 **9 关顺序表**：编号｜名称｜难度｜这一关新教会玩家什么。
+
+## 6. 设计方向（建议，不强制）
+
+难度可以从这些方向提升：
+- 两镜库存不对称，比如 A 只有 1 只、B 有 3 只；
+- 同一只箱子在两镜里身兼两职；
+- 剪辑标记设在高处，要先在 A 镜搭上去；
+- 灯位折中：照顾 A 镜就会让 B 镜露光，必须找到兼顾的位置；
+- 叠箱和悬挑；
+- 让横梁同时用作遮挡和落脚。
+
+每关最好有一个""啊哈""时刻，不要靠极限操作，也不要靠像素级的精确摆放。
+
+
+用户确认：保留两镜接力，教程用四次 1B 跳跃（推荐）。",2026-11-13T17:57:37.449186+00:00,Not separately metered; no paid asset-generation API,"Six level designs; 32 expanded crate snapshots and 40 reference jumps calculated in 2D. L00 four-jump revision explicitly approved by user. No UE edits, compilation, physics run or playtest. Research links are in the document."
+Docs/GPT_LEVEL_LAYOUTS.svg,Codex; Python Matplotlib,"用户：现在找到F:\Escape Unseen\GPT_LEVEL_BRIEF.md，完成Claude的委托。
+
+# Escape Unseen 关卡设计委托（给 GPT）
+
+日期：2026-11-13。截止提交：2026-11-16 01:59 UTC。请尽快交付，**最好 6 小时内**，之后还要留时间搭建和试玩。
+
+你写过 GDD v1.3，规则和参数以 v1.3 为准。下面只列这次的变化和硬约束。
+
+## 1. 要交什么
+
+1. **新手教程关 L00**：几何布局由你设计，教学步骤按第 4 节的脚本来。
+2. **5 个新关卡**，难度要明显高于现有的 L01–L03。
+3. **整体关卡顺序**：L00 + 现有三关 + 新五关，一共 9 关，排出难度逐步上升的曲线。现有三关可以插在中间，不一定放在最前面。
+
+玩家试玩反馈：现有三关都太简单，内容量显得不够。
+
+## 2. 这次的规则变化（必须考虑进去）
+
+- **灯可以放在整个房间的任何位置**，不再限定灯区。只有两种位置不行：在实体（墙、平台、横梁）里面，或者离实体不到 0.3B。
+  - 这样一来，靠""藏好箱子""制造难度会变弱，因为玩家可以把灯压低，打出很大的阴影。
+  - **难度主要要来自剪辑和箱子的调度**。另外 A、B 两镜**共用同一个灯位**：找一个能让两镜的搭建同时藏好的灯位，本身就是谜题的一部分。请利用这一点。
+- 关卡出口改成：走到门口按 E 进门（E 同时也是剪辑键）。**剪辑标记和出口区域在 X 方向至少相隔 1.5B**，不能重叠。
+
+## 3. 硬约束（都是现有代码能做的，不加新机制）
+
+- **只能用现有机制**：
+  - 每关两个镜头 A/B，一个剪辑标记，只能切一次（A→B）；
+  - 箱子是同一个实体池（编号 #01…），每镜各有库存上限，同一只箱子在 A、B 两镜里可以放在不同位置；
+  - 可以叠箱，可以悬挑，但必须落稳；
+  - 固定设施只有地面、平台（矩形实体）、横梁（矩形实体，遮光，也能踩）、出口平台；
+  - 一盏规则灯。
+- **不能用的**：移动平台、开关、钥匙、第二个剪辑点、新的道具类型。
+- **单位和参数**（GDD 第 26 章）：
+  - B = 100 cm；
+  - 胶囊半径 0.30B，半高 0.65B；
+  - 水平速度 4.0B/s；起跳 6.5B/s，重力 16B/s²，理论跳高 1.32B；
+  - **主解中每次上升 ≤ 1.00B**；
+  - 水平跳跃间隙 ≤ 1.5B，留余量；
+  - 头顶净空 ≥ 1.6B；
+  - 自动台阶高度 0.20B。
+- **房间范围**：可玩区域 X 0–14，Z 0–11.5，单位 B。相机机位不变，超出范围的东西看不见。
+- **每关的箱子总数不超过 4**，每镜库存不超过 4。
+- **""空场无逃路""**：任何一镜只放现成设施、不加箱子时，都不能直接走到出口；只用一镜的搭建，也不能解决全部高差。
+
+## 4. 新手教程 L00 的教学脚本
+
+几何由你设计，每一步都要非常简单，只有一种做法。所有提示都用英文，每句不超过 70 个字符。
+
+1. **摆灯（phase 0）**：""This lamp is the guard's flashlight. Drag it."" → 拖动以后显示 ""Press Enter to lock the light.""
+2. **搭 A 镜**：""Shot A. Put the crate where the light can't reach."" 预览颜色：青色＝藏好了，红色＝会露光。只需放 1 只箱子，藏身处只有一个，而且非常明显。
+3. **审批**：""Call the guard. Press [审批键]."" 看守巡检，显示 LOCKED。
+4. **搭 B 镜**：""Shot B. Same crate, new place."" 把同一只 #01 放到另一处阴影里，然后审批。
+5. **表演**：""Action! A/D to move, W to jump."" 在 A 镜里借箱子上一级台阶，走到标记上：""Stand on the mark. Press E to cut to Shot B.""
+6. **切镜之后**：""You stay. The set changes."" 借 B 镜里的箱子继续往上爬，到门口：""Press E to escape.""
+
+整个教程的高差只要求两次 1B 的上升。
+
+## 5. 每关的交付格式（Codex 会照着搭，请严格按这个写）
+
+每关一节：
+
+- **关卡编号、英文名（2–3 个词）、难度 1–10、一句话核心巧思**
+- **固定设施表**：名称｜类型（platform/beam/exit）｜X0｜X1｜Z0｜Z1（单位 B）
+- **出生点**：(X, Z)；**剪辑标记**：X 范围和承托面 Z；**出口区**：X 范围和顶面 Z
+- **库存**：A 镜 n 只，B 镜 n 只；总实体数
+- **参考解**：
+  - 灯位；
+  - A 镜每只箱子的 X0、X1、Z0、Z1；
+  - B 镜每只箱子的 X0、X1、Z0、Z1；
+  - 逐步路线：每一次跳跃的起点、落点和上升量。
+- **阴影核算**：参考灯位下，参考解里的每只箱子都完整处在阴影里（按 GDD 第 27 章的二维方法核算，安全余量 0.005B）。另给一个**露光反例**，说明哪种看似合理的灯位或摆法会失败。
+- **""空场无逃路""的简短论证**
+- **两条英文提示**：第一条是方向性的，第二条更具体。每条不超过 90 个字符。
+
+最后附 **9 关顺序表**：编号｜名称｜难度｜这一关新教会玩家什么。
+
+## 6. 设计方向（建议，不强制）
+
+难度可以从这些方向提升：
+- 两镜库存不对称，比如 A 只有 1 只、B 有 3 只；
+- 同一只箱子在两镜里身兼两职；
+- 剪辑标记设在高处，要先在 A 镜搭上去；
+- 灯位折中：照顾 A 镜就会让 B 镜露光，必须找到兼顾的位置；
+- 叠箱和悬挑；
+- 让横梁同时用作遮挡和落脚。
+
+每关最好有一个""啊哈""时刻，不要靠极限操作，也不要靠像素级的精确摆放。
+
+
+用户确认：保留两镜接力，教程用四次 1B 跳跃（推荐）。",2026-11-13T17:57:37.449186+00:00,Shares the design task; no separate asset-generation charge,Technical XZ diagrams derived from the same level coordinates; six levels with separate A/B panels. Preview visually inspected. No UE capture.
 BP_EscapeGameInstance.uasset,Codex + Unreal MCP Blueprint/native editor asset API,"### 5A 出口：空气墙 + 按 E 进门（最优先）
 
 - **现象**：三关里往门口走，快走到门的时候都被一堵看不见的墙挡住。
@@ -713,3 +893,35 @@ Content/EscapeUnseen/Core/BP_EscapeHUD.uasset,Codex; Unreal MCP Blueprint DSL/na
 
 ---",2026-11-13T19:54:08.460247+00:00,0; project-authored Blueprint implementation; no paid asset-generation API,"Task 6 modification of existing HUD. Runtime typography, scene card, wrapped script hint, phase key bar, world interaction prompts, lamp/build feedback, inspection overlay/progress, stamped result cards, title/end and pause-menu styling. Uses recorded OFL fonts and project-authored UI materials. Rendered in final native 1920x1080 PIE captures; no cook/package run. Final Task 6 revision 2026-11-13T19:54:08.460247+00:00."
 Content/EscapeUnseen/Core/BP_ShotDirector.uasset,Codex; UE BlueprintTools via MCP,CODEX_TASKS.md Task 6: lamp and build contextual feedback,2026-11-13T19:54:08.460247+00:00,No paid generation API,LampHovered gates drag start. PreviewHidden combines existing placement/inventory with ShadowService.CheckBlock; ghost color and HUD use the shared result. Compiled and rendered in PIE; HIDDEN fixture passed actual inspection.
+BP_EscapeHUD; BP_EscapePC; BP_ShotDirector,Codex + Unreal MCP + native Canvas,"## 任务 6B：界面小修（Claude 审图后出的修改单）【允许接入 UE】
+
+任务 5 和任务 6 已通过，整体效果很好。下面几处要改，做完先交 6B，再开始任务 7。
+
+0. **工作区里有不明来源的未提交改动**：`BP_EscapeCharacter`、`BP_ShadowService`、`L01_FirstStep.umap`、`DEVLOG.md`、`PROVENANCE.csv`。请先查清它们是谁、为什么改的。
+   - 是你自己保存产生的、内容正确，就一起提交；
+   - 只是重新保存、没有实际内容变化，就还原；
+   - 判断不了的，写进交接记录，不要提交。
+1. **提示条挪到顶部**。现在底部的提示条会盖住地面、箱子预览、床和水桶，而这些正是玩家放箱子的区域。
+   - 新位置：上边距 40；水平方向在场记板卡片右侧的区域（X 600–1880）里居中；最大宽度 1000；样式不变。
+   - 巡检阶段（phase 2、3）隐藏提示条，由横幅代替，避免重复显示 ""The guard checks the shot...""。
+2. **巡检横幅放进上下黑边里**。现在的横幅挡住了看守窗口，而巡检时看守恰恰是主角。
+   - 上下黑边都加高到 110 px；
+   - 上黑边里居中放 `● INSPECTION`，Bebas 64；
+   - 下黑边里居中放副文字，Courier 26，原来的按键提示改为在下黑边里右对齐；
+   - 进度条：4 px 高的琥珀色，贴着上黑边的下沿，从屏幕左边走到右边。现在的进度条和面板没有对齐，这个问题一并去掉；
+   - 场记板卡片在巡检阶段淡出，阶段结束后淡回。
+3. **界面面板遇到遮挡时自动变淡**：
+   - 被检测的东西：提示条、按键栏、场记板卡片；
+   - 触发条件：鼠标光标、规则灯在屏幕上的位置，或者角色头顶的屏幕位置，落进了某个面板的矩形；
+   - 效果：这个面板在 0.15 s 内降到 25% 不透明，离开后恢复。
+4. **标题卡**：按键栏改成 `ENTER START` 和 `Q QUIT`。确认 Q 在标题界面真的能退出游戏；如果不能，就只显示 `ENTER START`。
+5. **措辞统一**：界面上所有的 ""blocks"" 都改成 ""crates""。摆灯阶段的提示改成 `Drag the lamp. Its shadows are your hiding places.`
+
+验收截图：
+- `task6B_build.png`：L01 搭景阶段，提示条在顶部；
+- `task6B_inspection.png`：巡检过场；
+- `task6B_fade.png`：把灯拖到提示条下面，提示条变淡；
+- `task6B_title.png`：标题卡。
+
+---
+",2026-11-14T00:51:50.887512+00:00,No paid generation API,Task 6B; four native screenshots; actual Q quits PIE; Docs/TASK6B_7_HANDOFF.md

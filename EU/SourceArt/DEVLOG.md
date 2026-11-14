@@ -80,6 +80,13 @@ Claude accepted 4C and requested removal of the dark strip outside the window fr
 
 The Blueprint compiled, and the requested actual PIE closeup confirms no dark strip outside either side: EU/Saved/review/task4D_closeup.png. It is cropped from the native 4x engine screenshot. bAlwaysOn was restored to false, pause cleared, PIE stopped and assets saved. The only game asset changed is BP_GuardWindow. No additional playthrough or packaging was performed.
 
+
+## Claude level-design commission, 13 November 2026
+
+Codex delivered `Docs/GPT_LEVEL_DESIGN.md` and `Docs/GPT_LEVEL_LAYOUTS.svg` from `GPT_LEVEL_BRIEF.md` and GDD v1.3. They specify L00, five new levels L04–L08, and the order L00, L01, L02, L03, L04, L06, L05, L07, L08. The user explicitly approved four 1B tutorial jumps to preserve the requirement that both shots are necessary. The document discloses the legacy empty-A exception in L01/L02 and the impossibility of a unique legal crate coordinate under unrestricted continuous lamp placement.
+
+Analytical work covered complete 0.005B-expanded shadow containment for 32 crate snapshots, 40 reference jump paths using a conservative capsule bounding rectangle, full base support, lamp clearance, mark clearance, and one exposed-point counterexample per new level. The reference layouts were drawn from the same data, and the diagram preview was visually inspected. This work did not connect to UE, modify Content, compile Blueprints, run Chaos/PIE, playtest or package the game. Actual movement feel and physical settling remain unverified. Asset provenance records include the brief and the user's tutorial clarification.
+
 ## 2026-11-13 — Task 5 gameplay feedback
 
 - 5A (`ec8d0b9`): fixed ExitZone mesh-default collision, explicit E escape, 0.5-second fade and WRAP, GameInstance level order.
@@ -92,3 +99,7 @@ The Blueprint compiled, and the requested actual PIE closeup confirms no dark st
 Imported the three unmodified OFL font files from official Google Fonts sources, retaining licenses and six Runtime Font/FontFace assets. Rebuilt BP_EscapeHUD with the specified scene card, script hint, key blocks, projected prompts, inspection framing, native material stamps, title/end and pause menu. BP_ShotDirector now shares the existing shadow CheckBlock predicate between ghost color and HIDDEN/LIT labels; dragging begins on the lamp. No new shadow algorithm or fixed-level reconstruction was added.
 
 Affected Blueprints/materials compiled and saved. Eight native 1920x1080 task6 PNGs in Saved/review were visually checked. Real approvals generated inspection/LOCKED; mark and exit fixtures used teleport and checked the actual predicates. Preview at (1100,50), with lamp (500,800), was HIDDEN and passed inspection. Fixed a disconnected Saturate material pin, integer promotion in Canvas geometry, overlap between preview status and the bottom hint, and Canvas-material tint encoding. Final PIE stopped; temporary actors/bridge removed; play-window settings restored. See Docs/TASK5_6_HANDOFF.md for evidence and limits. No full traversal, packaged run, push or submission; Task 7 remains unstarted.
+
+## 2026-11-14 — Task 6B UI corrections
+
+Top hints, inspection letterboxes, panel overlap opacity and title Q quit are implemented and compiled. Four native 1920×1080 screenshots were visually checked; actual approval and lamp overlap (.25 opacity) were observed. Actual Q at the title exited PIE. Prior design commission files/logs are included; three binary resaves are restored with UE closed. Details: Docs/TASK6B_7_HANDOFF.md. No full traversal, packaging or push.
