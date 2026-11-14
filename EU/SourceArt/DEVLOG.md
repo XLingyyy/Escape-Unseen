@@ -208,3 +208,6 @@ maps saved. Screenshot: Saved/review/task8_rail.png; details in TASK8_HANDOFF.md
 
 
 - 2026-11-14 UTC：Task 10 L10_FlyRail 完成，已保存。参考A/B及平台双端点共4次审批通过，端点出生头胸隐藏。门、最高横梁、灯及平台端点预览均在画面内；顶部提示条按原规则淡化。详情 Docs/TASK10B_HANDOFF.md；未完整通关、打包或推送。
+
+
+- 2026-11-14 UTC：Task 10 L11_LastFerry 完成，已保存。参考A/B及平台双端点共6次审批通过，端点出生头胸隐藏。摆灯右移后门、灯及最高设施可见；左右表演镜头跟随通过，右缘浮动开门提示截断但底部提示完整。详情 Docs/TASK10B_HANDOFF.md；未完整通关、打包或推送。
