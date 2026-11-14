@@ -211,3 +211,6 @@ maps saved. Screenshot: Saved/review/task8_rail.png; details in TASK8_HANDOFF.md
 
 
 - 2026-11-14 UTC：Task 10 L11_LastFerry 完成，已保存。参考A/B及平台双端点共6次审批通过，端点出生头胸隐藏。摆灯右移后门、灯及最高设施可见；左右表演镜头跟随通过，右缘浮动开门提示截断但底部提示完整。详情 Docs/TASK10B_HANDOFF.md；未完整通关、打包或推送。
+
+
+- 2026-11-14 UTC：Task 11A 完成。12张现有游戏地图全场灯轨（墙内面±60cm），保留RailZ；LampStartSide、bEnableFullRail及有限轨/参考灯位回退已接入。钢管/端座、1B琥珀刻度、Shift 0.25倍微调与相机平移补偿、L00移动超过1B消失的新提示已编译保存。L00/L11定向PIE和菜单实际重载通过；物理Shift/鼠标按钮事件未自动验证，未完整通关或运行11B求解器。高度检查仅L08 ShadeBar距灯轨30cm命中。交接与实际验证边界见Docs/TASK11A_HANDOFF.md，原生截图task11a_L00_fullrail.png / task11a_L11_fullrail.png已查看。主线仍为11关，11B/11C未开始。PIE停止、临时桥删除、播放设置恢复、L00打开且无附加窗口；未打包或推送。
