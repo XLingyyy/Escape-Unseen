@@ -169,3 +169,12 @@ maps saved. Screenshot: Saved/review/task8_rail.png; details in TASK8_HANDOFF.md
 - 2026-11-14 UTC：任务 8.5 完成。BP_SpawnMark、纸白胶带T、30%幽灵、START标签已预摆并绑定九关出生点；L02实测StartPlay后0.200秒淡出、胶带保留、返回摆灯恢复及总开关生效。截图 EU/Saved/review/task8_spawn.png。任务8全部交付，详见 EU/SourceArt/Docs/TASK8_HANDOFF.md；PIE已停、临时桥删除、播放设置恢复、编辑器L00无弹窗。任务9/10未启动，等待用户试玩手感。
 
 - 2026-11-14 UTC：任务 8.6 完成。头胸逐帧巡视判定、主角优先失败原因、眼睛、三闪轮廓和出生幽灵露光提示已接入并编译；L03 两次原生 PIE 验证审批排除主角、检查中途暴露、自动重开、藏好通过及开关回退。四张 task8_6_*.png 已检查，详见 EU/SourceArt/Docs/TASK86_9_HANDOFF.md。未改布局、未完整通关或打包；按用户授权继续任务 9。
+
+
+## 2026-11-14 UTC — Task 9: moving platforms and wide-map camera
+
+- Added BP_MovingPlatform and three material instances: continuous horizontal/vertical half-cosine motion, 0.6 s endpoint holds, editable phase/speed/travel, full-body collision waiting and native based-character carrying. Actual body is 200×280×30 cm; root scale (2,2.8,0.3) must be preserved when placing instances.
+- ShadowService now combines cached fixed shadows with current moving-platform bounds at every query. Director rejects crate placement inside the full swept path plus 10 cm and fails approval on the first exposed inspection frame. HUD adds endpoint dashed outlines, 15% Cyan intersection and BLOCKED feedback. PC/Director add wide-map edge/key pan and smooth 300 cm deadzone follow.
+- Saved the separate Tests/L_Task9_Mechanics map, outside LevelOrder. Native motion and visibility fixtures completed with clean restoration: natural cycles, collision wait/resume, vertical rider, cut/retry phase continuity, camera behavior, dynamic Hero/crate/spawn visibility, placement padding and dynamic approval failure. Four 1920×1080 screenshots were inspected. Approval failed 0.02482 s after first observed exposure.
+- Fixed actual back-wall overlap by reducing body depth to 280 cm. Recovered a saved-state editor reinstance assertion and completed the structural edit outside ConstructionScript. No new C++ or dependencies.
+- Details, evidence, placement contract and untested scenarios: Docs/TASK86_9_HANDOFF.md. Bounded agents prepared offline; root integrated and accepted. PIE stopped, temporary bridge removed, play settings restored, editor returned to L00. No full traversal, package, push or submission. Task 10 not started.

@@ -30,4 +30,49 @@ Bounded agents prepared HUD/spawn bodies and the fixture offline. The root agent
 
 ## Task 9
 
-Implementation follows Task 8.6. No Task 10 level construction is included in this authorization.
+Completed after Task 8.6 (commit `714910d`). All changed Blueprints compiled and saved. Task 10 mainline layouts and LevelOrder are unchanged.
+
+### Delivered behavior and integration
+
+- New `BP_MovingPlatform`: movable solid steel body, 200×280×30 cm, MI_SetPiece color ×0.35, two weak amber 6 cm warning strips. Body has BlockAll collision and casts shadows; Actor tags are Occluder and MovingOccluder. The 280 cm depth leaves 10 cm clearance from the existing back wall.
+- Instance-editable `TravelOffset`, `Vertical`, `AverageSpeed` and `InitialPhase` select a signed world X/Z path, up to 400 cm, average speed 100–150 cm/s, and initial cycle phase 0–1. Each endpoint holds for 0.6 seconds; travel uses a half-cosine curve. A 400 cm path at 125 cm/s takes 3.2 seconds each way and 7.6 seconds per cycle.
+- Construction records the placed center as Endpoint0 without moving it. BeginPlay applies InitialPhase once. Tick runs independently of Director phase; StartPlay, cut and retry do not reset it. Blocking freezes both position and cycle time until the obstacle leaves.
+- Full-body sweep and a separate based-character clearance sweep prevent crushing. Native CharacterMovement carries a standing character. `GetSweepBounds()` returns the raw union of endpoint body bounds; Director adds 10 cm for placement exclusion and returns red BLOCKED.
+- ShadowService caches fixed geometry in BaseShadowPts/BaseShadowCounts. CheckBlock, CheckPoint and DrawShadows refresh moving occluders from their current bounds on every query. Approval, patrol, head/chest exposure, spawn ghost, crate preview and guides share these entry points.
+- During approval inspection, the first failed InspectOK immediately calls FailInspection. Settling remains separate. The existing patrol interval already runs from the guard's full departure until the next inspection (10–20 seconds, including the five-second warning), so no timer rewrite was needed.
+- HUD draws endpoint shadow outlines in amber, 2 physical pixels wide, with 12-pixel dashes/gaps. Their convex intersection uses 15% Cyan via MI_PlatformShadowPreview. These appear in phase 0 or whenever ShadowGuides is enabled, using the current light position.
+- Maps wider than 1500 cm use UpdateWideCamera: phase 4 follows Hero X with a total 300 cm deadzone and FInterpTo speed 6; phases 0/1 pan at 800 cm/s from A/D or the outer 60 physical mouse pixels. Bounds use the actual perspective lens and room limits. Small-map camera behavior is preserved. Existing off-screen guard-window suppression already leaves only the top warning banner.
+
+**Placement contract:** the Cube root's scale `(2, 2.8, 0.3)` is part of the platform dimensions. Preserve this scale when placing Task 10 instances; do not overwrite it with unit scale. Platform endpoint coordinates are body centers. Strip transforms compensate for the root scale.
+
+New assets: `Core/BP_MovingPlatform`, `Materials/MI_MovingPlatform`, `MI_MovingPlatformStripe`, `MI_PlatformShadowPreview`, and `Tests/L_Task9_Mechanics`. Modified assets: `Core/BP_ShadowService`, `BP_ShotDirector`, `BP_EscapeHUD`, `BP_EscapePC`. Paths are beneath `EU/Content/EscapeUnseen/`. Task 9's incidental L03 editor resave was restored to the committed Task 8.6 state.
+
+### Actual validation
+
+Two completed native PIE fixtures are recorded in `EU/Saved/codex_task9/verify/verify_motion_result.json` and `verify_visibility_result.json`; both have no cleanup errors. They use natural world/platform time, controlled runtime placements and public methods. No Phase or platform clock was assigned. PC Tick and patrol were temporarily isolated; all altered settings were restored. These runs do not represent manual traversal or keyboard input.
+
+| Check | Observed result |
+| --- | --- |
+| Horizontal/vertical motion | Both completed the natural 7.6 s cycle. Sampled endpoint holds were 0.596/0.585 s, consistent with configured 0.6 s at frame resolution. |
+| Cut/retry continuity | StartPlay, TryCut and Retry preserved platform position and phase. |
+| Collision waiting | Crate and Hero separately stopped the horizontal platform; position and phase stayed fixed during each 0.3 s observation, then resumed when the obstacle was removed. |
+| Standing rider | During 0.658 s, the vertical platform rose 67.03 cm and Hero rose 67.99 cm; Hero remained grounded and based on the platform. |
+| Camera | 800 cm/s pan, actual left/right mouse-edge routing, 300 cm deadzone, smooth follow, lens-based bounds and small-map preservation passed. |
+| Current moving shadow | At opposite horizontal endpoints, the same crate, point, Hero and spawn ghost changed between hidden and exposed; ghost color changed and the fixed baseline arrays stayed unchanged. |
+| Build exclusion | A crate centered at X=545, Z=500 was rejected by the 10 cm padding; X=535 was accepted. BLOCKED preview was captured. |
+| Endpoint preview | The vertical platform's native endpoint intersection had four vertices and area 60,968.36 cm²; amber outlines and Cyan fill were visually confirmed. |
+| Continuous approval | With temporary StableWindow=4 s and PhaseTimeout=8 s, natural platform movement exposed the crate. RETAKE occurred 0.02482 s after the first observed exposed frame (0.04709 s after the last hidden sample); ApprovedA stayed false. Defaults were restored. |
+
+Four native 1920×1080 captures were inspected: `EU/Saved/review/task9_platform_ride.png`, `task9_platform_shadow_preview.png`, `task9_platform_blocked.png`, `task9_approval_dynamic_retake.png`. Preview capture includes transient motion blur from the fixture's camera placement; outlines and fill remain visible.
+
+The development map is 2400×1150 cm and is outside LevelOrder. Horizontal endpoints are `(700,0,500)` and `(1100,0,500)`. Final vertical endpoints are `(1450,0,200)` and `(1450,0,600)`; it was moved from X=1800 after the motion run to make the endpoint shadow overlap visible. Both use speed 125 and phase 0. The inherited scene title is a fixture label, not a new mainline level.
+
+No additional manual A/D input, horizontal riding, overhead-obstacle scenario, full timed patrol with platforms, light dragging, guide-toggle UI, level traversal, audio listening or package build was run. Shared query wiring and existing off-screen warning logic were inspected; these are distinct from the runtime checks above.
+
+### Resolved integration findings and final state
+
+Initial full-depth platforms touched the back wall. Native HitResult confirmed initial overlap against BackWall; reducing actual body depth from 300 to 280 cm fixed it without shrinking the sweep relative to the body. A Blueprint reinstance attempted inside the bridge ConstructionScript caused an editor assertion; saved assets were recovered on restart and the structural edit completed through a deferred post-tick callback. Do not compile/reinstance actor classes inside that bridge's ConstructionScript.
+
+Fixture-only fixes included copying Vector2D values before temporary camera-bound edits, using public SetCursor, unpacking IntersectPolygons' Python return as `(A, B, Poly)`, and delaying first capture until one second of natural game time. The previous first-frame Shot request was consumed by the editor viewport; the final captures show the actual PIE HUD at 1920×1080.
+
+Bounded agents prepared platform/HUD/camera bodies, validation and documentation offline. The root agent performed all UE writes, compilation, native integration, screenshot inspection and acceptance. Final cleanup stopped PIE, removed the temporary bridge, restored play-window settings, saved assets and returned the editor to L00. No push, package or competition submission was performed; Task 10 has not started.
