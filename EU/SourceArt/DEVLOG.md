@@ -178,3 +178,6 @@ maps saved. Screenshot: Saved/review/task8_rail.png; details in TASK8_HANDOFF.md
 - Saved the separate Tests/L_Task9_Mechanics map, outside LevelOrder. Native motion and visibility fixtures completed with clean restoration: natural cycles, collision wait/resume, vertical rider, cut/retry phase continuity, camera behavior, dynamic Hero/crate/spawn visibility, placement padding and dynamic approval failure. Four 1920×1080 screenshots were inspected. Approval failed 0.02482 s after first observed exposure.
 - Fixed actual back-wall overlap by reducing body depth to 280 cm. Recovered a saved-state editor reinstance assertion and completed the structural edit outside ConstructionScript. No new C++ or dependencies.
 - Details, evidence, placement contract and untested scenarios: Docs/TASK86_9_HANDOFF.md. Bounded agents prepared offline; root integrated and accepted. PIE stopped, temporary bridge removed, play settings restored, editor returned to L00. No full traversal, package, push or submission. Task 10 not started.
+
+
+- 2026-11-14 UTC：Task 10 L00 完成。新布局、EntryScrim、粉笔线、首次推箱/巡视教学、逐关巡视最小间隔接口已编译保存；L01 移出主线。A/B 各一次审批及旗淡化、教学消耗/重来保持的定向 PIE 均通过。原生截图 task10_L00_FirstCut.png 已检查，门/最高横梁/灯完整可见。详见 Docs/TASK10A_HANDOFF.md；未完整通关、打包或推送。
