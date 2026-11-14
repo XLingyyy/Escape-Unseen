@@ -147,7 +147,47 @@ The editor's background 3 FPS throttle was temporarily disabled for these
 physics observations and restored without saving preferences. Blueprints compiled
 and all nine maps saved.
 
-## 8.4–8.5
+## 8.4 — timed guard patrols
+
+Implemented in BP_ShotDirector, BP_GuardWindow and BP_EscapeHUD, with
+bEnableGuardPatrol=true. Editable Director defaults are interval 10–20 seconds,
+warning 5 seconds and inspection 1.5 seconds. StartPlay resets the guard below
+the window and starts a random interval. After a successful visit, the next
+interval begins only after GuardRoot is actually hidden; its final five seconds
+contain the warning. TryCut never resets patrol state.
+
+During inspection, every tick uses ShadowService.CheckBlock on the currently
+placed crates, with its existing 0.5 cm margin and exposure-area predicate.
+Characters are excluded. Failure shows RETAKE, stops movement and restarts the
+actual StartPlay path after 1.2 seconds, restoring A and the approved snapshots.
+Returning to build cancels a pending automatic restart.
+
+The final-five-second warning temporarily replaces the window backing with a
+warm emissive MID, adds the world count at window top+60 cm (Bebas 96 with pop),
+and shows the top GUARD RETURNING banner (Bebas 40). Each integer transition
+plays the lower-pitched SFX_Land, with SFX_Clapper at one second. The world label
+is omitted when its window/label is offscreen. Passing displays a cyan CLEAR
+stamp at Bebas 64 for 0.8 seconds. The old hint is suppressed while the warning
+banner is visible; existing result-card geometry is preserved.
+
+Native L03 PIE verification ran two natural visits with unchanged parameters:
+actual TryCut kept Remaining=7.998912218958139 on both sides; the first inspection
+lasted 1.50011 seconds; the second interval started after the guard completed
+its 0.40854-second descent and lasted 10.53493 seconds for a 10.52980 draw.
+Exposing a crate during the second inspection produced RETAKE and a real A
+restart 1.20379 seconds later. Snapshot arrays stayed unchanged. A separate fresh
+PIE with master=false kept an exposed crate in ordinary phase-4 play for 21.7563
+seconds, with no patrol, warm backing, warning or restart.
+
+Native 1920x1080 screenshots task8_warn.png (count 3), task8_clear.png and
+task8_caught.png in EU/Saved/review were visually inspected. Reports are
+EU/Saved/codex_task8/patrol/verify_patrol_*_result.json. These tests seed runtime
+snapshots and expose a crate through public ApplyPose; they do not claim a solved
+level or physical pushing during the patrol test. No audio listening claim.
+All three Blueprints compiled and saved; the loaded L03 instance was explicitly
+migrated to the new defaults. Other maps inherit the new class defaults.
+
+## 8.5
 
 Pending integration. Task 8.5 was added by the user during implementation.
 No v2 gameplay assets are included in the fallback package.
