@@ -19,3 +19,11 @@ L00_FirstCut duplicates L03 through AssetTools; all four facilities are preplace
 Reference lamp (1300,1000), A crate (350,50), B crate (900,250): both approvals passed, one request per shot. Tutorial first/light-lock/A-build/B-build/approval/action text observed. Actual action spawn (150,0,67), yaw0. Camera retained at (750,2000,560), pitch−2/yaw−90, FOV58: door, exit lamp, highest facility and rule lamp/shade bounds fully in viewport. Native 1920×1080 screenshots: Saved/review/task7_L00.png and task7_L00_tutorial_first.png. Evidence: Saved/codex_task7/task7_L00_report.json. No jump traversal performed.
 
 During initial map duplication, a Python World reference prevented garbage collection on load and crashed UE. The duplicated file survived; temporary references were released before map load, unsaved Blueprint edits were reapplied/compiled/saved, and L00 was completed from the saved duplicate. No fixed geometry is generated at BeginPlay.
+
+## Task 7 — L04 Double Duty, completed 2026-11-14 UTC
+
+Map `Content/EscapeUnseen/Maps/L04_DoubleDuty.umap` follows design L04; 3 fixed facilities are editor-preplaced with shared visible/collision/shadow bounds. Inventory A=3, B=3, pool=3; A is editable. Reference XZ coordinates in cm: lamp (700, 1100); A: #01 (350, 50), #02 (450, 50), #03 (450, 150); B: #01 (750, 350), #02 (850, 350), #03 (850, 450). Both reference approvals passed.
+
+Action spawn (150, 0, 67), yaw0; the editor spawn includes 2cm contact clearance. Door scale 1, bottom Z600, top Z840.00; exit-lamp top Z866.00. Guard (300, -150, 650), scale1.4, window XZ bounds (216, 643, 384, 769); minimum facility clearance 184.71cm and horizontal reference-lamp gap 316.00cm.
+
+Camera (750, 2000, 560), rotation (-2, -90, 0); position/rotation retained from L03, FOV58 changed to 62. Door, exit lamp, highest facility (Shade Bar), rule lamp and shade bounds are fully inside the viewport. Initial FOV58 clipped RuleBulb, Decor_LampShade; a camera-only recapture at FOV62 fixed framing and reused the completed A/B approvals. Native screenshots: Saved/review/task7_L04.png. Evidence: Saved/codex_task7/task7_L04_report.json, Saved/codex_task7/task7_L04_camera_report.json. No jump traversal, packaging or push was performed.

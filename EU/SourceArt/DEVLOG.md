@@ -107,3 +107,7 @@ Top hints, inspection letterboxes, panel overlap opacity and title Q quit are im
 ## 2026-11-14 — Task 7 L00 First Cut
 
 Added editor-preplaced tutorial L00 from approved design, editable A/B crate relay, per-shot budgets, stage-specific tutorial text and spawn facing. Startup selects L00; completed-map order is L00–L03. Both reference approvals passed once; two native screenshots checked and full required geometry/lamp/door bounds are in frame at original FOV58. See Docs/TASK6B_7_HANDOFF.md. No traversal, packaging or push.
+
+## 2026-11-14 — Task 7 L04 Double Duty
+
+Added `Content/EscapeUnseen/Maps/L04_DoubleDuty.umap` from approved design L04, with per-shot inventory A=3, B=3, pool=3 and editor-preplaced geometry. Both reference approvals passed; final camera framing contains the required door/platform/lamp bounds (FOV58 changed to 62; position/rotation retained from L03). Initial FOV58 clipped RuleBulb, Decor_LampShade; a camera-only recapture at FOV62 fixed framing and reused the completed A/B approvals. Screenshots: Saved/review/task7_L04.png. Details: Docs/TASK6B_7_HANDOFF.md. No traversal, packaging or push.
