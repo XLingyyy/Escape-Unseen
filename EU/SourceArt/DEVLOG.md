@@ -123,3 +123,9 @@ Added `Content/EscapeUnseen/Maps/L06_CrossedShadows.umap` from approved design L
 ## 2026-11-14 — Task 7 L07 Return Ticket
 
 Added `Content/EscapeUnseen/Maps/L07_ReturnTicket.umap` from approved design L07, with per-shot inventory A=4, B=3, pool=4 and editor-preplaced geometry. Both reference approvals passed; final camera framing contains the required door/platform/lamp bounds (FOV58 changed to 62; position/rotation retained from L03). Screenshots: Saved/review/task7_L07.png. Details: Docs/TASK6B_7_HANDOFF.md. No traversal, packaging or push.
+
+## 2026-11-14 — Task 7 L08 Final Assembly
+
+Added `Content/EscapeUnseen/Maps/L08_FinalAssembly.umap` from approved design L08, with per-shot inventory A=3, B=3, pool=3 and editor-preplaced geometry. Both reference approvals passed; final camera framing contains the required door/platform/lamp bounds (FOV58 changed to 62; position/rotation retained from L03). The final camera-only recapture reused the completed A/B approvals. Screenshots: Saved/review/task7_L08.png, Saved/review/task7_L08_door_visible.png. Details: Docs/TASK6B_7_HANDOFF.md. No traversal, packaging or push.
+
+Task7 final integration: all six maps passed their required A/B reference approvals. L08 reports final-level state and restart target L00. All authored packages saved, temporary bridge deleted, PIE stopped, play settings restored and editor returned to L00 with no dirty packages. Door/card overlap in L07/L08 and supplemental hover-fade screenshots are documented in Docs/TASK6B_7_HANDOFF.md.

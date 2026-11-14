@@ -57,3 +57,21 @@ Action spawn (1300, 0, 67), yaw180; the editor spawn includes 2cm contact cleara
 Camera (750, 2000, 560), rotation (-2, -90, 0); position/rotation retained from L03, FOV58 changed to 62. Door, exit lamp, highest facility (Shade Bar), rule lamp and shade bounds are fully inside the viewport. Native screenshots: Saved/review/task7_L07.png. Evidence: Saved/codex_task7/task7_L07_report.json. No jump traversal, packaging or push was performed.
 
 L07 retains the approved coordinate-table thicknesses: two raised decks 40cm and shade bar30cm. These exact coordinates take precedence over the generic20cm note. The fourth crate uses T_Crate_04 generated from the existing03 texture with image_gen; MI_Crate04 duplicates MI_Crate03 and binds the verified Tex parameter. Full generation prompt/time and native import sizing are in PROVENANCE.csv. Camera containment does not mean HUD-free visibility: the fixed scene card overlaps the upper-left portion of the L07 exit door; the requested panel position and overlap-fade rules are retained.
+
+## Task 7 — L08 Final Assembly, completed 2026-11-14 UTC
+
+Map `Content/EscapeUnseen/Maps/L08_FinalAssembly.umap` follows design L08; 5 fixed facilities are editor-preplaced with shared visible/collision/shadow bounds. Inventory A=3, B=3, pool=3; A is editable. Reference XZ coordinates in cm: lamp (1300, 1110); A: #01 (800, 50), #02 (700, 50), #03 (700, 150); B: #01 (550, 350), #02 (850, 550), #03 (400, 750). Both reference approvals passed.
+
+Action spawn (1300, 0, 67), yaw180; the editor spawn includes 2cm contact clearance. Door scale 0.85, bottom Z900, top Z1104.00; exit-lamp top Z1130.00. Guard (950, -150, 650), scale1.4, window XZ bounds (866, 643, 1034, 769); minimum facility clearance 143.00cm and horizontal reference-lamp gap 266.00cm.
+
+Camera (750, 2000, 560), rotation (-2, -90, 0); position/rotation retained from L03, FOV58 changed to 62. Door, exit lamp, highest facility (Shade Bar), rule lamp and shade bounds are fully inside the viewport. The final camera-only recapture reused the completed A/B approvals. Native screenshots: Saved/review/task7_L08.png, Saved/review/task7_L08_door_visible.png. Evidence: Saved/codex_task7/task7_L08_report.json, Saved/codex_task7/task7_L08_camera_report.json. No jump traversal, packaging or push was performed.
+
+## Task 7 final handoff — 2026-11-14 UTC
+
+All six requested maps are complete and saved. LevelOrder is L00_FirstCut, L01_FirstStep, L02_HiddenStair, L03_MatchCut, L04_DoubleDuty, L05_SplitBudget, L06_CrossedShadows, L07_ReturnTicket, L08_FinalAssembly. L08 runtime reports LevelIndex8, IsFinal=true, NextLevel=L00_FirstCut; its existing final-screen flow is selected by that flag. Startup and editor startup maps are L00. L01 no longer repeats the title. Actual jump traversal and end-to-end escape were intentionally left to the user.
+
+Each new map passed one A and one B reference approval. Camera-only recaptures reused those results. All required door, exit-lamp, highest-facility and rule-lamp/shade bounds are inside the viewport. L00 retains FOV58; L04–L08 use FOV62 with the L03 position/rotation unchanged. L08 door scale0.85 keeps the exit-lamp top at1129.99999cm. No gameplay geometry was adjusted to make approval pass.
+
+Known presentation limitation: the fixed scene card overlaps the upper-left doors in L07/L08. Default task7_L07.png / task7_L08.png retain that visible limitation. Additional native phase0 task7_L07_door_visible.png / task7_L08_door_visible.png put the actual mouse over the card, triggering its specified25% opacity and revealing the door. No HUD element was hidden or moved for those captures.
+
+Cleanup completed: PIE stopped; temporary BP_CodexTask6BBridge deleted; floating play settings restored to1280x720; editor returned to L00; no dirty content/map packages and no modal window. Evidence: Saved/codex_task7/finish_report.json, stop_restore.json and final_state.json. No packaging, push or competition submission.
