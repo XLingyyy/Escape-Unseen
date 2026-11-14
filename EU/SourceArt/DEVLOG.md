@@ -190,3 +190,6 @@ maps saved. Screenshot: Saved/review/task8_rail.png; details in TASK8_HANDOFF.md
 
 
 - 2026-11-14 UTC：Task 10 L04_DoubleDuty 完成。灯轨及两条设计提示；固定设施与参考箱不变。A/B 参考审批通过，出生角色隐藏；task10_L04_DoubleDuty.png 已检查，门、最高横梁、灯均在画面内；灯后提示条按原遮挡规则淡化。交接见 Docs/TASK10A_HANDOFF.md；未完整通关。
+
+
+- 2026-11-14 UTC：Task 10 L05_SplitBudget 完成。灯轨及两条设计提示；固定设施与参考箱不变。A/B 参考审批通过，出生角色隐藏；task10_L05_SplitBudget.png 已检查，门、最高横梁、灯均在画面内；灯后提示条按原遮挡规则淡化。交接见 Docs/TASK10A_HANDOFF.md；未完整通关。
