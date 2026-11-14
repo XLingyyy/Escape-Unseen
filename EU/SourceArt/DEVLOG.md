@@ -111,3 +111,7 @@ Added editor-preplaced tutorial L00 from approved design, editable A/B crate rel
 ## 2026-11-14 — Task 7 L04 Double Duty
 
 Added `Content/EscapeUnseen/Maps/L04_DoubleDuty.umap` from approved design L04, with per-shot inventory A=3, B=3, pool=3 and editor-preplaced geometry. Both reference approvals passed; final camera framing contains the required door/platform/lamp bounds (FOV58 changed to 62; position/rotation retained from L03). Initial FOV58 clipped RuleBulb, Decor_LampShade; a camera-only recapture at FOV62 fixed framing and reused the completed A/B approvals. Screenshots: Saved/review/task7_L04.png. Details: Docs/TASK6B_7_HANDOFF.md. No traversal, packaging or push.
+
+## 2026-11-14 — Task 7 L05 Split Budget
+
+Added `Content/EscapeUnseen/Maps/L05_SplitBudget.umap` from approved design L06, with per-shot inventory A=2, B=3, pool=3 and editor-preplaced geometry. Both reference approvals passed; final camera framing contains the required door/platform/lamp bounds (FOV58 changed to 62; position/rotation retained from L03). Screenshots: Saved/review/task7_L05.png. Details: Docs/TASK6B_7_HANDOFF.md. No traversal, packaging or push.
