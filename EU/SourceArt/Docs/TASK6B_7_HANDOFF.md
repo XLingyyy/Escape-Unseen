@@ -47,3 +47,13 @@ Action spawn (1360, 0, 67), yaw180; the editor spawn includes 2cm contact cleara
 Camera (750, 2000, 560), rotation (-2, -90, 0); position/rotation retained from L03, FOV58 changed to 62. Door, exit lamp, highest facility (Left Shade), rule lamp and shade bounds are fully inside the viewport. The final camera-only recapture reused the completed A/B approvals. Native screenshots: Saved/review/task7_L06.png. Evidence: Saved/codex_task7/task7_L06_report.json, Saved/codex_task7/task7_L06_camera_report.json. No jump traversal, packaging or push was performed.
 
 L06 integration fits only over-width scene titles into the existing 480px text area; the CROSSED SHADOWS screenshot confirms it stays inside the card. L01 Director bTitle migrated true to false and saved, so only L00 presents the startup title. Evidence: Saved/codex_task7/title_migration.json; no new title-state framework.
+
+## Task 7 — L07 Return Ticket, completed 2026-11-14 UTC
+
+Map `Content/EscapeUnseen/Maps/L07_ReturnTicket.umap` follows design L07; 4 fixed facilities are editor-preplaced with shared visible/collision/shadow bounds. Inventory A=4, B=3, pool=4; A is editable. Reference XZ coordinates in cm: lamp (1300, 1110); A: #01 (670, 50), #02 (325, 250), #03 (425, 250), #04 (425, 350); B: #01 (700, 550), #02 (600, 550), #03 (600, 650). Both reference approvals passed.
+
+Action spawn (1300, 0, 67), yaw180; the editor spawn includes 2cm contact clearance. Door scale 1, bottom Z800, top Z1040.00; exit-lamp top Z1066.00. Guard (700, -150, 800), scale1.4, window XZ bounds (616, 793, 784, 919); minimum facility clearance 166.00cm and horizontal reference-lamp gap 516.00cm.
+
+Camera (750, 2000, 560), rotation (-2, -90, 0); position/rotation retained from L03, FOV58 changed to 62. Door, exit lamp, highest facility (Shade Bar), rule lamp and shade bounds are fully inside the viewport. Native screenshots: Saved/review/task7_L07.png. Evidence: Saved/codex_task7/task7_L07_report.json. No jump traversal, packaging or push was performed.
+
+L07 retains the approved coordinate-table thicknesses: two raised decks 40cm and shade bar30cm. These exact coordinates take precedence over the generic20cm note. The fourth crate uses T_Crate_04 generated from the existing03 texture with image_gen; MI_Crate04 duplicates MI_Crate03 and binds the verified Tex parameter. Full generation prompt/time and native import sizing are in PROVENANCE.csv. Camera containment does not mean HUD-free visibility: the fixed scene card overlaps the upper-left portion of the L07 exit door; the requested panel position and overlap-fade rules are retained.

@@ -119,3 +119,7 @@ Added `Content/EscapeUnseen/Maps/L05_SplitBudget.umap` from approved design L06,
 ## 2026-11-14 — Task 7 L06 Crossed Shadows
 
 Added `Content/EscapeUnseen/Maps/L06_CrossedShadows.umap` from approved design L05, with per-shot inventory A=3, B=3, pool=3 and editor-preplaced geometry. Both reference approvals passed; final camera framing contains the required door/platform/lamp bounds (FOV58 changed to 62; position/rotation retained from L03). The final camera-only recapture reused the completed A/B approvals. Screenshots: Saved/review/task7_L06.png. Details: Docs/TASK6B_7_HANDOFF.md. No traversal, packaging or push.
+
+## 2026-11-14 — Task 7 L07 Return Ticket
+
+Added `Content/EscapeUnseen/Maps/L07_ReturnTicket.umap` from approved design L07, with per-shot inventory A=4, B=3, pool=4 and editor-preplaced geometry. Both reference approvals passed; final camera framing contains the required door/platform/lamp bounds (FOV58 changed to 62; position/rotation retained from L03). Screenshots: Saved/review/task7_L07.png. Details: Docs/TASK6B_7_HANDOFF.md. No traversal, packaging or push.
