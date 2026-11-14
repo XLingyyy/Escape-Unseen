@@ -74,7 +74,43 @@ The fixture invokes StartPlay directly to expose the standing actor; these are
 appearance checks, not nine solved-level playthroughs. Per-map records are in
 EU/Saved/codex_task8/hero_after_*.json.
 
-## 8.2–8.5
+## 8.2 — horizontal light rail
+
+Implemented in BP_ShotDirector and BP_EscapeHUD with EnableLightRail=true.
+Per-map RailMinX, RailMaxX and RailZ are instance-editable. All nine maps have
+four preplaced, movable rail actors: 8 cm pipe at RailZ+25, 12 cm end seats,
+and a 25 cm hanging rod attached to RuleBulb. They have no collision, no
+Occluder tag and no cast shadow. MI_LightRail copies MI_SetPiece with its Color
+multiplied by .25; the shared original material is retained.
+
+| Map | X range (cm) | RailZ (cm) |
+|---|---:|---:|
+| L00 | 1050–1400 | 1000 |
+| L01 | 250–750 | 800 |
+| L02 | 250–750 | 900 |
+| L03 | 1050–1400 | 1000 |
+| L04 | 450–950 | 1100 |
+| L05 | 450–950 | 1100 |
+| L06 | 600–1100 | 1080 |
+| L07 | 1050–1400 | 1110 |
+| L08 | 1050–1400 | 1110 |
+
+Ranges use actual wall inner faces X=0/1500 and the existing point-to-facility
+30 cm clearance rule. All reference lamp positions remain within their rails.
+The lampshade Z scale is .54533 while enabled to leave 2 cm below the pipe;
+logical lamp position, shade XY scale and pivot remain unchanged. The original
+shade scale is stored and restored when the switch is disabled.
+
+Directional test in L01: (-500,200) clamps to (250,800); (9999,2200) clamps to
+(750,800). Disabling accepts the prior free-placement point (80,920), hides the
+pipe/ends/rod and restores the shade's unit scale. Re-enabling restores the rail
+and reference point (500,800). The phase-0 2 px amber rail line is visible in
+EU/Saved/review/task8_rail.png. Blueprints compiled and maps saved.
+Per-map bounds/placements and test results: EU/Saved/codex_task8/rail/*.json.
+Prior reference-approval results are reused because shadow geometry and its
+predicate are unchanged; no additional nine-map approval loop was run.
+
+## 8.3–8.5
 
 Pending integration. Task 8.5 was added by the user during implementation.
 No v2 gameplay assets are included in the fallback package.

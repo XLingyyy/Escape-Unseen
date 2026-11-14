@@ -151,3 +151,13 @@ in L00 and L03-derived levels. A default-on bEnableHeroModelFix branch now uses
 the same prisoner asset in every level; the disabled branch preserves v1.
 Nine native standing screenshots and transform records were checked; animation
 was retained. See Docs/TASK8_HANDOFF.md for evidence and test limitations.
+
+
+## Task 8.2 - horizontal light rail (14 November 2026 UTC)
+
+Nine maps now contain preplaced rail pipes, end seats and hanging rods, with
+per-map editable ranges and default-on EnableLightRail. MoveLight clamps only X
+and fixes Z; the phase-0 HUD draws a 2 px amber rail line. L01 endpoint and
+disabled-switch checks passed. Disabling restores free placement, original
+shade proportions and hides the added hardware. All blueprints compiled and
+maps saved. Screenshot: Saved/review/task8_rail.png; details in TASK8_HANDOFF.md.
