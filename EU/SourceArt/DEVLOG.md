@@ -165,3 +165,5 @@ maps saved. Screenshot: Saved/review/task8_rail.png; details in TASK8_HANDOFF.md
 - 2026-11-14 UTC：任务 8.3 完成。phase4 真实推箱150 cm/s、旋转/Y约束、前倾和摩擦/落地音效已接入；修复外观网格默认碰撞造成额外冲量。L03 原生 PIE 验证推箱、下落停稳、空中不推、切镜/重来恢复快照及关闭总开关。截图 task8_push.png / task8_fall.png；详情 EU/SourceArt/Docs/TASK8_HANDOFF.md。未完整通关或人工试听。
 
 - 2026-11-14 UTC：任务 8.4 完成。10–20秒巡视、5秒暖窗/双倒计时、1.5秒检查、CLEAR及失败1.2秒后重开A已接入；间隔从看守完全离窗起算。L03两轮自然计时和关闭总开关验证通过，切镜计时不变。截图 task8_warn.png / task8_clear.png / task8_caught.png；详情 EU/SourceArt/Docs/TASK8_HANDOFF.md。未完整通关或人工试听。
+
+- 2026-11-14 UTC：任务 8.5 完成。BP_SpawnMark、纸白胶带T、30%幽灵、START标签已预摆并绑定九关出生点；L02实测StartPlay后0.200秒淡出、胶带保留、返回摆灯恢复及总开关生效。截图 EU/Saved/review/task8_spawn.png。任务8全部交付，详见 EU/SourceArt/Docs/TASK8_HANDOFF.md；PIE已停、临时桥删除、播放设置恢复、编辑器L00无弹窗。任务9/10未启动，等待用户试玩手感。

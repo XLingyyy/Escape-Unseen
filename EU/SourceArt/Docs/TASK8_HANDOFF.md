@@ -187,7 +187,52 @@ level or physical pushing during the patrol test. No audio listening claim.
 All three Blueprints compiled and saved; the loaded L03 instance was explicitly
 migrated to the new defaults. Other maps inherit the new class defaults.
 
-## 8.5
+## 8.5 — actor starting marks
 
-Pending integration. Task 8.5 was added by the user during implementation.
-No v2 gameplay assets are included in the fallback package.
+All nine maps now contain one preplaced, movable BP_SpawnMark, referenced by the
+Director and the existing StartPoint. Its real SCS components are two matte
+paper-white tape strips (each 60x6 cm, 0.2 cm thick, center 1 cm above support)
+and the imported prisoner model. The T crossbar faces camera +Y. Only the ghost
+receives the StartPoint yaw; the tape remains aligned to the floor/camera.
+MI_SpawnTape uses #EDE6D6 converted to linear Color with Roughness 1.
+MI_SpawnGhost uses the existing translucent M_GhostUnlit at opacity .3.
+All marker geometry has no collision and casts no shadow.
+
+Construction and BeginPlay synchronize from StartPoint. The source model's feet
+remain on the support while breathing between 1 and 1.02 over two seconds.
+The START label uses the existing Bebas Canvas style at size 30, anchored
+150 cm above the breathing model's head, without a key block. Planning phases
+0/1/2/3/7 show the ghost and label. Phase 4 fades both through a shared alpha in
+0.2 seconds; tape remains. MasterEnableSpawnMark=true is available on Director;
+turning it off hides the whole marker. New maps can reuse the same actor and
+references; moving StartPoint is synchronized at BeginPlay. Re-run marker
+construction to refresh its editor preview, and update StartToGroundZOffset when
+moving the spawn to a different support height.
+
+Placement reports confirm all nine saved StartPoint bindings; L06/L07/L08 retain
+180-degree facing. Their existing light-rail, crate-push and guard-patrol switches
+are all true and patrol parameters remain 10/20/5/1.5. No other task's geometry
+was rearranged. Reports: EU/Saved/codex_task8/spawn/place_L*_report.json.
+
+L02 native PIE verification confirms position, yaw, paper-white MID, opacity .3
+and both visible tape components in lamp phase. A real StartPlay produced
+intermediate fade values and reached zero at 0.2000066 game seconds; the tape
+stayed visible. EnterLight restored the ghost/label, and master off/on hid and
+restored the complete marker. Screenshot: EU/Saved/review/task8_spawn.png,
+native 1920x1080 and visually inspected. A screenshot-write hitch initially
+skipped intermediate fade samples; the measurement was repeated after that
+write settled. No gameplay timing workaround was added. The latest PIE log
+contains no Error/Fatal/Accessed None entries.
+
+## Final delivery state
+
+- All changed Blueprints compiled and assets/maps saved.
+- PIE stopped, temporary BP_CodexTask6BBridge deleted, editor returned to L00.
+- Floating-play preferences restored to 1280x720, non-centered, position (-1,-1).
+  Temporary background-throttle changes were restored without SaveConfig.
+- The final window list contains only EU - Unreal Editor; no modal is present.
+- Offline subagents prepared bounded logic/migration/verification scripts. Codex
+  performed the sole UE integration, compilation, native PIE checks and commits.
+- Task 8 ends here. Tasks 9 and 10 have not been started. No push or submission.
+  V2 was not packaged; the requested fallback ZIP contains v1 gameplay only.
+- Full traversal, player feel and audio listening remain for user playtesting.
